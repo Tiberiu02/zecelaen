@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-math {
+    background-color: hsl(0, 0%, 97%);
+    --grid-color: hsl(0, 0%, 92%);
+    background-size: 30px 30px;
+    background-position: 11px 17px;
+    background-image:
+        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+}
