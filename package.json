@@ -13,6 +13,7 @@
     "random-seedable": "^1.0.8",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.11.0",
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
