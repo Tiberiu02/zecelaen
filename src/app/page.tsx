@@ -76,7 +76,7 @@ export default function Home() {
           <div className="flex gap-2 mr-8 items-center text-red-700 font-semibold">
             <FaFire className="text-lg text-red-500 mb-[1px]" />7
           </div>
-          <div className="flex gap-2 mr-8 items-center text-yellow-700 font-semibold">
+          <div className="flex gap-2 items-center text-yellow-700 font-semibold">
             <FaStar className="text-xl text-yellow-500 mb-[1px]" />
             12
           </div>
