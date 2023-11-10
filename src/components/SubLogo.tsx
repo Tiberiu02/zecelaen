@@ -258,8 +258,6 @@ export function SubLogo({
     radius: 40,
     type: random.choice(["ellipse", "square", "triangle"]),
   };
-  // console.log(shape1.type, shape2.type);
-  console.log(random.choice([1, 2, 3]));
 
   const top = Math.min(shape1.cy - shape1.radius, shape2.cy - shape2.radius);
   const bottom = Math.max(shape1.cy + shape1.radius, shape2.cy + shape2.radius);

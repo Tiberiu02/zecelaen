@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Quicksand, Rubik } from "next/font/google";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const qs = Quicksand({ subsets: ["latin"] });

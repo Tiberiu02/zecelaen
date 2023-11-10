@@ -4,7 +4,7 @@ import { FaStar, FaFire, FaFacebookF } from "react-icons/fa6";
 import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { SubLogo } from "../../components/SubLogo";
-import { Test1 } from "./Test1";
+import { Exercise } from "./Exercise";
 
 export default function Home() {
   const progress = true;
@@ -72,11 +72,23 @@ export default function Home() {
       {/* <h1 className="text-base mt-12 font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow [font-family:KaTeX\_Main,Times_New_Roman,serif]">
               Subiectul I
             </h1> */}
-      <h1 className="text-2xl mt-12 w-[60rem] text-left text-black [font-family:KaTeX\_Main,Times_New_Roman,serif]">
-        <span className="bg-anti-math font-semibold">Subiectul I</span>
+      <h1 className="text-2xl mt-24 w-[60rem] text-left text-black [font-family:KaTeX\_Main,Times_New_Roman,serif]">
+        <span className="bg-anti-math">Subiectul I</span>
       </h1>
 
-      <Test1 />
+      <Exercise
+        index={1}
+        description="Rezultatul calculului $15 - (3 + 4)$ este egal cu:"
+        points={5}
+        options={["3", "8", "16", "22"]}
+      />
+
+      <Exercise
+        index={2}
+        description="Știind că $\frac{x}{y} \not = \frac{5}{2}$, $y \not = 0$, rezultatul calculului $2x + 5y + 10$ este egal cu:"
+        points={5}
+        options={["0", "7", "10", "17"]}
+      />
 
       <div className="flex flex-col gap-4 items-center">
         <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
