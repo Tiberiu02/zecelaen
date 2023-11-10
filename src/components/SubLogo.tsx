@@ -188,6 +188,30 @@ function createEllipsePath(
 
   return path;
 }
+
+function blendMax(color1: string, color2: string) {
+  const c1 = color1.replace("#", "");
+  const c2 = color2.replace("#", "");
+
+  const r1 = parseInt(c1.substring(0, 2), 16);
+  const g1 = parseInt(c1.substring(2, 4), 16);
+  const b1 = parseInt(c1.substring(4, 6), 16);
+
+  const r2 = parseInt(c2.substring(0, 2), 16);
+  const g2 = parseInt(c2.substring(2, 4), 16);
+  const b2 = parseInt(c2.substring(4, 6), 16);
+
+  const r = Math.max(r1, r2);
+  const g = Math.max(g1, g2);
+  const b = Math.max(b1, b2);
+
+  const rHex = r.toString(16).padStart(2, "0");
+  const gHex = g.toString(16).padStart(2, "0");
+  const bHex = b.toString(16).padStart(2, "0");
+
+  return `#${rHex}${gHex}${bHex}`;
+}
+
 export function SubLogo({
   className = "",
   seed,

@@ -100,7 +100,7 @@ export default function Home() {
                 <div
                   key={i}
                   className={twMerge(
-                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-xl border-[1px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 hover:shadow-md cursor-pointer duration-150"
+                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-xl border-[1px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
                   )}
                 >
                   <SubLogo
