@@ -82,10 +82,10 @@ export default function Home() {
           </div>
           <div className="w-full"></div>
 
-          <CgMenuGridO className="text-3xl shrink-0 hover:scale-110 cursor-pointer duration-150" />
+          <CgMenuGridO className="text-3xl shrink-0 opacity-40 hover:opacity-100 cursor-pointer duration-150" />
         </div>
       </h1>
-      <h1 className="w-full text-lg font-medium text-left text-black mb-0 py-4 flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
+      <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="w-[60rem]">Subiecte Evaluarea Națională Matematică</div>
       </h1>
 
@@ -100,7 +100,7 @@ export default function Home() {
                 <div
                   key={i}
                   className={twMerge(
-                    "relative overflow-hidden w-[28rem] items-center bg-white rounded-xl border-[1px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 hover:scale-[1.02] cursor-pointer duration-150"
+                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-xl border-[1px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 hover:shadow-md cursor-pointer duration-150"
                   )}
                 >
                   <SubLogo

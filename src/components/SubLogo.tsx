@@ -1,4 +1,6 @@
-import { LCG } from "random-seedable";
+import { LCG, PCG } from "random-seedable";
+import { CSSProperties } from "react";
+import { twMerge } from "tailwind-merge";
 
 function createTrianglePath(
   centerX: number,
@@ -193,7 +195,7 @@ export function SubLogo({
   className?: string;
   seed: number;
 }) {
-  const random = new LCG(seed);
+  const random = new PCG(seed);
 
   for (let i = 0; i < 100; i++) random.float();
 
@@ -201,19 +203,20 @@ export function SubLogo({
   const shapeAngleRad = random.choice([-45, 45]) * (Math.PI / 180);
 
   const color = [
-    "#F86F6F",
-    "#FF9431",
-    "#FFC700",
-    "#56D354",
-    "#408CFF",
-    "#C67EFF", // purple
+    "#F86F6F", // red
+    // "#FF9431", // orange
+    // "#FFC700", // yellow
+    "#56D354", // green
+    // "#00C2FF", // cyan
+    "#408CFF", // blue
+    // "#C67EFF", // purple
     // "#FD8CFF", // pink
   ];
 
   const ix = random.int() % color.length;
   const logoColors = [
     color[ix],
-    color[(ix + 2) % color.length],
+    color[(ix + 1 + (random.int() % (color.length - 1))) % color.length],
     color[(ix + 1) % color.length],
   ];
 
@@ -266,20 +269,51 @@ export function SubLogo({
       viewBox={`${cx - size / 2} ${cy - size / 2} ${size} ${size}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      className={twMerge(className, "group-hover:rotate-45 duration-150")}
     >
       <defs>
         <clipPath id={`clip-path-${seed}`}>
-          <path d={path1} />
+          <path
+            d={path1}
+            className={`duration-150 group-hover:[transform:var(--clip-path-transform)]`}
+            style={
+              {
+                "--clip-path-transform": `translate(${shape2.cx}px,${
+                  shape2.cy
+                }px) rotate(60deg) translate(${-shape2.cx}px,${-shape2.cy}px) translate(${
+                  shape1.cx
+                }px,${
+                  shape1.cy
+                }px) rotate(-60deg) translate(${-shape1.cx}px,${-shape1.cy}px)`,
+              } as CSSProperties
+            }
+          />
         </clipPath>
       </defs>
 
-      <path d={path1} fill={logoColors[0]} />
-      <path d={path2} fill={logoColors[1]} />
       <path
         d={path2}
-        fill={logoColors[2]}
-        clipPath={`url(#clip-path-${seed})`}
+        fill={logoColors[1]}
+        className="group-hover:-rotate-[60deg] duration-150"
+        style={{
+          transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
+        }}
+      />
+      <path
+        d={path1}
+        fill={logoColors[0]}
+        className=" group-hover:-rotate-[60deg] duration-150"
+        style={{
+          transformOrigin: `${shape1.cx}px ${shape1.cy}px`,
+        }}
+      />
+      <path
+        d={path2}
+        fill={logoColors[1]}
+        className="mix-blend-lighten group-hover:-rotate-[60deg] duration-150"
+        style={{
+          transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
+        }}
       />
     </svg>
   );
