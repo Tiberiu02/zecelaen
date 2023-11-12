@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { TbDiscountCheckFilled } from "react-icons/tb";
 import { CgMenuGridO } from "react-icons/cg";
-import { FaStar, FaFire } from "react-icons/fa";
+import { FaStar, FaFire } from "react-icons/fa6";
 import { SubLogo } from "../components/SubLogo";
 
 export default function Home() {
@@ -67,7 +67,7 @@ export default function Home() {
   ] as const;
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
-      <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-[1px] border-t-0 border-gray-200 shadow">
+      <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-2 border-t-0 border-gray-200 shadow">
         <div className="w-[60rem] flex items-center">
           <div className="font-bold text-2xl">
             10<sup>N</sup>
@@ -76,8 +76,8 @@ export default function Home() {
           <div className="flex gap-2 mr-8 items-center text-red-700 font-semibold">
             <FaFire className="text-lg text-red-500 mb-[1px]" />7
           </div>
-          <div className="flex gap-2 items-center text-yellow-700 font-semibold">
-            <FaStar className="text-xl text-yellow-500 mb-[1px]" />
+          <div className="flex gap-2 items-center text-yellow-600 font-semibold">
+            <FaStar className="text-xl text-yellow-400 mb-[1px]" />
             12
           </div>
           <div className="w-full"></div>

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .bg-math {
-    background-color: hsl(0, 0%, 99%);
-    --grid-color: hsl(230, 50%, 95%);
+    background-color: hsl(0, 0%, 96%);
+    --grid-color: hsl(230, 0%, 91%);
     background-size: 30px 30px;
     background-position: 11px 17px;
     background-image:
@@ -13,6 +13,6 @@
 }
 
 .bg-anti-math {
-    background-color: rgba(252,252,252,0.5);
-    box-shadow: 0px 0px 10px 5px rgba(252,252,252,0.8)
+    background-color: hsla(0, 0%, 98%, 0.8);
+    box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
 }
