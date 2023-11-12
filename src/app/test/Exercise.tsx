@@ -38,8 +38,8 @@ export function Exercise({
     "text-fuchsia-300 border-2 border-fuchsia-300 group-hover:text-gray-100 group-hover:bg-fuchsia-300 opacity-80 ",
   ];
   return (
-    <div className="rounded-xl text-left text-black justify-center flex flex-col items-center">
-      <div className="w-[60rem] flex flex-col gap-4 bg-white rounded-xl border-[1px] border-gray-200 shadow py-6 px-8">
+    <div className="text-left text-black justify-center flex flex-col items-center">
+      <div className="w-[60rem] flex flex-col gap-4 bg-white rounded-3xl border-[1px] border-gray-200 shadow py-6 px-8">
         <div className="flex justify-between font-bold text-lg">
           <span className="font-bold">{index}.</span>
           <div className="flex text-yellow-400 gap-1">
@@ -55,7 +55,7 @@ export function Exercise({
         <div className="grid grid-cols-4 gap-8 px-8 mt-8">
           {options.map((option, i) => (
             <button
-              className="flex group items-center text-xl bg-white rounded-3xl border-[2px] border-gray-200 shadow p-2 hover:bg-gray-100 duration-150"
+              className="flex group items-center text-xl bg-white rounded-3xl border-[2px] border-gray-200 shadow h-12 px-2 hover:bg-gray-100 duration-150"
               key={i}
             >
               <div
@@ -66,7 +66,7 @@ export function Exercise({
               >
                 {"ABCD"[i]}
               </div>
-              <div className="mx-auto">{parseKatex(`${option}$`)}</div>
+              <div className="mx-auto">{parseKatex(`$${option}$`)}</div>
             </button>
           ))}
         </div>

@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </h1>
 
-      <div className="w-[60rem] p-8 mt-8 rounded-xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
+      <div className="w-[60rem] p-8 mt-8 rounded-3xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="flex flex-row items-center gap-4 w-full">
           <SubLogo seed={1201231} className="w-8 h-8" />
           <div className="flex mr-auto flex-col justify-between">
