@@ -48,7 +48,7 @@ export function Exercise({
           </div>
         </div>
         <div className="flex w-full justify-between gap-8">
-          <div className="font-normal center text-lg">
+          <div className="font-normal center text-lg text-center w-full">
             {parseKatex(description)}
           </div>
         </div>
