@@ -97,11 +97,12 @@ export default function Home() {
             </h1>
             <div className="grid grid-cols-[auto_auto] gap-4">
               {subs.map(([name, year, progress], i) => (
-                <div
+                <a
                   key={i}
                   className={twMerge(
-                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-xl border-[1px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
+                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-xl border-2 hover:bg-gray-100 border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
                   )}
+                  href={"/test"}
                 >
                   <SubLogo
                     seed={i + parseInt(byear) * 101}
@@ -118,7 +119,7 @@ export default function Home() {
                   {progress && (
                     <TbDiscountCheckFilled className="text-green-500 text-4xl" />
                   )}
-                </div>
+                </a>
               ))}
             </div>
           </>

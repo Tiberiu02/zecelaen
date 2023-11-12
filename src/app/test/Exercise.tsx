@@ -32,10 +32,10 @@ export function Exercise({
   options: string[];
 }) {
   const optionClass = [
-    "bg-sky-500 opacity-80 group-hover:opacity-100",
-    "bg-purple-500 opacity-80 group-hover:opacity-100",
-    "bg-orange-500 opacity-80 group-hover:opacity-100",
-    "bg-fuchsia-500 opacity-80 group-hover:opacity-100",
+    "text-sky-400 border-2 border-sky-400 group-hover:text-gray-100 group-hover:bg-sky-400 opacity-80 ",
+    "text-purple-400 border-2 border-purple-400 group-hover:text-gray-100 group-hover:bg-purple-400 opacity-80 ",
+    "text-orange-400 border-2 border-orange-400 group-hover:text-gray-100 group-hover:bg-orange-400 opacity-80 ",
+    "text-fuchsia-400 border-2 border-fuchsia-400 group-hover:text-gray-100 group-hover:bg-fuchsia-400 opacity-80 ",
   ];
   return (
     <div className="rounded-xl text-left text-black justify-center flex flex-col items-center">
@@ -52,15 +52,15 @@ export function Exercise({
             {parseKatex(description)}
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-8 px-8">
+        <div className="grid grid-cols-4 gap-8 px-8 mt-8">
           {options.map((option, i) => (
             <button
-              className="flex group items-center text-xl bg-white rounded-full border-[2px] border-gray-200 shadow p-2 hover:bg-gray-50 duration-150"
+              className="flex group items-center text-xl bg-white rounded-3xl border-[2px] border-gray-200 shadow p-2 hover:bg-gray-100 duration-150"
               key={i}
             >
               <div
                 className={twMerge(
-                  "h-7 w-7 duration-150 text-base flex items-center justify-center rounded-full text-white font-semibold",
+                  "h-7 w-7 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
                   optionClass[i]
                 )}
               >

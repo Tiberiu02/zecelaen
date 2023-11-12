@@ -48,24 +48,24 @@ export default function Home() {
           )}
         </div>
         <div className="w-full mt-8 text-base flex items-center font-medium gap-2 text-black/60">
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-50 px-4 py-1 duration-150">
+          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150">
             <HiDownload className=" " />
             Subiect
           </button>
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-50 px-4 py-1 duration-150">
+          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150">
             <HiDownload className=" " />
             Barem
           </button>
           <div className="w-full"></div>
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-50 px-4 py-1 duration-150 text-green-500">
+          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150 text-green-500">
             <RiWhatsappFill className=" " />
             Share
           </button>
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-50 px-4 py-1 duration-150 text-blue-800">
+          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150 text-blue-800">
             <FaFacebookF className="text-xs" />
             Share
           </button>
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-50 px-4 py-1 duration-150 text-blue-500">
+          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150 text-blue-500">
             <FaFacebookMessenger className="text-xs" />
             Share
           </button>
