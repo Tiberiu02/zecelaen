@@ -32,10 +32,10 @@ export function Exercise({
   options: string[];
 }) {
   const optionClass = [
-    "text-sky-300 border-2 border-sky-300 group-hover:text-gray-100 group-hover:bg-sky-300 opacity-80 ",
-    "text-purple-300 border-2 border-purple-300 group-hover:text-gray-100 group-hover:bg-purple-300 opacity-80 ",
-    "text-orange-300 border-2 border-orange-300 group-hover:text-gray-100 group-hover:bg-orange-300 opacity-80 ",
-    "text-fuchsia-300 border-2 border-fuchsia-300 group-hover:text-gray-100 group-hover:bg-fuchsia-300 opacity-80 ",
+    "text-sky-500 border-2 border-sky-500 group-hover:text-gray-100 group-hover:bg-sky-500 opacity-80 ",
+    "text-purple-500 border-2 border-purple-500 group-hover:text-gray-100 group-hover:bg-purple-500 opacity-80 ",
+    "text-orange-500 border-2 border-orange-500 group-hover:text-gray-100 group-hover:bg-orange-500 opacity-80 ",
+    "text-fuchsia-500 border-2 border-fuchsia-500 group-hover:text-gray-100 group-hover:bg-fuchsia-500 opacity-80 ",
   ];
   return (
     <div className="text-left text-black justify-center flex flex-col items-center">
