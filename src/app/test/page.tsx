@@ -47,7 +47,7 @@ export default function Home() {
             <TbDiscountCheckFilled className="text-green-500 text-4xl" />
           )}
         </div>
-        <div className="w-[calc(100%+1rem)] mt-8 text-base flex items-center font-medium gap-2 text-black/60">
+        <div className="w-[calc(100%+1rem)] mt-4 text-base flex items-center font-medium gap-2 text-black/60">
           <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150">
             <HiDownload className=" " />
             Subiect
