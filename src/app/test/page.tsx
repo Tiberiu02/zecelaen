@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </h1>
 
-      <div className="w-[60rem] px-6 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
+      <div className="w-[60rem] px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="flex flex-row items-center gap-4 w-full">
           <SubLogo seed={1201231} className="w-12 h-12" />
           <div className="flex mr-auto flex-col justify-between">
@@ -47,7 +47,7 @@ export default function Home() {
             <TbDiscountCheckFilled className="text-green-500 text-4xl" />
           )}
         </div>
-        <div className="w-[calc(100%+1rem)] mt-4 text-base flex items-center font-medium gap-2 text-black/60">
+        <div className="w-[calc(100%+0rem)] mt-6 text-base flex items-center font-medium gap-2 text-black/60">
           <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 px-4 py-1 duration-150">
             <HiDownload className=" " />
             Subiect
