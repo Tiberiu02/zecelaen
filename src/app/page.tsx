@@ -95,12 +95,12 @@ export default function Home() {
             <h1 className="text-base mt-12 mb-2 font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow">
               {byear}
             </h1>
-            <div className="grid grid-cols-[auto_auto] gap-4 [&>*:nth-child(even)]:translate-y-1/4">
+            <div className="grid grid-cols-[auto_auto] gap-4 [&>*:nth-child(even)]:translate-y-[16px] hover:[&>*:nth-child(even)]:translate-y-[18px]">
               {subs.map(([name, year, progress], i) => (
                 <a
                   key={i}
                   className={twMerge(
-                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-full border-2 hover:bg-gray-100 border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
+                    "relative group overflow-hidden w-[28rem] items-center bg-white rounded-full border-2 hover:bg-gray-50 hover:shadow-none hover:translate-y-[2px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
                   )}
                   href={"/test"}
                 >

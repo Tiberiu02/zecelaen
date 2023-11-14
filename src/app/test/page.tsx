@@ -33,10 +33,10 @@ export default function Home() {
       </h1>
 
       <div className="w-[60rem] px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
-        <div className="flex flex-row items-center gap-4 w-full">
-          <SubLogo seed={1201231} className="w-12 h-12" />
+        <div className="flex flex-row items-center gap-4 w-full px-1">
+          <SubLogo seed={1201231} className="w-10 h-10" />
           <div className="flex mr-auto flex-col justify-between">
-            <div className="text-xl font-medium text-center bg-anti-math">
+            <div className="text-lg font-medium text-center bg-anti-math">
               Evaluarea Națională
             </div>
             <div className="w-fit font-semibold text-sm opacity-40 bg-anti-math">
@@ -73,9 +73,6 @@ export default function Home() {
       </div>
 
       <div className="flex mt-16 gap-6 flex-col">
-        <h1 className="text-base w-fit self-center font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow">
-          Subiectul I
-        </h1>
         <Test1 />
       </div>
 

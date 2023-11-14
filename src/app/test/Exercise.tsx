@@ -8,15 +8,19 @@ import { twMerge } from "tailwind-merge";
 function parseKatex(str: string) {
   return (
     <>
-      {str.split("$").map((x, i) =>
-        i % 2 == 0 ? (
-          x
-        ) : (
-          <span className="inline-block -my-4" key={i}>
-            <BlockMath math={x} />
-          </span>
-        )
-      )}
+      {str.split("<br/>").map((s, ix) => (
+        <div key={ix} className="[text-wrap:balance]">
+          {s.split("$").map((x, i) =>
+            i % 2 == 0 ? (
+              x
+            ) : (
+              <span className="inline-block -my-4" key={`${ix}-${i}`}>
+                <BlockMath math={x} />
+              </span>
+            )
+          )}
+        </div>
+      ))}
     </>
   );
 }
@@ -27,12 +31,14 @@ export function Exercise({
   index,
   options,
   correct,
+  image,
 }: {
   description: string;
   points: number;
   index: number;
   options: string[];
   correct: number;
+  image?: string;
 }) {
   const [chosen, setChosen] = useState<number | null>(null);
 
@@ -55,14 +61,15 @@ export function Exercise({
             <div className="text-yellow-500">{points}</div>
           </div>
         </div>
-        <div className="font-normal center text-lg text-center w-full">
+        <div className="font-normal center text-lg text-center w-full flex flex-col gap-4 items-center">
           {parseKatex(description)}
+          {image && <img src={image} className="max-h-64" />}
         </div>
-        <div className="grid grid-cols-4 gap-4 px-0 mt-6 -mx-2">
+        <div className="flex gap-4 px-0 mt-6 -mx-2 ">
           {options.map((option, i) => (
             <div
               className={twMerge(
-                "flex group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 px-2",
+                "flex w-full gap-4 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 pl-2 pr-4",
                 chosen != i
                   ? "bg-white border-gray-200 "
                   : correct == i
@@ -92,7 +99,7 @@ export function Exercise({
                   <FaXmark />
                 </div>
               )}
-              <div className="mx-auto">{parseKatex(`$${option}$`)}</div>
+              <div className="mx-auto">{parseKatex(`${option}`)}</div>
             </div>
           ))}
         </div>
