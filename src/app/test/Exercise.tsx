@@ -1,7 +1,15 @@
 "use client";
 
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState } from "react";
-import { FaCheck, FaStar, FaXmark } from "react-icons/fa6";
+import {
+  FaAngleDown,
+  FaAngleUp,
+  FaCaretDown,
+  FaCheck,
+  FaStar,
+  FaXmark,
+} from "react-icons/fa6";
 import { BlockMath } from "react-katex";
 import { twMerge } from "tailwind-merge";
 
@@ -56,6 +64,8 @@ export function Exercise({
   }[];
 }) {
   const [chosen, setChosen] = useState<number | null>(null);
+  const [showSolution, setShowSolution] = useState(false);
+  const [cardRef] = useAutoAnimate();
 
   const className = {
     options: [
@@ -68,7 +78,10 @@ export function Exercise({
 
   return (
     <div className="text-left text-black justify-center flex flex-col items-center [ttext-wrap:balance]">
-      <div className="w-[60rem] flex flex-col gap-0 bg-white rounded-2xl border-[1px] border-gray-200 shadow py-4 px-6">
+      <div
+        className="w-[60rem] flex flex-col gap-0 bg-white rounded-2xl border-[1px] border-gray-200 shadow py-4 px-6"
+        ref={cardRef}
+      >
         <div className="flex justify-between font-bold text-lg gap-4">
           <span className="font-bold">{index}.</span>
           {points && (
@@ -88,7 +101,6 @@ export function Exercise({
             />
           )}
         </div>
-
         {subExercises &&
           subExercises.map((sub, i) => (
             <div key={i}>
@@ -149,6 +161,38 @@ export function Exercise({
               </div>
             ))}
         </div>
+        {showSolution && (
+          <div className="flex flex-col gap-4 mt-8">
+            <div className="font-bold text-lg">Rezolvare</div>
+
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube-nocookie.com/embed/jW-Jj5FmNM4?si=f0JwzZ7dsitNHQha&rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        )}
+        {(chosen != null || !options) && (
+          <button
+            className="flex  duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50"
+            onClick={() => setShowSolution(!showSolution)}
+          >
+            {showSolution ? (
+              <>
+                <FaAngleUp className="mt-0" />
+                Ascunde rezolvarea
+              </>
+            ) : (
+              <>
+                <FaAngleDown className="mt-1" />
+                Arată rezolvarea
+              </>
+            )}
+          </button>
+        )}
       </div>
     </div>
   );
