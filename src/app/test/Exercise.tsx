@@ -8,19 +8,27 @@ import { twMerge } from "tailwind-merge";
 function parseKatex(str: string) {
   return (
     <>
-      {str.split("<br/>").map((s, ix) => (
-        <div key={ix} className="[text-wrap:balance]">
-          {s.split("$").map((x, i) =>
-            i % 2 == 0 ? (
-              x
-            ) : (
-              <span className="inline-block -my-4" key={`${ix}-${i}`}>
-                <BlockMath math={x} />
-              </span>
-            )
-          )}
-        </div>
-      ))}
+      {str.split("<br/>").map((s, ix) => {
+        const segments = s.split("$");
+        return (
+          <div
+            key={ix}
+            className="text-3xl text-[1.35rem] line font-normal [font-family:KaTeX\_Main,'Times_New_Roman',serif]"
+          >
+            {segments.map((x, i) =>
+              i % 2 == 0 ? (
+                x.replaceAll(/-([\d ])/gi, "−$1")
+              ) : (
+                <span className="whitespace-nowrap" key={`${ix}-${i}`}>
+                  <span className="inline-block -my-3 text-lg">
+                    <BlockMath math={x} />
+                  </span>
+                </span>
+              )
+            )}
+          </div>
+        );
+      })}
     </>
   );
 }
@@ -32,13 +40,20 @@ export function Exercise({
   options,
   correct,
   image,
+  imageSize,
+  subExercises,
 }: {
   description: string;
-  points: number;
+  points?: number;
   index: number;
-  options: string[];
-  correct: number;
+  options?: string[];
+  correct?: number;
   image?: string;
+  imageSize?: number;
+  subExercises?: {
+    description: string;
+    points?: number;
+  }[];
 }) {
   const [chosen, setChosen] = useState<number | null>(null);
 
@@ -52,56 +67,87 @@ export function Exercise({
   };
 
   return (
-    <div className="text-left text-black justify-center flex flex-col items-center">
+    <div className="text-left text-black justify-center flex flex-col items-center [ttext-wrap:balance]">
       <div className="w-[60rem] flex flex-col gap-0 bg-white rounded-2xl border-[1px] border-gray-200 shadow py-4 px-6">
-        <div className="flex justify-between font-bold text-lg">
+        <div className="flex justify-between font-bold text-lg gap-4">
           <span className="font-bold">{index}.</span>
-          <div className="flex text-yellow-400 gap-1">
-            <FaStar className="mt-1" />
-            <div className="text-yellow-500">{points}</div>
-          </div>
+          {points && (
+            <div className="flex text-yellow-400 gap-1">
+              <FaStar className="mt-1" />
+              <div className="text-yellow-500">{points}</div>
+            </div>
+          )}
         </div>
-        <div className="font-normal center text-lg text-center w-full flex flex-col gap-4 items-center">
+        <div className="font-normal text-lg text-left w-full flex flex-col mt-4 gap-4 items-left">
           {parseKatex(description)}
-          {image && <img src={image} className="max-h-64" />}
+          {image && (
+            <img
+              src={image}
+              className="self-center"
+              style={{ maxWidth: `${imageSize || 20}rem` }}
+            />
+          )}
         </div>
-        <div className="flex gap-4 px-0 mt-6 -mx-2 ">
-          {options.map((option, i) => (
-            <div
-              className={twMerge(
-                "flex w-full gap-4 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 pl-2 pr-4",
-                chosen != i
-                  ? "bg-white border-gray-200 "
-                  : correct == i
-                  ? "bg-[#d6ffd5] border-[#8ce98b] shadow-[#8ce98b]"
-                  : "bg-[#ffe6e6] border-[#fcc3c3] shadow-[#fcc3c3]",
-                chosen == null &&
-                  "hover:bg-gray-100 cursor-pointer hover:shadow-none hover:translate-y-[2px]"
-              )}
-              onClick={chosen == null ? () => setChosen(i) : undefined}
-              key={i}
-            >
-              {chosen == null ? (
-                <div
-                  className={twMerge(
-                    "h-7 w-7 border-2 border-red-200 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
-                    className.options[i]
-                  )}
-                >
-                  {"ABCD"[i]}
+
+        {subExercises &&
+          subExercises.map((sub, i) => (
+            <div key={i}>
+              <div
+                key={i}
+                className="flex items-center justify-between font-bold text-lg mt-4 gap-4"
+              >
+                <span className="font-medium">
+                  {"abcde"[i]}
+                  {"."}
+                </span>
+                <div className="flex text-yellow-400 gap-1">
+                  <FaStar className="mt-1" />
+                  <div className="text-yellow-500">{sub.points}</div>
                 </div>
-              ) : i == correct ? (
-                <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-[#b3ffb1] border-opacity-50 bg-[#3ace38]">
-                  <FaCheck />
-                </div>
-              ) : (
-                <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-white border-opacity-50 bg-[#FF7676]">
-                  <FaXmark />
-                </div>
-              )}
-              <div className="mx-auto">{parseKatex(`${option}`)}</div>
+              </div>
+              <div className="font-normal center mt-4 text-lg text-left w-full flex flex-col gap-4 items-left">
+                {parseKatex(sub.description)}
+              </div>
             </div>
           ))}
+        <div className="flex gap-4 px-0 mt-6 -mx-2 ">
+          {options &&
+            options.map((option, i) => (
+              <div
+                className={twMerge(
+                  "flex w-full gap-4 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 pl-2 pr-4",
+                  chosen != i
+                    ? "bg-white border-gray-200 "
+                    : correct == i
+                    ? "bg-[#d6ffd5] border-[#8ce98b] shadow-[#8ce98b]"
+                    : "bg-[#ffe6e6] border-[#fcc3c3] shadow-[#fcc3c3]",
+                  chosen == null &&
+                    "hover:bg-gray-100 cursor-pointer hover:shadow-none hover:translate-y-[2px]"
+                )}
+                onClick={chosen == null ? () => setChosen(i) : undefined}
+                key={i}
+              >
+                {chosen == null ? (
+                  <div
+                    className={twMerge(
+                      "h-7 w-7 border-2 border-red-200 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
+                      className.options[i]
+                    )}
+                  >
+                    {"ABCD"[i]}
+                  </div>
+                ) : i == correct ? (
+                  <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-[#b3ffb1] border-opacity-50 bg-[#3ace38]">
+                    <FaCheck />
+                  </div>
+                ) : (
+                  <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-white border-opacity-50 bg-[#FF7676]">
+                    <FaXmark />
+                  </div>
+                )}
+                <div className="mx-auto">{parseKatex(`${option}`)}</div>
+              </div>
+            ))}
         </div>
       </div>
     </div>
