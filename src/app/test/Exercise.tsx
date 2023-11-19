@@ -8,6 +8,7 @@ import {
   FaCaretDown,
   FaCheck,
   FaStar,
+  FaVideo,
   FaXmark,
 } from "react-icons/fa6";
 import { BlockMath } from "react-katex";
@@ -21,7 +22,7 @@ function parseKatex(str: string) {
         return (
           <div
             key={ix}
-            className="text-3xl text-[1.35rem] line font-normal [font-family:KaTeX\_Main,'Times_New_Roman',serif]"
+            className="text-3xl text-[1.35rem] line font-normal font-katex"
           >
             {segments.map((x, i) =>
               i % 2 == 0 ? (
@@ -165,14 +166,10 @@ export function Exercise({
           <div className="flex flex-col gap-4 mt-8">
             <div className="font-bold text-lg">Rezolvare</div>
 
-            <iframe
-              className="w-full aspect-video"
-              src="https://www.youtube-nocookie.com/embed/jW-Jj5FmNM4?si=f0JwzZ7dsitNHQha&rel=0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+            <div className="bg-blue-500 text-white aspect-video w-full rounded-2xl flex items-center justify-center gap-4 flex-col">
+              <FaVideo className="text-3xl" />
+              <div>video will be here</div>
+            </div>
           </div>
         )}
         {(chosen != null || !options) && (

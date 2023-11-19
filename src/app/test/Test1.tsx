@@ -226,7 +226,7 @@ export function Test1() {
         subExercises={[
           {
             description:
-              "Arată că măsura unghiului dreptelor $AB'$ și $BC'$ este egală cu $60^circ$.",
+              "Arată că măsura unghiului dreptelor $AB'$ și $BC'$ este egală cu $60^\\circ$.",
             points: 2,
           },
           {

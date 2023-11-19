@@ -2,17 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-math {
-    background-color: hsl(0, 0%, 96%);
-    --grid-color: hsl(230, 0%, 93%);
-    background-size: 30px 30px;
-    background-position: 11px 17px;
-    background-image:
-        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
-}
+@layer base {
+    
+    @font-face {
+        font-family: "KatexRO";
+        src: url('/KaTeX_RO_Main-Regular.woff2');
+    }
 
-.bg-anti-math {
-    background-color: hsla(0, 0%, 98%, 0.8);
-    box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
+    .bg-math {
+        background-color: hsl(0, 0%, 96%);
+        --grid-color: hsl(230, 0%, 93%);
+        background-size: 30px 30px;
+        background-position: 11px 17px;
+        background-image:
+            linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+    }
+
+    .bg-anti-math {
+        background-color: hsla(0, 0%, 98%, 0.8);
+        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
+    }
 }
