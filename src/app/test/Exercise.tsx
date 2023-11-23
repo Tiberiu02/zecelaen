@@ -7,6 +7,7 @@ import {
   FaAngleUp,
   FaCaretDown,
   FaCheck,
+  FaRegStar,
   FaStar,
   FaVideo,
   FaXmark,
@@ -62,9 +63,14 @@ export function Exercise({
   subExercises?: {
     description: string;
     points?: number;
+    solution?: {
+      text: string;
+      points: number;
+    }[];
   }[];
 }) {
   const [chosen, setChosen] = useState<number | null>(null);
+  const [score, setScore] = useState<number | null>(null);
   const [showSolution, setShowSolution] = useState(false);
   const [cardRef] = useAutoAnimate();
 
@@ -74,6 +80,14 @@ export function Exercise({
       "bg-[#B265FF] border-[#d3a7ff]",
       "bg-[#FF63E6] border-[#ffaaf1]",
       "bg-[#FF8C21] border-[#ffc691]",
+    ],
+    score: [
+      "text-[#FF6767]",
+      "text-[#FF823C]",
+      "text-[#FF9F2E]",
+      "text-[#95D92C]",
+      "text-[#61D338]",
+      "text-[#09D305]",
     ],
   };
 
@@ -123,9 +137,9 @@ export function Exercise({
               </div>
             </div>
           ))}
-        <div className="flex gap-4 px-0 mt-6 -mx-2 ">
-          {options &&
-            options.map((option, i) => (
+        {options && (
+          <div className="flex gap-4 px-0 mt-6 -mx-2 ">
+            {options.map((option, i) => (
               <div
                 className={twMerge(
                   "flex w-full gap-4 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 pl-2 pr-4",
@@ -150,7 +164,7 @@ export function Exercise({
                     {"ABCD"[i]}
                   </div>
                 ) : i == correct ? (
-                  <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-[#b3ffb1] border-opacity-50 bg-[#3ace38]">
+                  <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-[#c8ffc6] border-opacity-50 bg-[#5dd35b]">
                     <FaCheck />
                   </div>
                 ) : (
@@ -161,14 +175,86 @@ export function Exercise({
                 <div className="mx-auto">{parseKatex(`${option}`)}</div>
               </div>
             ))}
-        </div>
+          </div>
+        )}
         {showSolution && (
           <div className="flex flex-col gap-4 mt-8">
-            <div className="font-bold text-lg">Rezolvare</div>
+            <div className="font-semibold text-lg">Rezolvare</div>
 
             <div className="bg-blue-500 text-white aspect-video w-full rounded-2xl flex items-center justify-center gap-4 flex-col">
               <FaVideo className="text-3xl" />
               <div>video will be here</div>
+            </div>
+          </div>
+        )}
+        {showSolution &&
+          subExercises &&
+          subExercises.some((e) => e.solution) && (
+            <div className="flex flex-col gap-0 mt-8">
+              <div className="font-semibold text-lg">Barem</div>
+
+              {subExercises.map(
+                (sub, i) =>
+                  sub.solution && (
+                    <div key={i}>
+                      <div className="font-medium text-lg mt-4">
+                        {"abcde"[i]}
+                        {"."}
+                      </div>
+                      <div className="font-normal center text-lg text-left w-full flex flex-col gap-4 mt-4 items-left">
+                        {sub.solution.map((s, i) => (
+                          <div
+                            key={i}
+                            className="flex gap-4 justify-between items-center"
+                          >
+                            <div className="font-normal text-lg">
+                              {parseKatex(s.text)}
+                            </div>
+                            <div className="flex text-yellow-400 gap-1 shrink-0">
+                              <FaStar className="mt-1" />
+                              <div className="text-yellow-500 font-bold">
+                                {s.points}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )
+              )}
+            </div>
+          )}
+        {score != null && (
+          <div
+            className={twMerge(
+              "flex flex-row items-center justify-end gap-1 mt-8",
+              className.score[score]
+            )}
+          >
+            <FaStar className="text-xl mt-[-2px]" />
+            <div className="font-bold text-lg">{score}</div>
+          </div>
+        )}
+        {showSolution && !options && score == null && (
+          <div className="flex flex-col gap-4 mt-8">
+            <div className="font-bold text-lg">Estimare punctaj</div>
+            <div className="font-norma text-lg">
+              Câte puncte crezi că ai fi obținut, conform baremului?
+            </div>
+            <div className="flex gap-4">
+              {[0, 1, 2, 3, 4, 5].map((p, i) => (
+                <div
+                  className={twMerge(
+                    "flex justify-center w-full gap-2 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 py-2 bg-white border-gray-200 hover:bg-gray-100 cursor-pointer hover:shadow-none hover:translate-y-[2px]",
+                    className.score[i]
+                  )}
+                  onClick={() => setScore(p)}
+                  key={i}
+                >
+                  <FaStar className="" />
+                  <div className="font-bold">{p}</div>
+                </div>
+              ))}
             </div>
           </div>
         )}

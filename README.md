@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+- $\pi \approx 3.14159$
+- $\pm \, 0.2$
+- $\dfrac{0}{1} \neq \infty$
+- $0 < x < 1$
+- $0 \leq x \leq 1$
+- $x \geq 10$
+- $\forall \, x \in (1,2)$
+- $\exists \, x \notin [0,1]$
+- $A \subset B$
+- $A \subseteq B$
+- $A \cup B$
+- $A \cap B$
+- $X \implies Y$
+- $X \impliedby Y$
+- $a \to b$
+- $a \longrightarrow b$
+- $a \Rightarrow b$
+- $a \Longrightarrow b$
+- $a \propto b$

@@ -8,6 +8,90 @@ import { HiDownload } from "react-icons/hi";
 import { SubLogo } from "../../components/SubLogo";
 import { Test1 } from "./Test1";
 
+import React from "react";
+
+const CircularProgressBar = ({
+  relativeWidth,
+  progressGreen,
+  progressRed,
+  className,
+}: {
+  relativeWidth: number;
+  progressGreen: number;
+  progressRed: number;
+  className?: string;
+}) => {
+  // Calculate the center, start, and end points
+  const eps = 0.0001;
+  const R = 100;
+  const r = R - (R * relativeWidth) / 2;
+  const Cx = R;
+  const Cy = R;
+  const startX = R;
+  const startY = (R * relativeWidth) / 2;
+
+  // Convert progress to radians
+  const midAngle = (Math.PI * 2 * progressRed) / 100;
+  const endAngle = (Math.PI * 2 * (progressGreen + progressRed)) / 100 - eps;
+
+  // Calculate mid position based on angle
+  const midX = Cx + r * Math.sin(midAngle);
+  const midY = Cy - r * Math.cos(midAngle);
+
+  // Calculate end position based on angle
+  const endX = Cx + r * Math.sin(endAngle);
+  const endY = Cy - r * Math.cos(endAngle);
+
+  console.log(endAngle, progressGreen + progressRed);
+
+  // Large Arc Flag (0 for angles < 180, 1 for angles > 180)
+  const largeArcFlag1 = progressRed <= 50 ? "0" : "1";
+  const largeArcFlag2 = progressGreen <= 50 ? "0" : "1";
+
+  // Path definition for the background circle
+  const backgroundPath = `M ${startX} ${startY} A ${r} ${r} 0 1 1 ${
+    startX - eps
+  } ${startY}`;
+
+  // Path definition for the progress bar
+  const progressRedBarPath = `M ${startX} ${startY} A ${r} ${r} 0 ${largeArcFlag1} 1 ${midX} ${midY}`;
+  const progressBarGreenPath = `M ${midX} ${midY} A ${r} ${r} 0 ${largeArcFlag2} 1 ${endX} ${endY}`;
+
+  return (
+    <svg
+      width={2 * R}
+      height={2 * R}
+      viewBox={`0 0 ${2 * R} ${2 * R}`}
+      className={className}
+    >
+      <path
+        d={backgroundPath}
+        stroke="#e5e5e5"
+        strokeWidth={relativeWidth * R}
+        fill="none"
+      />
+      {progressRed > 0 && (
+        <path
+          d={progressRedBarPath}
+          stroke="#FF6767"
+          strokeWidth={relativeWidth * R}
+          fill="none"
+          strokeLinecap="round"
+        />
+      )}
+      {progressGreen > 0 && (
+        <path
+          d={progressBarGreenPath}
+          stroke="#5dd35b"
+          strokeWidth={relativeWidth * R}
+          fill="none"
+          strokeLinecap="round"
+        />
+      )}
+    </svg>
+  );
+};
+
 export default function Home() {
   const progress = true;
 
@@ -44,7 +128,20 @@ export default function Home() {
             </div>
           </div>
           {progress && (
-            <TbDiscountCheckFilled className="text-green-500 text-4xl" />
+            <div className="relative w-14 h-14 -mr-1 -mb-2">
+              {/* // <TbDiscountCheckFilled className="text-green-500 text-4xl" /> */}
+              <CircularProgressBar
+                relativeWidth={0.2}
+                progressGreen={40}
+                progressRed={10}
+                className="w-14 h-14"
+              />
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <div className="text-sm font-semibold text-black mt-[1px]">
+                  9,52
+                </div>
+              </div>
+            </div>
           )}
         </div>
         <div className="w-[calc(100%+0rem)] mt-6 text-base flex items-center font-medium gap-2 text-black/60">

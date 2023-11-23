@@ -137,11 +137,35 @@ export function Test1() {
             description:
               "Este posibil ca, peste 2 ani, suma dintre vârsta Mariei și vârsta tatălui ei să fie egală cu 60 de ani? Justifică răspunsul dat.",
             points: 2,
+            solution: [
+              {
+                text: "Peste 2 ani vârsta Mariei va fi de $14 + 2 = 16$ ani, iar vârsta tatălui Mariei va fi de $40 + 2 = 42$ de ani",
+                points: 1,
+              },
+              {
+                text: "Cum $16 + 42 = 58 \\not = 60$, deducem că nu este posibil ca peste 2 ani suma dintre vârsta Mariei și vârsta tatălui ei să fie egală cu $60$ de ani",
+                points: 1,
+              },
+            ],
           },
           {
             description:
               "Determină peste câți ani vârsta Mariei va fi jumătate din vârsta tatălui ei.",
             points: 3,
+            solution: [
+              {
+                text: "$14 + x = \\frac{1}{2} \\cdot (40 + x)$, unde $x$ reprezintă numărul de ani care vor trece până când vârsta Mariei va fi jumătate din vârsta tatălui ei",
+                points: 1,
+              },
+              {
+                text: "$28 + 2x = 40 + x$",
+                points: 1,
+              },
+              {
+                text: "$x = 12$",
+                points: 1,
+              },
+            ],
           },
         ]}
       />
