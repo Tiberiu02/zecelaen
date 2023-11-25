@@ -1,8 +1,6 @@
-import { TbDiscountCheckFilled } from "react-icons/tb";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaStar, FaFire, FaFacebookF } from "react-icons/fa6";
-import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io5";
+import { FaFacebookMessenger } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";
 import { SubLogo } from "../../components/SubLogo";
@@ -92,6 +90,73 @@ const CircularProgressBar = ({
   );
 };
 
+const RoundedRectangleProgressBar = ({
+  width,
+  height,
+  thickness,
+  borderRadius,
+  progressGreen,
+  progressRed,
+}: {
+  width: number;
+  height: number;
+  thickness: number;
+  borderRadius: number;
+  progressGreen: number;
+  progressRed: number;
+}) => {
+  const progressLengthGreen =
+    2 * (width + height - 2 * borderRadius) * (progressGreen / 100);
+  const progressLengthRed =
+    2 * (width + height - 2 * borderRadius) * (progressRed / 100);
+
+  // Path for the entire rounded rectangle
+  const fullPath = `M ${borderRadius},0
+                    H ${width - borderRadius}
+                    A ${borderRadius},${borderRadius} 0 0 1 ${width},${borderRadius}
+                    V ${height - borderRadius}
+                    A ${borderRadius},${borderRadius} 0 0 1 ${
+    width - borderRadius
+  },${height}
+                    H ${borderRadius}
+                    A ${borderRadius},${borderRadius} 0 0 1 0,${
+    height - borderRadius
+  }
+                    V ${borderRadius}
+                    A ${borderRadius},${borderRadius} 0 0 1 ${borderRadius},0
+                    Z`;
+
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox={`${-thickness / 2} ${-thickness / 2} ${width + thickness} ${
+        height + thickness
+      }`}
+    >
+      <path d={fullPath} stroke="#eee" strokeWidth={thickness} fill="none" />
+      <path
+        d={fullPath}
+        stroke="#5dd35b"
+        strokeWidth={thickness}
+        fill="none"
+        strokeDasharray={`0,${progressLengthRed},${progressLengthGreen},${
+          2 * (width + height)
+        }`}
+        strokeLinecap="round"
+      />
+      <path
+        d={fullPath}
+        stroke="#FF6767"
+        strokeWidth={thickness}
+        fill="none"
+        strokeDasharray={`${progressLengthRed},${2 * (width + height)}`}
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+
 export default function Home() {
   const progress = true;
 
@@ -128,16 +193,19 @@ export default function Home() {
             </div>
           </div>
           {progress && (
-            <div className="relative w-14 h-14 -mr-1 -mb-2">
+            <div className="relative -mr-1">
               {/* // <TbDiscountCheckFilled className="text-green-500 text-4xl" /> */}
-              <CircularProgressBar
-                relativeWidth={0.2}
-                progressGreen={40}
-                progressRed={10}
-                className="w-14 h-14"
+              <RoundedRectangleProgressBar
+                width={75}
+                height={40}
+                thickness={4}
+                progressGreen={50}
+                progressRed={25}
+                borderRadius={20}
+                // className="w-14 h-14"
               />
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                <div className="text-sm font-semibold text-black mt-[1px]">
+                <div className="text-base font-semibold text-black mt-[1px]">
                   9,52
                 </div>
               </div>
