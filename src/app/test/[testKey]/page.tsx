@@ -3,10 +3,11 @@ import { FaStar, FaFire, FaFacebookF } from "react-icons/fa6";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";
-import { SubLogo } from "../../components/SubLogo";
-import { Test1 } from "./Test1";
+import { SubLogo } from "../../../components/SubLogo";
+import { Test } from "./Test";
 
 import React from "react";
+import { testsByKey } from "@/tests/tests";
 
 const CircularProgressBar = ({
   relativeWidth,
@@ -157,8 +158,36 @@ const RoundedRectangleProgressBar = ({
   );
 };
 
-export default function Home() {
+function fullDate(date: string) {
+  const [day, month, year] = date.split(".");
+  const months = [
+    "ianuarie",
+    "februarie",
+    "martie",
+    "aprilie",
+    "mai",
+    "iunie",
+    "iulie",
+    "august",
+    "septembrie",
+    "octombrie",
+    "noiembrie",
+    "decembrie",
+  ];
+  return `${day} ${months[parseInt(month) - 1]} ${year}`;
+}
+
+export default async function Page({
+  params,
+}: {
+  params: { testKey: string };
+}) {
+  const test = testsByKey[params.testKey];
   const progress = true;
+
+  const pdfSubiect = `/pdf/${test.id}/subiect.pdf`;
+  const pdfBarem = `/pdf/${test.id}/barem.pdf`;
+  console.log(pdfSubiect);
 
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
@@ -183,13 +212,13 @@ export default function Home() {
 
       <div className="w-[60rem] px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="flex flex-row items-center gap-4 w-full px-1">
-          <SubLogo seed={1201231} className="w-10 h-10" />
+          <SubLogo seed={test.fullName} className="w-10 h-10" />
           <div className="flex mr-auto flex-col justify-between">
             <div className="text-lg font-medium text-center bg-anti-math">
-              Evaluarea Națională
+              {test.fullName}
             </div>
             <div className="w-fit font-semibold text-sm opacity-40 bg-anti-math">
-              23 iunie 2023
+              {fullDate(test.date)}
             </div>
           </div>
           {progress && (
@@ -213,14 +242,22 @@ export default function Home() {
           )}
         </div>
         <div className="w-[calc(100%+0rem)] mt-6 text-base flex items-center font-medium gap-2 text-black/60">
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150">
+          <a
+            href={pdfSubiect}
+            download={`${test.fullName} - ZeceLaEN.pdf`}
+            className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150"
+          >
             <HiDownload className=" " />
             Subiect
-          </button>
-          <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150">
+          </a>
+          <a
+            href={pdfBarem}
+            download={`${test.fullName} - BAREM - ZeceLaEN.pdf`}
+            className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150"
+          >
             <HiDownload className=" " />
             Barem
-          </button>
+          </a>
           <div className="w-full"></div>
           <button className="flex gap-2 items-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150 text-green-500">
             <RiWhatsappFill className=" " />
@@ -238,7 +275,7 @@ export default function Home() {
       </div>
 
       <div className="flex mt-16 gap-6 flex-col">
-        <Test1 />
+        <Test testId={test.id} />
       </div>
 
       <div className="flex flex-col gap-4 items-center">

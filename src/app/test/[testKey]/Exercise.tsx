@@ -18,27 +18,40 @@ import { twMerge } from "tailwind-merge";
 function parseKatex(str: string) {
   return (
     <>
-      {str.split("<br/>").map((s, ix) => {
-        const segments = s.split("$");
-        return (
-          <div
-            key={ix}
-            className="text-3xl text-[1.35rem] line font-normal font-katex"
-          >
-            {segments.map((x, i) =>
-              i % 2 == 0 ? (
-                x.replaceAll(/-([\d ])/gi, "−$1")
-              ) : (
-                <span className="whitespace-nowrap" key={`${ix}-${i}`}>
-                  <span className="inline-block -my-3 text-lg">
-                    <BlockMath math={x} />
-                  </span>
+      <div className="text-3xl text-[1.35rem] line font-normal font-katex">
+        {str.split("$").map((s, ix) => {
+          if (ix % 2 == 1) {
+            return (
+              <span className="whitespace-nowrap" key={`${ix}`}>
+                <span className="inline-block -my-3 text-lg">
+                  <BlockMath math={s} />
                 </span>
-              )
-            )}
-          </div>
-        );
-      })}
+              </span>
+            );
+          } else {
+            const lines = s.split("\n");
+            return (
+              <div
+                key={ix}
+                className="text-3xl text-[1.35rem] line font-normal font-katex inline"
+              >
+                {lines.map((line, i) => {
+                  line = line.replaceAll(/-([\d ])/gi, "−$1");
+                  if (i == 0) {
+                    return <span key={i}>{line}</span>;
+                  } else {
+                    return (
+                      <span key={i} className="block">
+                        {line}
+                      </span>
+                    );
+                  }
+                })}
+              </div>
+            );
+          }
+        })}
+      </div>
     </>
   );
 }
@@ -138,11 +151,11 @@ export function Exercise({
             </div>
           ))}
         {options && (
-          <div className="flex gap-4 px-0 mt-6 -mx-2 ">
+          <div className="flex gap-4 px-0 mt-6 -mx-2">
             {options.map((option, i) => (
               <div
                 className={twMerge(
-                  "flex w-full gap-4 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 pl-2 pr-4",
+                  "flex w-full gap-4 group items-center text-xl rounded-full border-[2px] duration-150 shadow py-1 pl-2 pr-4",
                   chosen != i
                     ? "bg-white border-gray-200 "
                     : correct == i

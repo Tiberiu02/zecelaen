@@ -212,13 +212,22 @@ function blendMax(color1: string, color2: string) {
   return `#${rHex}${gHex}${bHex}`;
 }
 
+function numFromStr(str: string) {
+  let num = 0;
+  for (let i = 0; i < str.length; i++) {
+    num += str.charCodeAt(i) * (1 + i + i * i);
+  }
+  return num;
+}
+
 export function SubLogo({
   className = "",
   seed,
 }: {
   className?: string;
-  seed: number;
+  seed: number | string;
 }) {
+  if (typeof seed === "string") seed = numFromStr(seed);
   const random = new PCG(seed);
 
   for (let i = 0; i < 100; i++) random.float();

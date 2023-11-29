@@ -1,5 +1,3 @@
-21.06.2023
-
 # Subiectul I
 
 ## 1. 5p
@@ -64,7 +62,7 @@ Se consideră numerele reale $a = 2\sqrt{3}$ și $b = 3\sqrt{2}$. Radu afirmă c
 a. adevărată
 b. falsă
 
-# Subiectul II
+# Subiectul al II-lea
 
 ## 1. 5p
 
@@ -132,7 +130,19 @@ b. $24$ cm
 c. $30$ cm
 d. $36$ cm
 
-# Subiectul III
+# Subiectul al III-lea
+
+## 1. 5p
+
+La ora de geometrie, fiecare dintre cei 25 de elevi ai unei clase a desenat pe caiet fie un triunghi, fie un patrulater.
+
+### a. 2p
+
+Este posibil ca exact 7 elevi să fi desenat câte un triunghi și numărul total de laturi desenate de cei 25 de elevi să fie egal cu 90? Justifică răspunsul dat.
+
+### b. 3p
+
+Determină numărul de elevi care au desenat câte un patrulater, știind că numărul total de laturi ale figurilor geometrice desenate de elevii clasei este egal cu 91.
 
 ## 2. 5p
 

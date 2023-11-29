@@ -3,68 +3,10 @@ import { TbDiscountCheckFilled } from "react-icons/tb";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaStar, FaFire } from "react-icons/fa6";
 import { SubLogo } from "../components/SubLogo";
+import { getKey, tests, testsByYear } from "@/tests/tests";
+import { Fragment } from "react";
 
 export default function Home() {
-  const subs = [
-    ["2024", [["Subiect model", "2024", 100]]],
-    [
-      "2023",
-      [
-        ["Evaluarea Națională", "21 iunie 2023", 100],
-        ["Subiect de rezervă", "21 iunie 2023", 100],
-        ["Simulare națională", "21 aprilie 2023", 100],
-        ["Simulare Constanța", "28 februarie 2023"],
-        ["Simulare Dolj", "28 februarie 2023", 100], // ? data
-        ["Simulare Ilfov", "30 ianuarie 2023"],
-        ["Simulare Brăila", "17 ianuarie 2023"],
-        ["Simulare Iași", "17 ianuarie 2023", 100], // ? data
-        ["Simulare Botoșani", "18 ianuarie 2023"],
-        ["Simulare Huneadoara", "18 ianuarie 2023"],
-        ["Subiect model", "2023"],
-      ],
-    ],
-    [
-      "2022",
-      [
-        ["Evaluarea Națională", "16 iunie 2022"],
-        ["Subiect de rezervă", "16 iunie 2022"],
-        ["Simulare națională", "5 aprilie 2022"],
-        ["Subiect model", "2022"],
-        ["Test de antrenament 1", "2022"],
-        ["Test de antrenament 2", "2022"],
-        ["Test de antrenament 3", "2022"],
-        ["Test de antrenament 4", "2022"],
-        ["Test de antrenament 5", "2022"],
-        ["Test de antrenament 6", "2022"],
-      ],
-    ],
-    [
-      "2021",
-      [
-        ["Evaluarea Națională", "24 iunie 2021"],
-        ["Subiect de rezervă", "24 iunie 2021"],
-        ["Simulare națională", "3 martie 2021"],
-        ["Sesiunea Specială", "6 iulie 2021"],
-        ["Subiect model 1", "2021"],
-        ["Subiect model 2", "2021"],
-        ["Test de antrenament 1", "2021"],
-        ["Test de antrenament 2", "2021"],
-        ["Test de antrenament 3", "2021"],
-        ["Test de antrenament 4", "2021"],
-        ["Test de antrenament 5", "2021"],
-        ["Test de antrenament 6", "2021"],
-        ["Test de antrenament 7", "2021"],
-        ["Test de antrenament 8", "2021"],
-        ["Test de antrenament 9", "2021"],
-        ["Test de antrenament 10", "2021"],
-        ["Test de antrenament 11", "2021"],
-        ["Test de antrenament 12", "2021"],
-        ["Test de antrenament 13", "2021"],
-        ["Test de antrenament 14", "2021"],
-        ["Test de antrenament 15", "2021"],
-      ],
-    ],
-  ] as const;
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
       <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-2 border-t-0 border-gray-200 shadow">
@@ -90,39 +32,36 @@ export default function Home() {
       </h1>
 
       <div className="flex flex-col gap-4 items-center">
-        {subs.map(([byear, subs]) => (
-          <>
+        {Object.entries(testsByYear).map(([byear, subs]) => (
+          <Fragment key={byear}>
             <h1 className="text-base mt-12 mb-2 font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow">
               {byear}
             </h1>
             <div className="grid grid-cols-[auto_auto] gap-4 [&>*:nth-child(even)]:translate-y-[16px] hover:[&>*:nth-child(even)]:translate-y-[18px]">
-              {subs.map(([name, year, progress], i) => (
+              {subs.map((s, i) => (
                 <a
                   key={i}
                   className={twMerge(
                     "relative group overflow-hidden w-[28rem] items-center bg-white rounded-full border-2 hover:bg-gray-50 hover:shadow-none hover:translate-y-[2px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
                   )}
-                  href={"/test"}
+                  href={`/test/${getKey(s.fullName)}`}
                 >
-                  <SubLogo
-                    seed={i + parseInt(byear) * 101}
-                    className="w-8 h-8"
-                  />
+                  <SubLogo seed={s.fullName} className="w-8 h-8" />
                   <div className="flex mr-auto flex-col justify-between">
                     <div className="text-xl font-normal text-center">
-                      {name}
+                      {s.name}
                     </div>
                     <div className="w-fit font-semibold text-sm opacity-40">
-                      {year}
+                      {s.date}
                     </div>
                   </div>
-                  {progress && (
+                  {null && (
                     <TbDiscountCheckFilled className="text-green-500 text-4xl" />
                   )}
                 </a>
               ))}
             </div>
-          </>
+          </Fragment>
         ))}
         <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
           <span className="text-2xl">©</span> 2023 ZeceLaEN.ro

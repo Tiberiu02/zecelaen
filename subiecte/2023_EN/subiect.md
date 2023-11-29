@@ -1,5 +1,3 @@
-21.06.2023
-
 # Subiectul I
 
 ## 1. 5p
@@ -61,12 +59,12 @@ d. Vlad
 
 În diagrama de mai jos sunt prezentate rezultatele obținute la un test la matematică, de către elevii unei clase a VIII-a. Afirmația: „Conform informațiilor din diagramă, la acest test, nota 7 a fost obținută de 10 elevi.” este:
 
-![Imagine](img/1-6.png)
+![Imagine](img/1-6.png) size=40
 
 a. adevărată
 b. falsă
 
-# Subiectul II
+# Subiectul al II-lea
 
 ## 1. 5p
 
@@ -134,7 +132,7 @@ b. $5\sqrt{2}$ cm
 c. $5\sqrt{3}$ cm
 d. 10 cm
 
-# Subiectul III
+# Subiectul al III-lea
 
 ## 1. 5p
 
