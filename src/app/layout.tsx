@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Quicksand, Rubik } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
+import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"] });
 const qs = Quicksand({ subsets: ["latin"] });
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={twMerge(rubik.className, "overflow-x-hidden")}>
+        {children}
+      </body>
     </html>
   );
 }

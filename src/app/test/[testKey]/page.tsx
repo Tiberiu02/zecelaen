@@ -8,155 +8,8 @@ import { Test } from "./Test";
 
 import React from "react";
 import { testsByKey } from "@/tests/tests";
-
-const CircularProgressBar = ({
-  relativeWidth,
-  progressGreen,
-  progressRed,
-  className,
-}: {
-  relativeWidth: number;
-  progressGreen: number;
-  progressRed: number;
-  className?: string;
-}) => {
-  // Calculate the center, start, and end points
-  const eps = 0.0001;
-  const R = 100;
-  const r = R - (R * relativeWidth) / 2;
-  const Cx = R;
-  const Cy = R;
-  const startX = R;
-  const startY = (R * relativeWidth) / 2;
-
-  // Convert progress to radians
-  const midAngle = (Math.PI * 2 * progressRed) / 100;
-  const endAngle = (Math.PI * 2 * (progressGreen + progressRed)) / 100 - eps;
-
-  // Calculate mid position based on angle
-  const midX = Cx + r * Math.sin(midAngle);
-  const midY = Cy - r * Math.cos(midAngle);
-
-  // Calculate end position based on angle
-  const endX = Cx + r * Math.sin(endAngle);
-  const endY = Cy - r * Math.cos(endAngle);
-
-  console.log(endAngle, progressGreen + progressRed);
-
-  // Large Arc Flag (0 for angles < 180, 1 for angles > 180)
-  const largeArcFlag1 = progressRed <= 50 ? "0" : "1";
-  const largeArcFlag2 = progressGreen <= 50 ? "0" : "1";
-
-  // Path definition for the background circle
-  const backgroundPath = `M ${startX} ${startY} A ${r} ${r} 0 1 1 ${
-    startX - eps
-  } ${startY}`;
-
-  // Path definition for the progress bar
-  const progressRedBarPath = `M ${startX} ${startY} A ${r} ${r} 0 ${largeArcFlag1} 1 ${midX} ${midY}`;
-  const progressBarGreenPath = `M ${midX} ${midY} A ${r} ${r} 0 ${largeArcFlag2} 1 ${endX} ${endY}`;
-
-  return (
-    <svg
-      width={2 * R}
-      height={2 * R}
-      viewBox={`0 0 ${2 * R} ${2 * R}`}
-      className={className}
-    >
-      <path
-        d={backgroundPath}
-        stroke="#e5e5e5"
-        strokeWidth={relativeWidth * R}
-        fill="none"
-      />
-      {progressRed > 0 && (
-        <path
-          d={progressRedBarPath}
-          stroke="#FF6767"
-          strokeWidth={relativeWidth * R}
-          fill="none"
-          strokeLinecap="round"
-        />
-      )}
-      {progressGreen > 0 && (
-        <path
-          d={progressBarGreenPath}
-          stroke="#5dd35b"
-          strokeWidth={relativeWidth * R}
-          fill="none"
-          strokeLinecap="round"
-        />
-      )}
-    </svg>
-  );
-};
-
-const RoundedRectangleProgressBar = ({
-  width,
-  height,
-  thickness,
-  borderRadius,
-  progressGreen,
-  progressRed,
-}: {
-  width: number;
-  height: number;
-  thickness: number;
-  borderRadius: number;
-  progressGreen: number;
-  progressRed: number;
-}) => {
-  const progressLengthGreen =
-    2 * (width + height - 2 * borderRadius) * (progressGreen / 100);
-  const progressLengthRed =
-    2 * (width + height - 2 * borderRadius) * (progressRed / 100);
-
-  // Path for the entire rounded rectangle
-  const fullPath = `M ${borderRadius},0
-                    H ${width - borderRadius}
-                    A ${borderRadius},${borderRadius} 0 0 1 ${width},${borderRadius}
-                    V ${height - borderRadius}
-                    A ${borderRadius},${borderRadius} 0 0 1 ${
-    width - borderRadius
-  },${height}
-                    H ${borderRadius}
-                    A ${borderRadius},${borderRadius} 0 0 1 0,${
-    height - borderRadius
-  }
-                    V ${borderRadius}
-                    A ${borderRadius},${borderRadius} 0 0 1 ${borderRadius},0
-                    Z`;
-
-  return (
-    <svg
-      width={width}
-      height={height}
-      viewBox={`${-thickness / 2} ${-thickness / 2} ${width + thickness} ${
-        height + thickness
-      }`}
-    >
-      <path d={fullPath} stroke="#eee" strokeWidth={thickness} fill="none" />
-      <path
-        d={fullPath}
-        stroke="#5dd35b"
-        strokeWidth={thickness}
-        fill="none"
-        strokeDasharray={`0,${progressLengthRed},${progressLengthGreen},${
-          2 * (width + height)
-        }`}
-        strokeLinecap="round"
-      />
-      <path
-        d={fullPath}
-        stroke="#FF6767"
-        strokeWidth={thickness}
-        fill="none"
-        strokeDasharray={`${progressLengthRed},${2 * (width + height)}`}
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-};
+import { NavBar } from "@/components/NavBar";
+import { RoundedRectangleProgressBar } from "../../../components/RoundedRectangleProgressBar";
 
 function fullDate(date: string) {
   const [day, month, year] = date.split(".");
@@ -174,7 +27,7 @@ function fullDate(date: string) {
     "noiembrie",
     "decembrie",
   ];
-  return `${day} ${months[parseInt(month) - 1]} ${year}`;
+  return `${parseInt(day)} ${months[parseInt(month) - 1]} ${year}`;
 }
 
 export default async function Page({
@@ -191,24 +44,7 @@ export default async function Page({
 
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
-      <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-[1px] border-t-0 border-gray-200 shadow">
-        <div className="w-[60rem] flex items-center">
-          <div className="font-bold text-2xl">
-            10<sup>N</sup>
-          </div>
-          <div className="w-full"></div>
-          <div className="flex gap-2 mr-8 items-center text-red-700 font-semibold">
-            <FaFire className="text-lg text-red-500 mb-[1px]" />7
-          </div>
-          <div className="flex gap-2 items-center text-yellow-600 font-semibold">
-            <FaStar className="text-xl text-yellow-400 mb-[1px]" />
-            35
-          </div>
-          <div className="w-full"></div>
-
-          <CgMenuGridO className="text-3xl shrink-0 opacity-40 hover:opacity-100 cursor-pointer duration-150" />
-        </div>
-      </h1>
+      <NavBar />
 
       <div className="w-[60rem] px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="flex flex-row items-center gap-4 w-full px-1">
@@ -233,7 +69,7 @@ export default async function Page({
                 borderRadius={20}
                 // className="w-14 h-14"
               />
-              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+              <div className="absolute w-full h-full inset-0 flex items-center justify-center">
                 <div className="text-base font-semibold text-black mt-[1px]">
                   9,52
                 </div>

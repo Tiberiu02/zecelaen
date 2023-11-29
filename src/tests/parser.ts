@@ -118,7 +118,7 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
   currentQuestion = null;
   currentSubQuestion = null;
 
-  fs.writeFileSync("barem.json", JSON.stringify(result, null, 2));
+  // fs.writeFileSync("barem.json", JSON.stringify(result, null, 2));
 
   solutionLines.forEach((line, ix) => {
     if (sectionHeaderRegex.test(line)) {
