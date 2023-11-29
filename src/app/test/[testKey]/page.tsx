@@ -30,6 +30,12 @@ function fullDate(date: string) {
   return `${parseInt(day)} ${months[parseInt(month) - 1]} ${year}`;
 }
 
+export function generateStaticParams() {
+  return Object.keys(testsByKey).map((testKey) => ({
+    testKey,
+  }));
+}
+
 export default async function Page({
   params,
 }: {

@@ -20,48 +20,48 @@ export const tests = [
     id: "2023_EN_REZERVA",
     date: "21.06.2023",
   },
-  {
-    name: "Simulare Națională",
-    fullName: "Simulare Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_NAT",
-    date: "21.03.2023",
-  },
-  {
-    name: "Subiect Model",
-    fullName: "Model Evaluarea Națională Matematică 2023",
-    id: "2023_MODEL",
-    date: "01.11.2022",
-  },
-  {
-    name: "Simulare Constanța",
-    fullName: "Simulare Constanța Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_CT",
-    date: "28.02.2023",
-  },
-  {
-    name: "Simulare Dolj",
-    fullName: "Simulare Dolj Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_DJ",
-    date: "07.02.2023",
-  },
-  {
-    name: "Simulare Ilfov",
-    fullName: "Simulare Ilfov Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_IF",
-    date: "30.01.2023",
-  },
-  {
-    name: "Simulare Iași",
-    fullName: "Simulare Iași Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_IS",
-    date: "18.01.2023",
-  },
-  {
-    name: "Simulare Brăila",
-    fullName: "Simulare Brăila Evaluarea Națională Matematică 2023",
-    id: "2023_EN_SIM_BR",
-    date: "17.01.2023",
-  },
+  // {
+  //   name: "Simulare Națională",
+  //   fullName: "Simulare Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_NAT",
+  //   date: "21.03.2023",
+  // },
+  // {
+  //   name: "Subiect Model",
+  //   fullName: "Model Evaluarea Națională Matematică 2023",
+  //   id: "2023_MODEL",
+  //   date: "01.11.2022",
+  // },
+  // {
+  //   name: "Simulare Constanța",
+  //   fullName: "Simulare Constanța Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_CT",
+  //   date: "28.02.2023",
+  // },
+  // {
+  //   name: "Simulare Dolj",
+  //   fullName: "Simulare Dolj Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_DJ",
+  //   date: "07.02.2023",
+  // },
+  // {
+  //   name: "Simulare Ilfov",
+  //   fullName: "Simulare Ilfov Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_IF",
+  //   date: "30.01.2023",
+  // },
+  // {
+  //   name: "Simulare Iași",
+  //   fullName: "Simulare Iași Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_IS",
+  //   date: "18.01.2023",
+  // },
+  // {
+  //   name: "Simulare Brăila",
+  //   fullName: "Simulare Brăila Evaluarea Națională Matematică 2023",
+  //   id: "2023_EN_SIM_BR",
+  //   date: "17.01.2023",
+  // },
 ] as const;
 
 export function getKey(name: string) {
