@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "node copy-pdf.js"
+    "postinstall": "node copy-pdfs.js"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
