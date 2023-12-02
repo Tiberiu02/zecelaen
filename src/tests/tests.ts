@@ -20,12 +20,12 @@ export const tests = [
     id: "2023_EN_REZERVA",
     date: "21.06.2023",
   },
-  // {
-  //   name: "Simulare Națională",
-  //   fullName: "Simulare Evaluarea Națională Matematică 2023",
-  //   id: "2023_EN_SIM_NAT",
-  //   date: "21.03.2023",
-  // },
+  {
+    name: "Simulare Națională",
+    fullName: "Simulare Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_NAT",
+    date: "21.03.2023",
+  },
   // {
   //   name: "Subiect Model",
   //   fullName: "Model Evaluarea Națională Matematică 2023",

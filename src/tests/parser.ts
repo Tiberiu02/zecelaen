@@ -38,7 +38,7 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
   const optionRegex = /^[a-d]\. (.+)$/;
   const imageRegex = /^!\[(.+)\]\((.+)\)(.*)$/;
 
-  const lines = subiectMd.split("\n");
+  const lines = subiectMd.replaceAll("\r", "").split("\n");
   const result: Exam = {
     sections: [],
   };
@@ -107,7 +107,7 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
     }
   });
 
-  const solutionLines = baremMd.split("\n");
+  const solutionLines = baremMd.replaceAll("\r", "").split("\n");
 
   const choiceRegex = /^(\d+)\. ([a-d])$/;
   const solutionRegex = /^\((\d+)p\) (.+)$/;
@@ -190,7 +190,9 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
             lastSolutionItem.text += "\n" + line.trim();
           }
         } else {
-          throw new Error("No current subquestion");
+          throw new Error(
+            `No current subquestion at line ${ix} in barem: "${line}"`
+          );
         }
       }
     }
