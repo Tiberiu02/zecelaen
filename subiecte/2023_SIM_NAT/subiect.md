@@ -40,7 +40,7 @@ d. $\frac{3}{2}$
 
 Patru elevi, Elena, Maria, George și Mihai, au calculat media geometrică a numerelor $x = 3 - 2\sqrt{2}$ și $y = 3 + 2\sqrt{2}$ și au obținut următoarele rezultate:
 
-$\begin{array}{|c|c|c|c|c|}
+$\begin{array}{|c|c|c|c|}
 \hline
 \text{Elena} & \text{Maria} & \text{George} & \text{Mihai} \\
 \hline
