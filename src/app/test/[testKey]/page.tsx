@@ -46,7 +46,6 @@ export default async function Page({
 
   const pdfSubiect = `/pdf/${test.id}/subiect.pdf`;
   const pdfBarem = `/pdf/${test.id}/barem.pdf`;
-  console.log(pdfSubiect);
 
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
