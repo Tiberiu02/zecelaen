@@ -38,12 +38,12 @@ export const tests = [
     id: "2023_SIM_CT",
     date: "28.02.2023",
   },
-  // {
-  //   name: "Simulare Dolj",
-  //   fullName: "Simulare Dolj Evaluarea Națională Matematică 2023",
-  //   id: "2023_SIM_DJ",
-  //   date: "07.02.2023",
-  // },
+  {
+    name: "Simulare Dolj",
+    fullName: "Simulare Dolj Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_DJ",
+    date: "07.02.2023",
+  },
   // {
   //   name: "Simulare Ilfov",
   //   fullName: "Simulare Ilfov Evaluarea Națională Matematică 2023",

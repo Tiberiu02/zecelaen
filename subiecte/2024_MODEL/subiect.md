@@ -206,7 +206,7 @@ Calculează distanța de la punctul $E$ la dreapta $AC$.
 
 ### a. 2p
 
-Arată că aria totală a paralelipipedului dreptunghic $ABCD A'B'C'D'$ este egală cu $64$ cm².
+Arată că aria totală a paralelipipedului dreptunghic $ABCD A'B'C'D'$ este egală cu $64$ cm$^2$.
 
 ### b. 3p
 

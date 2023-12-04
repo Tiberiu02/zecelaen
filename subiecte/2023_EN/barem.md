@@ -82,7 +82,7 @@ $CE \perp AB$, $E \in AB$ $\Rightarrow$ $AECD$ dreptunghi, deci $AD = CE$, $AE =
 
 (1p) Triunghiul $ABC$ este dreptunghic, deci $BC^2 = AC^2 - AB^2$, de unde obținem $BC = 3\sqrt{10}$ cm
 
-(1p) $\mathcal{A}_{ABCD} = AB \cdot BC = 9\sqrt{10} \cdot 3\sqrt{10} = 270$ cm²
+(1p) $\mathcal{A}_{ABCD} = AB \cdot BC = 9\sqrt{10} \cdot 3\sqrt{10} = 270$ cm$^2$
 
 ### b.
 

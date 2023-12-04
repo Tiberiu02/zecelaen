@@ -104,7 +104,7 @@
 
 (1p) $A_t = 2 \cdot (AB \cdot AA' + BC \cdot AA' + AB \cdot BC)= 2 \cdot (16 + 8 + 8) =$
 
-(1p) $ = 2 \cdot 32 = 64$ cm²
+(1p) $ = 2 \cdot 32 = 64$ cm$^2$
 
 ### b.
 

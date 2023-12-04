@@ -176,7 +176,7 @@ Calculează media aritmetică a numerelor $a$ și $b$.
 
 ### a. 2p
 
-Arată că aria triunghiului $ABC$ este egală cu $50$ cm².
+Arată că aria triunghiului $ABC$ este egală cu $50$ cm$^2$.
 
 ### b. 3p
 

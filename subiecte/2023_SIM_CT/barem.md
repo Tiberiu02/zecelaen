@@ -84,7 +84,7 @@ $AM = BM$ și $AD = DB$ $\Rightarrow$ $DM$ mediatorea segmentului $AB \Rightarro
 
 (1p) $EM$ mediatorea segmentului $AC \Rightarrow AQ = 8$ cm și $\angle AQM = 90^\circ$
 
-(1p) $APMQ$ dreptunghic $\Rightarrow A_{APMQ} = 48$ cm²
+(1p) $APMQ$ dreptunghic $\Rightarrow A_{APMQ} = 48$ cm$^2$
 
 ## 5.
 
@@ -98,7 +98,7 @@ $AM = BM$ și $AD = DB$ $\Rightarrow$ $DM$ mediatorea segmentului $AB \Rightarro
 
 (1p) $AC = 18\sqrt{2}$ cm, $AM = 9\sqrt{13}$ cm
 
-(1p) $A_{\triangle ACM} = 81$ cm²
+(1p) $A_{\triangle ACM} = 81$ cm$^2$
 
 (1p) $A_{\triangle ACM} = \frac{AC \cdot AM \cdot \sin(\angle CAM)}{2} \Rightarrow \sin(\angle CAM) = \frac{1}{\sqrt{26}} = \frac{\sqrt{26}}{26}$
 
