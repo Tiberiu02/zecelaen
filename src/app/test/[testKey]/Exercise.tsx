@@ -24,7 +24,7 @@ function parseKatex(str: string) {
             return (
               <span className="whitespace-nowrap" key={`${ix}`}>
                 <span className="inline-block -my-3 text-lg">
-                  <BlockMath math={"{\\def,{{\\char`,}}}" + s} />
+                  <BlockMath math={`\\def,{{\\char\`,}} {${s}}`} />
                 </span>
               </span>
             );
@@ -41,7 +41,8 @@ function parseKatex(str: string) {
                     return <span key={i}>{line}</span>;
                   } else {
                     return (
-                      <span key={i} className="block">
+                      <span key={i}>
+                        <br />
                         {line}
                       </span>
                     );
