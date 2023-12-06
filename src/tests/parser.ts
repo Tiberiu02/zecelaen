@@ -101,7 +101,7 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
           if (currentQuestion.text != "") {
             currentQuestion.text += "\n";
           }
-          currentQuestion.text += line.trim() + "\n";
+          currentQuestion.text += line.trim();
         }
       }
     }

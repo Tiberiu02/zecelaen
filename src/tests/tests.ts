@@ -56,12 +56,12 @@ export const tests = [
     id: "2023_SIM_IS",
     date: "18.01.2023",
   },
-  // {
-  //   name: "Simulare Brăila",
-  //   fullName: "Simulare Brăila Evaluarea Națională Matematică 2023",
-  //   id: "2023_SIM_BR",
-  //   date: "17.01.2023",
-  // },
+  {
+    name: "Simulare Brăila",
+    fullName: "Simulare Brăila Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_BR",
+    date: "17.01.2023",
+  },
 ] as const;
 
 export function getKey(name: string) {

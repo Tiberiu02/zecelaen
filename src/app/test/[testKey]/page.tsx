@@ -1,5 +1,4 @@
-import { CgMenuGridO } from "react-icons/cg";
-import { FaStar, FaFire, FaFacebookF } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";

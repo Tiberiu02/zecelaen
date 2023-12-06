@@ -30,6 +30,7 @@ function parseKatex(str: string) {
             );
           } else {
             const lines = s.split("\n");
+            console.log([s, lines]);
             return (
               <div
                 key={ix}
