@@ -9,25 +9,7 @@ import React from "react";
 import { testsByKey } from "@/tests/tests";
 import { NavBar } from "@/components/NavBar";
 import { RoundedRectangleProgressBar } from "../../../components/RoundedRectangleProgressBar";
-
-function fullDate(date: string) {
-  const [day, month, year] = date.split(".");
-  const months = [
-    "ianuarie",
-    "februarie",
-    "martie",
-    "aprilie",
-    "mai",
-    "iunie",
-    "iulie",
-    "august",
-    "septembrie",
-    "octombrie",
-    "noiembrie",
-    "decembrie",
-  ];
-  return `${parseInt(day)} ${months[parseInt(month) - 1]} ${year}`;
-}
+import { fullDate } from "../../../tests/fullDate";
 
 export function generateStaticParams() {
   return Object.keys(testsByKey).map((testKey) => ({

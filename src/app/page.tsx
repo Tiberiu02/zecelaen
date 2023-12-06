@@ -4,6 +4,7 @@ import { SubLogo } from "../components/SubLogo";
 import { getKey, tests, testsByYear } from "@/tests/tests";
 import { Fragment } from "react";
 import { NavBar } from "../components/NavBar";
+import { fullDate } from "@/tests/fullDate";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
                         {s.name}
                       </div>
                       <div className="w-fit font-semibold text-sm opacity-40">
-                        {s.date}
+                        {fullDate(s.date)}
                       </div>
                     </div>
                     {null && (

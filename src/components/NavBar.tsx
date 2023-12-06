@@ -9,7 +9,7 @@ export function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-screen select-none text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-2 border-t-0 border-gray-200 shadow">
+    <div className="w-screen select-none text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-[1px] border-t-0 border-gray-200 shadow">
       <div className="w-[60rem] flex items-center">
         <a className="font-bold text-2xl" href="/">
           10<sup>N</sup>
