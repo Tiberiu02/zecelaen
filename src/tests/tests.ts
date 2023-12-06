@@ -50,12 +50,12 @@ export const tests = [
     id: "2023_SIM_IF",
     date: "30.01.2023",
   },
-  // {
-  //   name: "Simulare Iași",
-  //   fullName: "Simulare Iași Evaluarea Națională Matematică 2023",
-  //   id: "2023_SIM_IS",
-  //   date: "18.01.2023",
-  // },
+  {
+    name: "Simulare Iași",
+    fullName: "Simulare Iași Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_IS",
+    date: "18.01.2023",
+  },
   // {
   //   name: "Simulare Brăila",
   //   fullName: "Simulare Brăila Evaluarea Națională Matematică 2023",
