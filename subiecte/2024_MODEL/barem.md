@@ -64,7 +64,7 @@
 
 (1p) În triunghiul dreptunghic isoscel $AOB$, $OM$ mediană, deci $OM$ bisectoare $\Rightarrow \angle MOB = 45^\circ$
 
-(1p) $NP \perp Ox$, $P \in Ox \Rightarrow P(3,0)$, iar $\angle MON = \angle MOB + \angle BOP + \angle PON = 45^\circ + 90^\circ + 45^\circ = 180^\circ$, de unde rezultă că punctele $N$, $O$ și $M$ sunt coliniare
+(1p) $NP \perp Ox$, $P \in Ox \Rightarrow P(3, 0)$, iar $\angle MON = \angle MOB + \angle BOP + \angle PON = 45^\circ + 90^\circ + 45^\circ = 180^\circ$, de unde rezultă că punctele $N$, $O$ și $M$ sunt coliniare
 
 ## 4.
 

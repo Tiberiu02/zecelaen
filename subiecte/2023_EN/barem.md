@@ -56,7 +56,7 @@
 
 ### b.
 
-(1p) $A(5,0)$ și $B(0,5)$
+(1p) $A(5, 0)$ și $B(0, 5)$
 (1p) În triunghiul dreptunghic $AOB$, $AB = \sqrt{AO^2 + OB^2} = 5\sqrt{2}$
 (1p) ${\cal A}_{\triangle PAB} = \frac{d(P,AB) \cdot AB}{2} = \frac{AO \cdot PB}{2} = \frac{5 \cdot 8}{2} = 20$, de unde obținem $d(P,AB) = 4\sqrt{2}$
 

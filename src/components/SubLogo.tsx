@@ -154,13 +154,14 @@ function createEllipsePath(
   cx: number,
   cy: number,
   radius: number,
-  angle: number
+  angle: number,
+  minorRatio = 0.6
 ) {
   // Convert angle to radians
   const rad = (angle * Math.PI) / 180;
 
   const rx = radius;
-  const ry = radius * 0.6;
+  const ry = radius * minorRatio;
 
   // Rotation matrix
   const cos = Math.cos(rad);
@@ -189,6 +190,15 @@ function createEllipsePath(
   return path;
 }
 
+function createCirclePath(
+  cx: number,
+  cy: number,
+  radius: number,
+  angle: number
+) {
+  return createEllipsePath(cx, cy, radius * 0.9, angle, 0.8);
+}
+
 function blendMax(color1: string, color2: string) {
   const c1 = color1.replace("#", "");
   const c2 = color2.replace("#", "");
@@ -215,9 +225,43 @@ function blendMax(color1: string, color2: string) {
 function numFromStr(str: string) {
   let num = 0;
   for (let i = 0; i < str.length; i++) {
-    num += str.charCodeAt(i) * (1 + i + i * i);
+    num = (num + str.charCodeAt(i) * (1 + i + i * i)) % 1000003;
   }
   return num;
+}
+
+function hexToRgb(hex: string) {
+  const c = hex.replace("#", "");
+  const r = parseInt(c.substring(0, 2), 16);
+  const g = parseInt(c.substring(2, 4), 16);
+  const b = parseInt(c.substring(4, 6), 16);
+  return [r, g, b];
+}
+
+function rgbToHex(r: number, g: number, b: number) {
+  const rHex = r.toString(16).padStart(2, "0");
+  const gHex = g.toString(16).padStart(2, "0");
+  const bHex = b.toString(16).padStart(2, "0");
+  return `#${rHex}${gHex}${bHex}`;
+}
+
+function hardLightComputeTopColor(baseColor: string, desiredColor: string) {
+  const base = hexToRgb(baseColor);
+  const desired = hexToRgb(desiredColor);
+
+  const top = [];
+  for (let i = 0; i < 3; i++) {
+    if (desired[i] <= base[i]) {
+      const ratio = desired[i] / base[i];
+      top[i] = 128 * ratio;
+    } else {
+      const ratio = (255 - desired[i]) / (255 - base[i]);
+      top[i] = 255 - 128 * ratio;
+    }
+    top[i] = Math.round(top[i]);
+  }
+
+  return rgbToHex(top[0], top[1], top[2]);
 }
 
 export function SubLogo({
@@ -230,42 +274,48 @@ export function SubLogo({
   if (typeof seed === "string") seed = numFromStr(seed);
   const random = new PCG(seed);
 
-  for (let i = 0; i < 100; i++) random.float();
+  for (let i = 0; i < 101; i++) random.int();
 
   const shapeDistance = 12;
-  const shapeAngleRad = random.choice([-45, 45]) * (Math.PI / 180);
+  const shapeAngleRad = random.choice([-45, 45, 135, -135]) * (Math.PI / 180);
 
-  const color = [
-    "#F86F6F", // red
-    // "#FF9431", // orange
-    // "#FFC700", // yellow
-    "#56D354", // green
-    // "#00C2FF", // cyan
-    "#408CFF", // blue
-    // "#C67EFF", // purple
-    // "#FD8CFF", // pink
+  const color = {
+    red: "#F86F6F",
+    orange: "#FF9431",
+    yellow: "#FFC700",
+    green: "#56D354",
+    cyan: "#00C2FF",
+    blue: "#408CFF",
+    purple: "#C67EFF",
+    pink: "#FD8CFF",
+  };
+
+  const combinations = [
+    [color.red, color.yellow, color.green],
+    [color.red, color.yellow, color.orange],
+    [color.red, color.pink, color.blue],
+    [color.red, color.yellow, color.green],
+    [color.purple, color.pink, color.blue],
+    [color.blue, color.cyan, color.green],
+    [color.purple, color.pink, color.red],
   ];
 
-  const ix = random.int() % color.length;
-  const logoColors = [
-    color[ix],
-    color[(ix + 1 + (random.int() % (color.length - 1))) % color.length],
-    color[(ix + 1) % color.length],
-  ];
+  const ix = random.int() % combinations.length;
+  const logoColors = combinations[random.int() % combinations.length];
 
   const shape1 = {
     cx: shapeDistance * Math.cos(shapeAngleRad),
     cy: shapeDistance * Math.sin(shapeAngleRad),
-    rotation: random.float() * 360,
+    rotation: random.float() * 60 - 30 + shapeAngleRad * (180 / Math.PI) + 180,
     radius: 40,
-    type: random.choice(["ellipse", "square", "triangle"]),
+    type: random.choice(["ellipse", "square", "triangle", "circle"]),
   };
   const shape2 = {
     cx: -shapeDistance * Math.cos(shapeAngleRad),
     cy: -shapeDistance * Math.sin(shapeAngleRad),
-    rotation: random.float() * 360,
+    rotation: random.float() * 60 - 30 - shapeAngleRad * (180 / Math.PI),
     radius: 40,
-    type: random.choice(["ellipse", "square", "triangle"]),
+    type: random.choice(["ellipse", "square", "triangle", "circle"]),
   };
 
   const top = Math.min(shape1.cy - shape1.radius, shape2.cy - shape2.radius);
@@ -278,18 +328,22 @@ export function SubLogo({
 
   const size = Math.max(right - left, bottom - top);
 
-  const path1 = (
+  const pathShape1 = (
     shape1.type === "triangle"
       ? createTrianglePath
       : shape1.type === "square"
       ? createSquarePath
+      : shape1.type === "circle"
+      ? createCirclePath
       : createEllipsePath
   )(shape1.cx, shape1.cy, shape1.radius, shape1.rotation);
-  const path2 = (
+  const pathShape2 = (
     shape2.type === "triangle"
       ? createTrianglePath
       : shape2.type === "square"
       ? createSquarePath
+      : shape2.type === "circle"
+      ? createCirclePath
       : createEllipsePath
   )(shape2.cx, shape2.cy, shape2.radius, shape2.rotation);
 
@@ -300,22 +354,25 @@ export function SubLogo({
       viewBox={`${cx - size / 2} ${cy - size / 2} ${size} ${size}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={twMerge(className, "group-hover:rotate-45 duration-150")}
+      className={twMerge(
+        className,
+        "group-hover:rotate-45 rotate-0 duration-150"
+      )}
     >
       <defs>
         <clipPath id={`clip-path-${seed}`}>
           <path
-            d={path1}
-            className={`duration-150 group-hover:[transform:var(--clip-path-transform)]`}
+            d={pathShape1}
+            className={`duration-150 rotate-0 group-hover:[transform:var(--clip-path-transform)]`}
             style={
               {
                 "--clip-path-transform": `translate(${shape2.cx}px,${
                   shape2.cy
-                }px) rotate(60deg) translate(${-shape2.cx}px,${-shape2.cy}px) translate(${
+                }px) rotate(90deg) translate(${-shape2.cx}px,${-shape2.cy}px) translate(${
                   shape1.cx
                 }px,${
                   shape1.cy
-                }px) rotate(-60deg) translate(${-shape1.cx}px,${-shape1.cy}px)`,
+                }px) rotate(-90deg) translate(${-shape1.cx}px,${-shape1.cy}px)`,
               } as CSSProperties
             }
           />
@@ -323,25 +380,28 @@ export function SubLogo({
       </defs>
 
       <path
-        d={path2}
-        fill={logoColors[1]}
-        className="group-hover:-rotate-[60deg] duration-150"
-        style={{
-          transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
-        }}
-      />
-      <path
-        d={path1}
+        d={pathShape1}
         fill={logoColors[0]}
-        className=" group-hover:-rotate-[60deg] duration-150"
+        className=" group-hover:-rotate-[90deg] duration-150"
         style={{
           transformOrigin: `${shape1.cx}px ${shape1.cy}px`,
         }}
       />
       <path
-        d={path2}
+        d={pathShape2}
+        fill={logoColors[2]}
+        className="mix-ble group-hover:-rotate-[90deg] duration-150"
+        style={{
+          transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
+        }}
+      />
+      <path
+        d={pathShape2}
         fill={logoColors[1]}
-        className="mix-blend-lighten group-hover:-rotate-[60deg] duration-150"
+        stroke={logoColors[1]}
+        strokeWidth="3"
+        className="group-hover:-rotate-[90deg] duration-150"
+        clipPath={`url(#clip-path-${seed})`}
         style={{
           transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
         }}

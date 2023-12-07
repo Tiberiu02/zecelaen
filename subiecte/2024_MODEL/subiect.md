@@ -57,7 +57,7 @@ d. David
 
 ## 6. 5p
 
-Alina afirmă că: „în intervalul de numere reale $[-3,2]$ sunt 7 numere întregi.” Afirmatia Alinei este:
+Alina afirmă că: „în intervalul de numere reale $[-3, 2]$ sunt 7 numere întregi.” Afirmatia Alinei este:
 
 a. adevărată
 b. falsă
@@ -99,7 +99,7 @@ d. $130^\circ$
 
 ## 4. 5p
 
-În figura alăturată este reprezentat paralelogramul $ABCD$ cu $AB$=10cm și $BC$=6cm. Perimetrul paralelogramului $ABCD$ este egal cu:
+În figura alăturată este reprezentat paralelogramul $ABCD$ cu $AB=10$cm și $BC=6$cm. Perimetrul paralelogramului $ABCD$ este egal cu:
 
 ![Imagine](img/2-4.png)
 

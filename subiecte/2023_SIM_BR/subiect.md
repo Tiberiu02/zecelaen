@@ -41,10 +41,10 @@ d. $2^\circ C$
 
 Numărul $3\sqrt{2}$ aparține intervalului de numere reale:
 
-a. $(2,3)$
-b. $(4,5)$
-c. $[5,6)$
-d. $[3,4]$
+a. $(2, 3)$
+b. $(4, 5)$
+c. $[5, 6)$
+d. $[3, 4]$
 
 ## 5. 5p
 

@@ -46,7 +46,7 @@
 
 (1p) $E(a) \in \mathbb{Z}, E(a) = \frac{a + 1}{a + 2} = 1 - \frac{1}{a + 2}$
 
-(1p) Cum $a + 2 \in \mathbb{Z}$ și $\frac{1}{a + 2} \in \mathbb{Z} \Rightarrow a + 2 \in \{-1,1\}$
+(1p) Cum $a + 2 \in \mathbb{Z}$ și $\frac{1}{a + 2} \in \mathbb{Z} \Rightarrow a + 2 \in \{-1, 1\}$
 
 (1p) $a = -1$ care nu convine și $a = -3$ care convine
 
@@ -60,11 +60,11 @@
 
 ### b.
 
-(1p) $A(-2,0)$ și $B(0,2)$ sunt punctele de intersecție a graficului funcției $f$ cu axele $Ox$, respectiv $Oy$
+(1p) $A(-2, 0)$ și $B(0, 2)$ sunt punctele de intersecție a graficului funcției $f$ cu axele $Ox$, respectiv $Oy$
 
 (1p) $CT \perp Ox$, $T \in Ox$, $B$ este mijlocul lui $AC$, deci $OB$ este linie mijlocie în triunghiul $ATC$
 
-(1p) $CT = 2 \cdot BO = 4$, $OT = AO = 2 \Rightarrow C(2,4)$
+(1p) $CT = 2 \cdot BO = 4$, $OT = AO = 2 \Rightarrow C(2, 4)$
 
 ## 4.
 

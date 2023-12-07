@@ -20,7 +20,7 @@ d. $100$
 
 ## 3. 5p
 
-Suma numerelor întregi din intervalul $[-2,3]$ este egală cu:
+Suma numerelor întregi din intervalul $[-2, 3]$ este egală cu:
 
 a. $-9$
 b. $-3$

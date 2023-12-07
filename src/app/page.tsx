@@ -31,7 +31,7 @@ export default function Home() {
                     )}
                     href={`/test/${getKey(s.fullName)}`}
                   >
-                    <SubLogo seed={s.fullName} className="w-8 h-8" />
+                    <SubLogo seed={s.id} className="w-8 h-8" />
                     <div className="flex mr-auto flex-col justify-between">
                       <div className="text-xl font-normal text-center">
                         {s.name}

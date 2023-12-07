@@ -34,7 +34,7 @@ export default async function Page({
 
       <div className="w-[60rem] px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="flex flex-row items-center gap-4 w-full px-1">
-          <SubLogo seed={test.fullName} className="w-10 h-10" />
+          <SubLogo seed={test.id} className="w-10 h-10" />
           <div className="flex mr-auto flex-col justify-between">
             <div className="text-lg font-medium text-center bg-anti-math">
               {test.fullName}

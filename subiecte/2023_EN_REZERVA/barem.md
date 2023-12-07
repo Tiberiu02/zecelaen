@@ -53,7 +53,7 @@
 
 ### b.
 
-(1p) $M(3,0)$ și $N(0,-1)$
+(1p) $M(3, 0)$ și $N(0, -1)$
 (1p) Triunghiul $MON$ este dreptunghic în $O$, deci $MN = \sqrt{10}$
 (1p) $OP \perp MN$, unde $P \in MN$, $OP = \frac{OM \cdot ON}{MN} = \frac{3\sqrt{10}}{10}$
 

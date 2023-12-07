@@ -20,7 +20,7 @@ d. $12$
 
 ## 3. 5p
 
-Suma numerelor întregi din intervalul $[-2022,2022]$ este egală cu:
+Suma numerelor întregi din intervalul $[-2022, 2022]$ este egală cu:
 
 a. $-2022$
 b. $-2021$
