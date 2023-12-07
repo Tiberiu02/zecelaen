@@ -10,11 +10,13 @@ export default function Home() {
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
       <NavBar />
-      <h1 className="w-full text-lg font-medium text-left text-black mb-0 h-16 justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
-        <div className="w-[60rem]">Subiecte Evaluarea Națională Matematică</div>
+      <h1 className="w-full text-lg font-medium text-left text-black mb-0 min-h-16 justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
+        <div className="w-full max-w-5xl p-4">
+          Subiecte Evaluarea Națională Matematică
+        </div>
       </h1>
 
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-w-4xl w-full px-4">
         {Object.entries(testsByYear)
           .sort((a, b) => parseInt(b[0]) - parseInt(a[0]))
           .map(([byear, subs]) => (
@@ -22,20 +24,23 @@ export default function Home() {
               <h1 className="text-base mt-12 mb-2 font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow">
                 {byear}
               </h1>
-              <div className="grid grid-cols-[auto_auto] gap-4 [&>*:nth-child(even)]:translate-y-[16px] hover:[&>*:nth-child(even)]:translate-y-[18px]">
+              <div
+                className={twMerge(
+                  "grid w-full max-w-md md:max-w-none md:grid-cols-[1fr_1fr] gap-4 md:[&>*:nth-child(even)]:translate-y-[16px] md:hover:[&>*:nth-child(even)]:translate-y-[18px]",
+                  subs.length == 1 && "md:grid-cols-1 md:max-w-md"
+                )}
+              >
                 {subs.map((s, i) => (
                   <a
                     key={i}
                     className={twMerge(
-                      "relative group overflow-hidden w-[28rem] items-center bg-white rounded-full border-2 hover:bg-gray-50 hover:shadow-none hover:translate-y-[2px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
+                      "relative group overflow-hidden items-center bg-white rounded-full border-2 hover:bg-gray-50 hover:shadow-none hover:translate-y-[2px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
                     )}
                     href={`/test/${getKey(s.fullName)}`}
                   >
                     <SubLogo seed={s.id} className="w-8 h-8" />
                     <div className="flex mr-auto flex-col justify-between">
-                      <div className="text-xl font-normal text-center">
-                        {s.name}
-                      </div>
+                      <div className="text-xl font-normal">{s.name}</div>
                       <div className="w-fit font-semibold text-sm opacity-40">
                         {fullDate(s.date)}
                       </div>

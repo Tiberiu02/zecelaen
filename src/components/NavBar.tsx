@@ -9,13 +9,13 @@ export function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-screen select-none text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-[1px] border-t-0 border-gray-200 shadow">
-      <div className="w-[60rem] flex items-center">
+    <div className="w-full select-none text-lg font-medium text-left text-black mb-0 h-16 flex flex-col justify-center items-center bg-white border-[1px] border-t-0 border-gray-200 shadow">
+      <div className="max-w-5xl w-full flex items-center px-4">
         <a className="font-bold text-2xl" href="/">
           10<sup>N</sup>
         </a>
         <div className="w-full"></div>
-        <div className="flex gap-2 mr-8 items-center text-red-700 font-semibold">
+        <div className="flex gap-2 mr-4 items-center text-red-700 font-semibold">
           <FaFire className="text-lg text-red-500 mb-[1px]" />7
         </div>
         <div className="flex gap-2 items-center text-yellow-600 font-semibold">
