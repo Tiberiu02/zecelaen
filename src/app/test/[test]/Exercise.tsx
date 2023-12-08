@@ -271,17 +271,17 @@ export function Exercise({
       )}
       {(chosen != null || !options) && (
         <button
-          className="flex w-fit self-center duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50"
+          className="flex w-fit self-center duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50 whitespace-nowrap"
           onClick={() => setShowSolution(!showSolution)}
         >
           {showSolution ? (
             <>
-              <FaAngleUp className="mt-0" />
+              <FaAngleUp className="shrink-0 mt-0" />
               Ascunde rezolvarea
             </>
           ) : (
             <>
-              <FaAngleDown className="mt-1" />
+              <FaAngleDown className="shrink-0 mt-1" />
               Arată rezolvarea
             </>
           )}
