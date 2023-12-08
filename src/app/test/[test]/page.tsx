@@ -11,6 +11,7 @@ import { NavBar } from "@/components/NavBar";
 import { RoundedRectangleProgressBar } from "../../../components/RoundedRectangleProgressBar";
 import { fullDate } from "../../../tests/fullDate";
 import { Button } from "@/components/Button";
+import { ShareButtons } from "@/components/ShareButtons";
 
 export function generateStaticParams() {
   return Object.keys(testsByKey).map((test) => ({
@@ -81,18 +82,7 @@ export default async function Page({ params }: { params: { test: string } }) {
             </div>
             {/* <div className="w-full"></div> */}
             <div className="grid grid-cols-3 gap-2">
-              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-green-500">
-                <RiWhatsappFill className="shrink-0" />
-                Share
-              </Button>
-              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-blue-800">
-                <FaFacebookF className="text-xs shrink-0" />
-                Share
-              </Button>
-              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-blue-500">
-                <FaFacebookMessenger className="text-xs shrink-0" />
-                Share
-              </Button>
+              <ShareButtons />
             </div>
           </div>
         </div>
