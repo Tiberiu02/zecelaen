@@ -54,7 +54,8 @@ export function NavBar() {
                 </a>
                 <a
                   className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
-                  href="/discord"
+                  href="https://discord.gg/XkRrWKvwbt"
+                  target="_blank"
                 >
                   <FaDiscord /> Discord
                 </a>
