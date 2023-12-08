@@ -10,19 +10,16 @@ import { testsByKey } from "@/tests/tests";
 import { NavBar } from "@/components/NavBar";
 import { RoundedRectangleProgressBar } from "../../../components/RoundedRectangleProgressBar";
 import { fullDate } from "../../../tests/fullDate";
+import { Button } from "@/components/Button";
 
 export function generateStaticParams() {
-  return Object.keys(testsByKey).map((testKey) => ({
-    testKey,
+  return Object.keys(testsByKey).map((test) => ({
+    test,
   }));
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { testKey: string };
-}) {
-  const test = testsByKey[params.testKey];
+export default async function Page({ params }: { params: { test: string } }) {
+  const test = testsByKey[params.test];
   const progress = true;
 
   const pdfSubiect = `/pdf/${test.id}/subiect.pdf`;
@@ -66,37 +63,36 @@ export default async function Page({
           </div>
           <div className="w-full mt-6 text-base grid grid-cols-1 md:flex flex-wrap items-center justify-between font-medium gap-2 text-black/60">
             <div className="grid grid-cols-2 gap-2">
-              <a
-                href={pdfSubiect}
-                download={`${test.fullName} - ZeceLaEN.pdf`}
-                className="flex gap-2 items-center justify-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150"
-              >
-                <HiDownload className=" " />
-                Subiect
+              <a href={pdfSubiect} download={`${test.fullName} - ZeceLaEN.pdf`}>
+                <Button className="flex gap-2 py-1 px-4 items-center justify-center">
+                  <HiDownload className="shrink-0" />
+                  Subiect
+                </Button>
               </a>
               <a
                 href={pdfBarem}
                 download={`${test.fullName} - BAREM - ZeceLaEN.pdf`}
-                className="flex gap-2 items-center justify-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150"
               >
-                <HiDownload className=" " />
-                Barem
+                <Button className="flex gap-2 py-1 px-4 items-center justify-center">
+                  <HiDownload className="shrink-0" />
+                  Barem
+                </Button>
               </a>
             </div>
             {/* <div className="w-full"></div> */}
             <div className="grid grid-cols-3 gap-2">
-              <button className="flex gap-2 items-center justify-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150 text-green-500">
+              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-green-500">
                 <RiWhatsappFill className="shrink-0" />
                 Share
-              </button>
-              <button className="flex gap-2 items-center justify-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150 text-blue-800">
+              </Button>
+              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-blue-800">
                 <FaFacebookF className="text-xs shrink-0" />
                 Share
-              </button>
-              <button className="flex gap-2 items-center justify-center bg-white rounded-full border-2 border-gray-200 shadow p-3 hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px] px-4 py-1 duration-150 text-blue-500">
+              </Button>
+              <Button className="flex gap-2 py-1 px-4 items-center justify-center text-blue-500">
                 <FaFacebookMessenger className="text-xs shrink-0" />
                 Share
-              </button>
+              </Button>
             </div>
           </div>
         </div>

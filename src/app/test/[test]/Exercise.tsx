@@ -1,17 +1,9 @@
 "use client";
 
+import { Button } from "@/components/Button";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState } from "react";
-import {
-  FaAngleDown,
-  FaAngleUp,
-  FaCaretDown,
-  FaCheck,
-  FaRegStar,
-  FaStar,
-  FaVideo,
-  FaXmark,
-} from "react-icons/fa6";
+import { FaAngleDown, FaAngleUp, FaStar, FaVideo } from "react-icons/fa6";
 import { BlockMath } from "react-katex";
 import { twMerge } from "tailwind-merge";
 
@@ -169,40 +161,32 @@ export function Exercise({
           )}
         >
           {options.map((option, i) => (
-            <div
+            <Button
               className={twMerge(
-                "flex w-full gap-4 group items-center text-xl rounded-full border-[2px] duration-150 shadow py-1 pl-2 pr-4",
-                chosen != i
-                  ? "bg-white border-gray-200 "
-                  : correct == i
-                  ? "bg-[#d6ffd5] border-[#8ce98b] shadow-[#8ce98b]"
-                  : "bg-[#ffe6e6] border-[#fcc3c3] shadow-[#fcc3c3]",
-                chosen == null &&
-                  "hover:bg-gray-100 cursor-pointer hover:shadow-none hover:translate-y-[2px]"
+                "flex w-full gap-4 items-center text-xl py-1 pl-2 pr-4",
+                chosen == i &&
+                  (correct == i
+                    ? "bg-[#d6ffd5] border-[#8ce98b] shadow-[#8ce98b]"
+                    : "bg-[#ffe6e6] border-[#fcc3c3] shadow-[#fcc3c3]")
               )}
+              active={chosen == null}
               onClick={chosen == null ? () => setChosen(i) : undefined}
               key={i}
             >
-              {chosen == null ? (
-                <div
-                  className={twMerge(
-                    "h-7 w-7 border-2 border-red-200 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
-                    className.options[i]
-                  )}
-                >
-                  {"ABCD"[i]}
-                </div>
-              ) : i == correct ? (
-                <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-[#c8ffc6] border-opacity-50 bg-[#5dd35b]">
-                  <FaCheck />
-                </div>
-              ) : (
-                <div className="h-7 w-7 text-base flex items-center justify-center rounded-full text-white border-2 border-white border-opacity-50 bg-[#FF7676]">
-                  <FaXmark />
-                </div>
-              )}
+              <div
+                className={twMerge(
+                  "h-7 w-7 border-2 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
+                  chosen == null
+                    ? className.options[i]
+                    : i == correct
+                    ? "border-[#98eb96] bg-[#5dd35b]"
+                    : "border-[#ffadad] bg-[#FF7676]"
+                )}
+              >
+                {"ABCD"[i]}
+              </div>
               <div className="mx-auto">{parseKatex(`${option}`)}</div>
-            </div>
+            </Button>
           ))}
         </div>
       )}
@@ -270,24 +254,24 @@ export function Exercise({
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
             {[0, 1, 2, 3, 4, 5].map((p, i) => (
-              <div
+              <Button
                 className={twMerge(
-                  "flex justify-center w-full gap-2 group items-center text-xl rounded-3xl border-[2px] duration-150 shadow h-12 py-2 bg-white border-gray-200 hover:bg-gray-100 cursor-pointer hover:shadow-none hover:translate-y-[2px]",
+                  "flex justify-center w-full gap-2 group items-center text-xl py-2",
                   className.score[i]
                 )}
                 onClick={() => setScore(p)}
                 key={i}
               >
-                <FaStar className="" />
+                <FaStar />
                 <div className="font-bold">{p}</div>
-              </div>
+              </Button>
             ))}
           </div>
         </div>
       )}
       {(chosen != null || !options) && (
         <button
-          className="flex  duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50"
+          className="flex w-fit self-center duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50"
           onClick={() => setShowSolution(!showSolution)}
         >
           {showSolution ? (

@@ -5,6 +5,7 @@ import { getKey, tests, testsByYear } from "@/tests/tests";
 import { Fragment } from "react";
 import { NavBar } from "../components/NavBar";
 import { fullDate } from "@/tests/fullDate";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -31,23 +32,19 @@ export default function Home() {
                 )}
               >
                 {subs.map((s, i) => (
-                  <a
-                    key={i}
-                    className={twMerge(
-                      "relative group overflow-hidden items-center bg-white rounded-full border-2 hover:bg-gray-50 hover:shadow-none hover:translate-y-[2px] border-gray-200 shadow flex flex-row px-6 py-4 gap-8 cursor-pointer duration-150"
-                    )}
-                    href={`/test/${getKey(s.fullName)}`}
-                  >
-                    <SubLogo seed={s.id} className="w-8 h-8" />
-                    <div className="flex mr-auto flex-col justify-between">
-                      <div className="text-xl font-normal">{s.name}</div>
-                      <div className="w-fit font-semibold text-sm opacity-40">
-                        {fullDate(s.date)}
+                  <a key={i} href={`/test/${getKey(s.fullName)}`}>
+                    <Button className="group flex items-center flex-row px-6 py-4 gap-8">
+                      <SubLogo seed={s.id} className="w-8 h-8" />
+                      <div className="flex mr-auto flex-col justify-between">
+                        <div className="text-xl font-normal">{s.name}</div>
+                        <div className="w-fit font-semibold text-sm opacity-40">
+                          {fullDate(s.date)}
+                        </div>
                       </div>
-                    </div>
-                    {null && (
-                      <TbDiscountCheckFilled className="text-green-500 text-4xl" />
-                    )}
+                      {null && (
+                        <TbDiscountCheckFilled className="text-green-500 text-4xl" />
+                      )}
+                    </Button>
                   </a>
                 ))}
               </div>
