@@ -9,6 +9,8 @@ import { BlockMath } from "react-katex";
 import { twMerge } from "tailwind-merge";
 
 function parseKatex(str: string) {
+  str = str.replaceAll("=", "$ = $");
+
   return (
     <>
       <div className="text-3xl text-[1.35rem] line font-normal font-katex overflow-x-auto overflow-y-hidden">

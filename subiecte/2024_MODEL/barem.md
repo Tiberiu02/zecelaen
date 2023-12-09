@@ -78,9 +78,9 @@
 
 (1p) $QN \parallel AB \parallel CD$, $PM \parallel BC \parallel AD$ și $\angle QAM = \angle PCN = 90^\circ$, deci $AMEQ$ și $CNEP$ sunt dreptunghiuri
 
-(1p) $PC \parallel AM \Rightarrow \triangle PEC \sim \triangle MEA$ $\Rightarrow \frac{PE}{ME} = \frac{PC'}{AM} = \frac{EC}{EA} = \frac{1}{2}$
+(1p) $PC \parallel AM \Rightarrow \triangle PEC \sim \triangle MEA$ $\Rightarrow \frac{PE}{ME} = \frac{PC}{AM} = \frac{EC}{EA} = \frac{1}{2}$
 
-(1p) $ME = 2 \cdot PE$, $AM = 2 \cdot PC$ $\Rightarrow \mathcal{A}_{MEQ} = AM \cdot ME = 4 \cdot PC \cdot PE = 4 \cdot \mathcal{A}_{CNEP}$
+(1p) $ME = 2 \cdot PE$, $AM = 2 \cdot PC$ $\Rightarrow \mathcal{A}_{AMEQ} = AM \cdot ME = 4 \cdot PC \cdot PE = 4 \cdot \mathcal{A}_{CNEP}$
 
 ## 5.
 
@@ -92,11 +92,11 @@
 
 ### b.
 
-(1p) $EM$ mediană în triunghiul dreptunghic isoscel $AEB \Rightarrow EM = \frac{AB}{2} = \sqrt{2}$ cm, $BE$ bisectoare $\angle ABC$, $EM \perp AB$, $M \in AB$ și $EN \perp BC$, $N \in BC$, de unde obținem $EM = EN = \frac{2\sqrt{3} - 1}{2}$ cm
+(1p) $EM$ mediană în triunghiul dreptunghic isoscel $AEB \Rightarrow EM = \frac{AB}{2} = \sqrt{2}$ cm, $BE$ bisectoarea $\angle ABC$, $EM \perp AB$, $M \in AB$ și $EN \perp BC$, $N \in BC$, de unde obținem $EM = EN = \sqrt{2}$ cm
 
 (1p) $\mathcal{A}_{\triangle AEC} = \mathcal{A}_{\triangle ABC} - \mathcal{A}_{\triangle AEB} - \mathcal{A}_{\triangle BEC} = \frac{AB \cdot BC}{2} - \frac{AB \cdot EM}{2} - \frac{BC \cdot EN}{2} = 2 \left(\sqrt{3} - 1\right)\text{cm}^2$
 
-(1p) $\mathcal{A}_{\triangle AEC} = \frac{AC \cdot EP}{2}$, unde $EP \perp AC$, $P \in AC$, de unde $EP = \frac{\sqrt{3} - 1}{\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{2}$ cm
+(1p) $\mathcal{A}_{\triangle AEC}$ = $\frac{AC \cdot EP}{2}$, unde $EP \perp AC$, $P \in AC$, de unde $EP = \frac{\sqrt{3} - 1}{\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{2}$ cm
 
 ## 6.
 

@@ -57,7 +57,7 @@ d. David
 
 ## 6. 5p
 
-Alina afirmă că: „în intervalul de numere reale $[-3, 2]$ sunt 7 numere întregi.” Afirmatia Alinei este:
+Alina afirmă că: „În intervalul de numere reale $[-3, 2]$ sunt 7 numere întregi.” Afirmația Alinei este:
 
 a. adevărată
 b. falsă
@@ -68,7 +68,7 @@ b. falsă
 
 În figura alăturată sunt reprezentate punctele coliniare $ A, B, C $ și $ D $, în această ordine, astfel încât $ AB = BC = CD $, iar lungimea segmentului $ CD $ este egală cu 10cm. Lungimea segmentului $ AD $ este egală cu:
 
-![Imagine](img/2-1.png)
+![Imagine](img/2-1.png) size=30
 
 a. 30cm
 b. 20cm
@@ -200,7 +200,7 @@ Calculează distanța de la punctul $E$ la dreapta $AC$.
 
 ## 6. 5p
 
-În figura alăturată este reprezentat paralelipipedul dreptunghic $ABCD A'B'C'D'$ cu $AB = A'A' = 4$ cm și $BC = 2$ cm.
+În figura alăturată este reprezentat paralelipipedul dreptunghic $ABCD A'B'C'D'$ cu $AB = AA' = 4$ cm și $BC = 2$ cm.
 
 ![Imagine](img/3-6.png)
 
@@ -210,4 +210,4 @@ Arată că aria totală a paralelipipedului dreptunghic $ABCD A'B'C'D'$ este ega
 
 ### b. 3p
 
-Arată că dreapta $NP$ este paralelă cu planul $(ACD')$, unde punctul $N$ este proiecția punctului $C'$ pe dreapta $BD'$ și punctul $P$ este proiecția punctului $C'$ pe dreapta $CB'$.
+Arată că dreapta $NP$ este paralelă cu planul $(ACD')$, unde punctul $N$ este proiecția punctului $C'$ pe dreapta $B'D'$ și punctul $P$ este proiecția punctului $C'$ pe dreapta $CB'$.
