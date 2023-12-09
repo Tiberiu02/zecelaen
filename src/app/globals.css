@@ -9,6 +9,18 @@
         src: url('/KaTeX_RO_Main-Regular.woff2');
     }
 
+    .bg-anti-math {
+        background-color: hsla(0, 0%, 98%, 0.8);
+        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
+    }
+
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+@layer utilities {
+
     .bg-math {
         background-color: hsl(0, 0%, 96%);
         --grid-color: hsl(230, 0%, 93%);
@@ -17,14 +29,5 @@
         background-image:
             linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
             linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
-    }
-
-    .bg-anti-math {
-        background-color: hsla(0, 0%, 98%, 0.8);
-        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
-    }
-
-    html {
-        -webkit-tap-highlight-color: transparent;
     }
 }

@@ -13,7 +13,7 @@ export default function Home() {
       <NavBar />
       <h1 className="w-full text-lg font-medium text-left text-black mb-0 min-h-16 justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
         <div className="w-full max-w-5xl p-4">
-          Subiecte Evaluarea Națională Matematică
+          Teste Evaluarea Națională Matematică
         </div>
       </h1>
 

@@ -19,8 +19,8 @@ export async function Test({ testId }: { testId: string }) {
   return (
     <>
       {exam.sections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="flex flex-col items-center gap-8">
-          <h1 className="text-base w-fit mt-16 self-center font-semibold text-left text-black/40 px-2 py-1 bg-white rounded-md border-[1px] border-gray-200 shadow">
+        <div key={sectionIndex} className="flex flex-col items-center gap-2">
+          <h1 className="text-base w-fit md:w-fit self-center text-center font-semibold bg-white rounded-full md:text-left text-black/40 mt-8 mb-2 py-2 px-4 border-[1px] border-gray-200 shadow">
             {section.title}
           </h1>
           {section.questions.map(async (question, questionIndex) => (

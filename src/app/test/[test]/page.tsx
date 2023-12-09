@@ -12,6 +12,7 @@ import { RoundedRectangleProgressBar } from "../../../components/RoundedRectangl
 import { fullDate } from "../../../tests/fullDate";
 import { Button } from "@/components/Button";
 import { ShareButtons } from "@/components/ShareButtons";
+import { Card } from "../../../components/Card";
 
 export function generateStaticParams() {
   return Object.keys(testsByKey).map((test) => ({
@@ -30,8 +31,8 @@ export default async function Page({ params }: { params: { test: string } }) {
     <main className="bg-math min-h-screen flex flex-col items-center">
       <NavBar />
 
-      <div className="flex flex-col items-center px-4 w-full max-w-5xl">
-        <div className="w-full px-4 py-4 mt-8 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col items-center bg-white border-[1px]  border-gray-200 shadow">
+      <div className="flex flex-col items-center md:px-4 w-full max-w-5xl">
+        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pb-6 md:pb-4">
           <div className="flex flex-row items-center gap-4 w-full px-1">
             <SubLogo seed={test.id} className="w-10 h-10 shrink-0" />
             <div className="flex mr-auto flex-col">
@@ -85,9 +86,9 @@ export default async function Page({ params }: { params: { test: string } }) {
               <ShareButtons />
             </div>
           </div>
-        </div>
+        </Card>
 
-        <div className="flex gap-6 flex-col w-full">
+        <div className="flex gap-2 flex-col w-full">
           <Test testId={test.id} />
         </div>
 

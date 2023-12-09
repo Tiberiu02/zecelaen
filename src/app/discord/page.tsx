@@ -1,27 +1,9 @@
-import {
-  FaBook,
-  FaCheck,
-  FaDiscord,
-  FaFacebookF,
-  FaListCheck,
-  FaUsers,
-} from "react-icons/fa6";
-import {
-  FaCheckCircle,
-  FaExclamationCircle,
-  FaFacebookMessenger,
-} from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
-import { HiDownload } from "react-icons/hi";
-import { SubLogo } from "../../components/SubLogo";
+import { FaBook, FaDiscord, FaUsers } from "react-icons/fa6";
+import { FaExclamationCircle } from "react-icons/fa";
 
 import React from "react";
-import { testsByKey } from "@/tests/tests";
 import { NavBar } from "@/components/NavBar";
-import { RoundedRectangleProgressBar } from "../../components/RoundedRectangleProgressBar";
-import { fullDate } from "../../tests/fullDate";
 import { Button } from "@/components/Button";
-import { ShareButtons } from "@/components/ShareButtons";
 
 export default async function Page() {
   return (
@@ -29,20 +11,20 @@ export default async function Page() {
       <NavBar />
 
       <div className="flex flex-col items-center px-4 w-full max-w-5xl">
-        <div className="px-8 py-8 mt-8 gap-4 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col bg-white border-[1px]  border-gray-200 shadow">
-          <div className="text-3xl self-center font-semibold mx-4 mb-8 [text-wrap:balance] text-center">
+        <div className="px-8 py-12 mt-8 gap-12 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col bg-white border-[1px]  border-gray-200 shadow">
+          <div className="text-3xl self-center font-semibold [text-wrap:balance] text-center">
             Hai cu noi pe Discord!
           </div>
           <div className="flex flex-col self-center gap-4">
-            <div className="text-xl leading-8 space font-normal mx-4">
+            <div className="text-xl leading-8 space font-normal">
               <FaBook className="inline text-blue-500 mr-2 text-2xl" /> Noutăți
               și discuții despre Evaluarea Națională
             </div>
-            <div className="text-xl leading-8 space font-normal mx-4">
+            <div className="text-xl leading-8 space font-normal">
               <FaExclamationCircle className="inline text-blue-500 mr-2 text-2xl" />{" "}
               Spune-ne ce să mai adăugăm pe ZeceLaEN.ro
             </div>
-            <div className="text-xl leading-8 space font-normal mx-4">
+            <div className="text-xl leading-8 space font-normal">
               <FaUsers className="inline text-blue-500 mr-2 text-2xl" /> Sunt
               bineveniți toți elevii, părinții și profesorii
             </div>
@@ -52,7 +34,7 @@ export default async function Page() {
             target="_blank"
             className="self-center"
           >
-            <Button className="text-[#5865F2] w-fit px-5 py-2 flex gap-2 mt-8 items-center font-bold">
+            <Button className="text-[#5865F2] w-fit px-5 py-2 flex gap-2 items-center font-bold">
               <FaDiscord className="text-2xl" /> Discord
             </Button>
           </a>

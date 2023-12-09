@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/Button";
+import { Card } from "@/components/Card";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState } from "react";
 import { FaAngleDown, FaAngleUp, FaStar, FaVideo } from "react-icons/fa6";
@@ -103,9 +104,9 @@ export function Exercise({
   };
 
   return (
-    <div
-      className="w-full flex flex-col gap-0 bg-white rounded-2xl border-[1px] border-gray-200 shadow py-4 px-6"
-      ref={cardRef}
+    <Card
+      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6"
+      cardRef={cardRef}
     >
       <div className="flex justify-between font-bold text-lg gap-4">
         <span className="font-bold">{index}.</span>
@@ -287,6 +288,6 @@ export function Exercise({
           )}
         </button>
       )}
-    </div>
+    </Card>
   );
 }
