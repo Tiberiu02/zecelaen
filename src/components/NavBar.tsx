@@ -58,12 +58,12 @@ export function NavBar() {
                 >
                   <FaDiscord /> Discord
                 </a>
-                <a
+                {/* <a
                   className="flex gap-3 p-2 px-4 pb-3 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
                   href="/despre"
                 >
                   <FaInfoCircle /> Despre Proiect
-                </a>
+                </a> */}
               </div>
             </>
           )}

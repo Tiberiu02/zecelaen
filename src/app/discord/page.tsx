@@ -11,7 +11,7 @@ export default async function Page() {
       <NavBar />
 
       <div className="flex flex-col items-center px-4 w-full max-w-5xl">
-        <div className="px-8 py-12 mt-8 gap-12 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col bg-white border-[1px]  border-gray-200 shadow">
+        <div className="p-8 sm:px-16 sm:py-12 mt-8 gap-12 rounded-2xl text-lg font-medium text-left text-black justify-center flex flex-col bg-white border-[1px]  border-gray-200 shadow">
           <div className="text-3xl self-center font-semibold [text-wrap:balance] text-center">
             Hai cu noi pe Discord!
           </div>

@@ -16,7 +16,12 @@ function parseKatex(str: string) {
           if (ix % 2 == 1) {
             return (
               <span className="whitespace-nowrap" key={`${ix}`}>
-                <span className="inline-block -my-3 text-lg px-[1px]">
+                <span
+                  className={twMerge(
+                    "inline-block -my-3 text-lg",
+                    str.includes("sqrt") && "pr-[2px]" // Padding because sqrt has -2 margin right
+                  )}
+                >
                   <BlockMath
                     math={`\\def,{{\\char\`,}} {${s.replaceAll(
                       ", ",
@@ -31,7 +36,7 @@ function parseKatex(str: string) {
             return (
               <div
                 key={ix}
-                className="text-3xl text-[1.35rem] line font-normal font-katex inline"
+                className="text-3xl text-[1.35rem] font-normal font-katex inline"
               >
                 {lines.map((line, i) => {
                   line = line.replaceAll(/-([\d ])/gi, "−$1");
