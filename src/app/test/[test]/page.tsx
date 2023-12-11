@@ -1,6 +1,3 @@
-import { FaFacebookF } from "react-icons/fa6";
-import { FaFacebookMessenger } from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";
 import { SubLogo } from "../../../components/SubLogo";
 import { Test } from "./Test";

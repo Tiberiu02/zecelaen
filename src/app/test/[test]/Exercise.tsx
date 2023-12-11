@@ -19,6 +19,7 @@ function parseKatex(str: string) {
                 <span
                   className={twMerge(
                     "inline-block -my-3 text-lg",
+                    str.includes("array") && "px-[1px]", // Padding to show table borders
                     str.includes("sqrt") && "pr-[2px]" // Padding because sqrt has -2 margin right
                   )}
                 >
