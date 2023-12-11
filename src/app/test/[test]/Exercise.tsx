@@ -256,10 +256,10 @@ export function Exercise({
       {showSolution && !options && score == null && (
         <div className="flex flex-col gap-4 mt-8">
           <div className="font-bold text-lg">Estimare punctaj</div>
-          <div className="font-norma text-lg">
+          <div className="font-normal text-lg">
             Câte puncte crezi că ai fi obținut, conform baremului?
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 -mx-1">
             {[0, 1, 2, 3, 4, 5].map((p, i) => (
               <Button
                 className={twMerge(
