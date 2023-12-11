@@ -28,9 +28,10 @@
 
 ### b.
 
-(1p) $a = 11b + 2$
-
-$\frac{a+b}{2} = 25$
+(1p) $\begin{cases}
+a = 11b + 2 \\
+\frac{a+b}{2} = 25
+\end{cases}$
 
 (1p) $a=46$
 

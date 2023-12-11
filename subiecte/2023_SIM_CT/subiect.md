@@ -148,7 +148,7 @@ Dacă $b = 2\sqrt{3} - 5$, calculați $(6a - b + 2\sqrt{3})^{2023}$.
 
 ## 3. 5p
 
-Fie $E(x)=\left( \frac{x-6}{x^2-25} + \frac{x}{x-5} - \frac{2}{x + 5} \right) : \frac{2x+4}{x^2-25}$, $x \in \mathbb{R} \backslash \{-5; -2; 5\}$.
+Fie $E(x)=\left( \frac{x-6}{x^2-25} + \frac{x}{x-5} - \frac{2}{x + 5} \right) : \frac{2x+4}{x^2-25}$, $x \in \mathbb{R} \backslash \{-5; -2; 5\}$
 
 ### a. 2p
 
