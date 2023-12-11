@@ -53,7 +53,7 @@
 
 ### a.
 
-(1p) $a = \left(-\frac{1}{3}\right)^2 \cdot (-6)^3 =$
+(1p) $a = \left(-\frac{1}{3}\right)^2 \cdot (-6)^2 =$
 (1p) $= \frac{1}{9} \cdot 36 = 4$
 
 ### b.
@@ -73,7 +73,7 @@
 
 ### b.
 
-(1p) $\angle BCD = \angle BCA$ și $\angle CBD = \angle BAC$ $\Rightarrow$ $\triangle CBD \sim \triangle CAB$
+(1p) $\angle BCD \equiv \angle BCA$ și $\angle CBD \equiv \angle BAC$ $\Rightarrow$ $\triangle CBD \sim \triangle CAB$
 
 (1p) $\frac{CD}{BC} = \frac{BC}{AC}$
 

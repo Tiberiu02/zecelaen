@@ -48,7 +48,7 @@ $\begin{array}{|c|c|c|c|}
 \hline
 \end{array}$
 
-Dintre cei patru elevi, cel care a răspun întrebarea profesorului este:
+Dintre cei patru elevi, cel care a răspuns corect la întrebarea profesorului este:
 
 a. Andreea
 b. Marina
@@ -95,9 +95,9 @@ d. $90^\circ$
 ![Imagine](img/2-3.jpg)
 
 a. 5 cm$^2$
-b. 7.5 cm$^2$
+b. 7,5 cm$^2$
 c. 10 cm$^2$
-d. 12.5 cm$^2$
+d. 12,5 cm$^2$
 
 ## 4. 5p
 
@@ -123,7 +123,7 @@ d. $75^\circ$
 
 ## 6. 5p
 
-În figura alăturată este reprezentat cubul $ABCD A'B'C'D'$ cu $AB=5$ cm. Lungimea segmentului $B'D'$ este egală cu:
+În figura alăturată este reprezentat cubul $ABCD A'B'C'D'$ cu $AB=5$ cm. Lungimea segmentului $BD'$ este egală cu:
 
 ![Imagine](img/2-6.png)
 
@@ -148,7 +148,7 @@ Determină peste câți ani vârsta Mariei va fi jumătate din vârsta tatălui 
 
 ## 2. 5p
 
-Se consideră expresia $E(x) = \left( \frac{1}{(x+1)(x+2)} + \frac{1}{x+2} \right) : \frac{x+3}{5(x+1)}$, unde $x$ este număr real, $x \neq -3$, $x \neq -2$ și $x \neq -1$.
+Se consideră expresia $E(x) = \left( \frac{1}{(x+1)(x+2)} + \frac{1}{x+2} \right)  : \frac{x+3}{5(x+1)}$, unde $x$ este număr real, $x \neq -3$, $x \neq -2$ și $x \neq -1$.
 
 ### a. 2p
 

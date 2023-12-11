@@ -35,12 +35,14 @@
 
 ### a.
 
-(1p) $(x+1)(x+2) = x^2 + 2x + x + 2 = x^2 + 3x + 2$, pentru orice număr real $x$
+(1p) $(x+1)(x+2) = x^2 + 2x + x + 2 =$
+
+(1p) $x^2 + 3x + 2$, pentru orice număr real $x$
 
 ### b.
 
 (1p) $E(x) = \frac{x^2 + 3x + 2 + 2x^2 + 4x - 3x^2 - 3x}{x(x+1)(x+2)}$ = $\frac{2x + 1}{(x+1)(x+2)}$ =
-(1p) = $\frac{2(2x+1)}{x(x+1)(x+2)} = \frac{(x+1)(x+2)}{2x+1} \cdot \frac{2}{x}$, unde $x$ este număr real, $x \neq 0$, $x \neq -1$, $x \neq -2$ și $x \neq -\frac{1}{2}$
+(1p) = $\frac{2(2x+1)}{x(x+1)(x+2)} = \frac{(x+1)(x+2)}{2x+1} = \frac{2}{x}$, unde $x$ este număr real, $x \neq 0$, $x \neq -1$, $x \neq -2$ și $x \neq -\frac{1}{2}$
 
 (1p) Dacă $n$ este număr natural par, nenul, atunci numărul $N = \frac{1}{E(n)} = \frac{n}{2}$ este natural
 
@@ -92,6 +94,6 @@
 
 ### b.
 
-(1p) $ABBA'$ este dreptunghi, $A'B \cap AB' = \{O\}$, deci $O$ este mijlocul segmentului $A'B$
+(1p) $ABB'A'$ este dreptunghi, $A'B \cap AB' = \{O\}$, deci $O$ este mijlocul segmentului $A'B$
 (1p) În triunghiul $A'BC$, $OM$ este linie mijlocie, de unde $OM \parallel A'C$
 (1p) $OM \subset (AMB')$, deci $A'C \parallel (AMB')$

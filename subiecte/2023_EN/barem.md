@@ -38,13 +38,13 @@
 
 ### a.
 
-(1p) $\frac{1}{(x+1)(x+2)} + \frac{1}{x+2} = \frac{1+x+x+1}{(x+1)(x+2)} =$
+(1p) $\frac{1}{(x+1)(x+2)} + \frac{1}{x+2} = \frac{1+x+1}{(x+1)(x+2)} =$
 (1p) $\frac{x+2}{(x+1)(x+2)} = \frac{1}{x+1}$, pentru orice număr real $x$, $x \neq -2$ și $x \neq -1$
 
 ### b.
 
 (1p) $E(x) = \frac{1}{x+1} \cdot \frac{5(x+1)}{x+3} = \frac{5}{x+3}$, unde $x$ este număr real, $x \neq -3$, $x \neq -2$ și $x \neq -1$
-(1p) $\frac{5}{x+3} = \frac{x+3}{8}$, de unde obținem $x^2 = 49$
+(1p) $\frac{5}{x+3} = \frac{x-3}{8}$, de unde obținem $x^2 = 49$
 (1p) $x = -7$ sau $x = 7$, care convin, deci suma soluțiilor ecuației este egală cu $0$
 
 ## 3.

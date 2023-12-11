@@ -11,7 +11,7 @@ d. $25$
 
 ## 2. 5p
 
-Dacă $\frac{1}{2} \cdot \frac{a}{3}$, atunci numărul $a$ este egal cu:
+Dacă $\frac{1}{2} = \frac{a}{3}$, atunci numărul $a$ este egal cu:
 
 a. $\frac{2}{3}$
 b. $1$
@@ -42,7 +42,7 @@ d. $\frac{23}{100}$
 
 $\begin{array}{|c|c|c|c|c|c|c|c|}
 \hline
-\text{Notă} & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+\text{Nota} & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
 \hline
 \text{Număr de elevi} & 2 & 1 & 3 & 8 & 6 & 4 & 1 \\
 \hline
@@ -57,7 +57,7 @@ d. $14$
 
 ## 6. 5p
 
-Se consideră numerele reale $a = 2\sqrt{3}$ și $b = 3\sqrt{2}$. Radu afirmă că: „Numărul $a$ este mai mic decât numărul $b$”. Afirmatia lui Radu este:
+Se consideră numerele reale $a = 2\sqrt{3}$ și $b = 3\sqrt{2}$. Radu afirmă că: „Numărul $a$ este mai mic decât numărul $b$”. Afirmația lui Radu este:
 
 a. adevărată
 b. falsă

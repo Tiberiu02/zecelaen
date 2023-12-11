@@ -57,7 +57,7 @@ d. Mihai
 
 ## 6. 5p
 
-Afirmatia „Numărul $4$ este mai mare decât numărul $2\sqrt{5}$.” este:
+Afirmația „Numărul $4$ este mai mare decât numărul $2\sqrt{5}$.” este:
 
 a. adevărată
 b. falsă
@@ -150,7 +150,7 @@ Se consideră expresia $E(x) = \left(\frac{ x^2 - 9 }{ x^2 - 16 } - 1 \right) : 
 
 ### a. 2p
 
-Arată că $E(x) = \frac{7}{2x - 3}$, unde $x$ este număr real, $x \neq -4$, $x \neq 4$ și $x \neq \pm \frac{3}{2}$.
+Arată că $E(x) = \frac{7}{2x - 3}$, unde $x$ este număr real, $x \neq -4$, $x \neq 4$ și $x \neq  \frac{3}{2}$.
 
 ### b. 3p
 
@@ -198,7 +198,7 @@ Arată că tangenta unghiului $CAE$ este egală cu $\sqrt{2} + 1$.
 
 ## 6. 5p
 
-În figura alăturată este reprezentat cubul $ABCD A'B'C'D'$ cu $AB = 6$cm. Punctul $M$ este mijlocul segmentului $B'Cx$ și dreptele $BM$ și $B'C$ se intersectează în punctul $R$. Punctul $P$ aparține segmentului $AC$, astfel încât $AP = 2\sqrt{2}$cm.
+În figura alăturată este reprezentat cubul $ABCD A'B'C'D'$ cu $AB = 6$cm. Punctul $M$ este mijlocul segmentului $B'C'$ și dreptele $BM$ și $B'C$ se intersectează în punctul $R$. Punctul $P$ aparține segmentului $AC$, astfel încât $AP = 2\sqrt{2}$cm.
 
 ![Imagine](img/3-6.png)
 
