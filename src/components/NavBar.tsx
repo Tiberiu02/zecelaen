@@ -47,7 +47,7 @@ export function NavBar() {
                 </a>
                 <a
                   className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
-                  href="https://bacplus.ro"
+                  href="https://bacplus.ro/top_licee/2023"
                   target="_blank"
                 >
                   <FaSchool /> Top Licee

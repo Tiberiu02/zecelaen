@@ -20,9 +20,9 @@ export async function Test({ testId }: { testId: string }) {
     <>
       {exam.sections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="flex flex-col items-center gap-2">
-          <h1 className="text-base w-fit md:w-fit self-center text-center font-semibold bg-white rounded-full md:text-left text-black/40 mt-8 mb-2 py-2 px-4 border-[1px] border-gray-200 shadow">
+          <h2 className="text-base w-fit md:w-fit self-center text-center font-semibold bg-white rounded-full md:text-left text-black/40 mt-8 mb-2 py-2 px-4 border-[1px] border-gray-200 shadow">
             {section.title}
-          </h1>
+          </h2>
           {section.questions.map(async (question, questionIndex) => (
             <Exercise
               key={questionIndex}

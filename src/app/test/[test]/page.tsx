@@ -29,13 +29,16 @@ export default async function Page({ params }: { params: { test: string } }) {
       <NavBar />
 
       <div className="flex flex-col items-center md:px-4 w-full max-w-5xl">
-        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pb-6 md:pb-4">
-          <div className="flex flex-row items-center gap-4 w-full px-1">
-            <SubLogo seed={test.id} className="w-10 h-10 shrink-0" />
+        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pt-6 pb-6 md:pb-4">
+          <div className="flex flex-row items-center gap-6 w-full px-1">
+            <SubLogo
+              seed={test.id}
+              className="w-12 h-12 shrink-0 hidden md:block"
+            />
             <div className="flex mr-auto flex-col">
-              <div className="text-lg font-medium [text-wrap:balance]">
+              <h1 className="text-lg font-medium [text-wrap:balance]">
                 {test.fullName}
-              </div>
+              </h1>
               <div className="w-fit font-semibold text-sm opacity-40">
                 {fullDate(test.date)}
               </div>
@@ -79,7 +82,7 @@ export default async function Page({ params }: { params: { test: string } }) {
               </a>
             </div>
             {/* <div className="w-full"></div> */}
-            <div className="grid grid-cols-3 gap-2">
+            <div className="md:grid grid-cols-3 gap-2 hidden">
               <ShareButtons />
             </div>
           </div>

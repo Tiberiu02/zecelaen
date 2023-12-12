@@ -123,7 +123,7 @@ export function Exercise({
           </div>
         )}
       </div>
-      <div className="font-normal text-lg text-left w-full flex flex-col mt-4 gap-4 items-left">
+      <h3 className="font-normal text-lg text-left w-full flex flex-col mt-4 gap-4 items-left">
         {parseKatex(description)}
         {image && (
           <img
@@ -132,7 +132,7 @@ export function Exercise({
             style={{ maxWidth: `${imageSize || 20}rem` }}
           />
         )}
-      </div>
+      </h3>
       {subExercises &&
         subExercises.map((sub, i) => (
           <div key={i}>
