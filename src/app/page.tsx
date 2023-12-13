@@ -56,7 +56,7 @@ export default async function Page() {
             O platformă nouă în România
           </h1>
 
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2">
             <div className="flex items-center gap-4">
               <svg
                 width="90"
@@ -76,7 +76,7 @@ export default async function Page() {
                   fill="#FF6363"
                 />
               </svg>
-              <div>
+              <div className="max-w-sm">
                 <b>Subiecte oficiale</b> de la examenele și simulările din anii
                 trecuți
               </div>
@@ -99,7 +99,7 @@ export default async function Page() {
                   fill="#19CE15"
                 />
               </svg>
-              <div>
+              <div className="max-w-sm">
                 <b>Grile interactive</b> cu care nu vei mai pierde timpul
                 verificând baremul
               </div>
@@ -107,7 +107,7 @@ export default async function Page() {
 
             <div className="flex items-center gap-4">
               <FaCirclePlay className="text-lg w-10 h-10 shrink-0 text-[#ff6363]" />
-              <div>
+              <div className="max-w-sm">
                 <b>Rezolvări video</b> pentru fiecare exercițiu, aflate direct
                 sub exercițiul respectiv
               </div>
@@ -115,7 +115,7 @@ export default async function Page() {
 
             <div className="flex items-center gap-4">
               <FaDiscord className="text-4xl w-10 h-10 shrink-0 text-[#5865F2]" />
-              <div>
+              <div className="max-w-sm">
                 <b>Server Discord.</b> Nu suntem doar o platformă, ci o
                 comunitate!
               </div>
