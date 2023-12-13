@@ -88,7 +88,7 @@ d. $110^\circ$
 
 ## 3. 5p
 
-Fie $\triangle ABC$ în care $\angle A = 60^\circ$ și $\angle B < \frac{\angle B + \angle C}{2}$. Dacă $BC = 2cm$, atunci perimetrul $\triangle ABC$ este:
+Fie $\triangle ABC$ în care $\angle A = 60^\circ$ și $\angle B =  \frac{\angle B + \angle C}{2}$. Dacă $BC = 2cm$, atunci perimetrul $\triangle ABC$ este:
 
 a. $7$ cm
 b. $5$ cm
@@ -142,7 +142,7 @@ Câți kilometri a parcurs excursionistul în a doua zi?
 
 ## 2. 5p
 
-Se consideră numerele $a = \frac{9}{\sqrt{3}} - \frac{3}{2} \sqrt{1 + \frac{1}{3} + \frac{5}{7}}$ și $b = \sqrt{12} - \sqrt{8}$.
+Se consideră numerele $a = \frac{9}{\sqrt{3}} - \frac{3}{2} \sqrt{1 + \frac{1}{3}} + \sqrt{\frac{14}{5} \cdot\frac{20} {7}}$ și $b = \sqrt{12} - \sqrt{8}$.
 
 ### a. 2p
 
@@ -180,7 +180,7 @@ Demonstrați că $OA \perp DE$.
 
 ## 5. 5p
 
-Se consideră paralelogramul $ABCD$ având aria $32cm^2$. Fie $E$ mijlocul segmentului $AB$ și $F$ este pe $CE$ astfel încât $CF = 2EF$.
+Se consideră paralelogramul $ABCD$ având aria $32cm^2$. Fie $E$ mijlocul segmentului $AB$ și $F$ $\in$ $CE$ astfel încât $CF = 2EF$.
 
 ![Imagine](img/3-5.png)
 

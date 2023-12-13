@@ -68,6 +68,12 @@ export const tests = [
     id: "2023_SIM_MM",
     date: "16.11.2022",
   },
+  {
+    name: "Simulare Giurgiu",
+    fullName: "Simulare Giurgiu Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_GR",
+    date: "20.02.2023"
+  },
 ] as const;
 
 export function getKey(name: string) {
