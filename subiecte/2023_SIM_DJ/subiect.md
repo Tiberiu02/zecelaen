@@ -33,7 +33,7 @@ d. $\frac{1}{2}$
 
 $\begin{array}{|c|c|c|c|c|c|c|}
 \hline
-\text{Notă} & 5 & 6 & 7 & 8 & 9 & 10 \\
+\text{Nota} & 5 & 6 & 7 & 8 & 9 & 10 \\
 \hline
 \text{Numărul elevilor} & 9 & 11 & 16 & 13 & 7 & 4 \\
 \hline

@@ -62,6 +62,12 @@ export const tests = [
     id: "2023_SIM_BR",
     date: "17.01.2023",
   },
+  {
+    name: "Simulare Maramureș",
+    fullName: "Simulare Maramureș Evaluarea Națională Matematică 2023",
+    id: "2023_SIM_MM",
+    date: "16.11.2022",
+  },
 ] as const;
 
 export function getKey(name: string) {

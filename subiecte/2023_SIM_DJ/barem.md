@@ -50,6 +50,22 @@
 
 (1p) $(x+3)^2+1>0$, oricare ar fi $x \in \mathbb{R}$
 
+## 3.
+
+### a.
+
+(1p) $a = -\frac{\sqrt{3}}{3} \cdot \sqrt{3} - (-2)$
+
+(1p) $a = 1$
+
+### b.
+
+(1p) $b = \left( \frac{\sqrt{6}}{3} + \frac{2\sqrt{6}}{3} \right) \cdot \sqrt{6} - \left( \frac{\sqrt{3}}{3} + \frac{2}{\sqrt{3}} \right) \cdot \sqrt{3}$
+
+(1p) $b = 3$
+
+(1p) $x = 2$ și $2$ este număr natural
+
 ## 4.
 
 ### a.
