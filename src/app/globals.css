@@ -30,6 +30,10 @@
             linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
             linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
     }
+
+    .balance-lines {
+        text-wrap: balance;
+    }
 }
 
 .katex {
