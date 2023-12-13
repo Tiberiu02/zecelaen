@@ -128,7 +128,7 @@ export function Exercise({
         {image && (
           <img
             src={image}
-            className="self-center w-full"
+            className="self-center w-full grayscale"
             style={{ maxWidth: `${imageSize || 20}rem` }}
           />
         )}
