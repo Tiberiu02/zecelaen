@@ -22,7 +22,7 @@ export default async function Page() {
             </div>
             <div className="text-xl leading-8 space font-normal">
               <FaExclamationCircle className="inline text-blue-500 mr-2 text-2xl" />{" "}
-              Spune-ne ce să mai adăugăm pe ZeceLaEN.ro
+              Spune-ne ce vrei să adăugăm pe ZeceLaEN.ro
             </div>
             <div className="text-xl leading-8 space font-normal">
               <FaUsers className="inline text-blue-500 mr-2 text-2xl" /> Sunt

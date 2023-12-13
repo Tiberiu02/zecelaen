@@ -13,7 +13,7 @@
     "@formkit/auto-animate": "^0.8.1",
     "@rive-app/react-canvas": "^4.5.6",
     "@types/react-katex": "^3.0.3",
-    "next": "13.5.6",
+    "next": "^14.0.4",
     "random-seedable": "^1.0.8",
     "react": "^18",
     "react-dom": "^18",

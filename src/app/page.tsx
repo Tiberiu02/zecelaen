@@ -6,11 +6,21 @@ import { FaCirclePlay, FaDiscord } from "react-icons/fa6";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Link from "next/link";
 import { IconRoFlag, IconCheckMarkStack } from "@/components/Icons";
+import { RuntimeLoader } from "@rive-app/react-canvas";
+
+const riveWASMResource = "https://unpkg.com/@rive-app/canvas@2.7.6/rive.wasm";
+RuntimeLoader.setWasmUrl(riveWASMResource);
 
 export default async function Page() {
+  const ageTM =
+    new Date().getFullYear() - 2003 + (new Date().getMonth() >= 6 ? 1 : 0);
+
   return (
     <main className="flex flex-col">
       <NavBar showStats={false} />
+
+      <link rel="preload" href="/animations/fig1.riv" as="fetch" />
+      <link rel="preload" href={riveWASMResource} as="fetch" />
 
       <div className="w-full bg-math flex flex-col overflow-hidden">
         <div
@@ -33,7 +43,7 @@ export default async function Page() {
               Prima platformă educațională gratuită dedicată Evaluării Naționale
             </h2>
             <Link href="/teste-matematica">
-              <Button className="px-6 py-2 w-fit font-medium text-lg mt-8 flex gap-4 items-center sm:-ml-1">
+              <Button className="px-6 py-2 w-fit font-medium text-lg mt-8 flex gap-2 items-center sm:-ml-1">
                 {/* <BiMath /> */}
                 Teste matematică
                 <FaAngleDoubleRight />
@@ -81,6 +91,33 @@ export default async function Page() {
                 comunitate!
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center bg-white px-8 mt-64 gap-4">
+        <h1 className="text-3xl text-center font-semibold mb-16">
+          Cine suntem?
+        </h1>
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 max-w-3xl">
+          <img
+            src="/tiberiu.webp"
+            alt="Tiberiu Mușat"
+            className="rounded-full w-48 self-center sm:self-start"
+          />
+          <div className="text-lg">
+            Mă numesc <b>Tiberiu Mușat</b>, am {ageTM} de ani, și sunt creatorul
+            Zece la EN. Am învățat la Colegiul Național de Informatică Tudor
+            Vianu, iar acum studiez inteligența artificială în Elveția. În liceu
+            am obținut două medalii de argint la Olimpiada Internațională de
+            Informatică (Singapore 2021, Tokyo 2018) și mai multe premii la
+            concursuri internaționale și naționale de informatică, fizică și
+            matematică.
+            <br />
+            <br />
+            Sunt convins că tehnologia poate avea un rol major în procesul
+            educațional. Visul meu este să creez cea mai bună platformă
+            educațională din lume, în România, modelată special pentru sistemul
+            românesc.
           </div>
         </div>
       </div>
