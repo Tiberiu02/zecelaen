@@ -19,8 +19,18 @@ export default async function Page() {
     <main className="flex flex-col">
       <NavBar showStats={false} />
 
-      <link rel="preload" href="/animations/fig1.riv" as="fetch" />
-      <link rel="preload" href={riveWASMResource} as="fetch" />
+      <link
+        rel="preload"
+        href="/animations/fig1.riv"
+        as="fetch"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href={riveWASMResource}
+        as="fetch"
+        crossOrigin="anonymous"
+      />
 
       <div className="w-full bg-math flex flex-col overflow-hidden">
         <div
