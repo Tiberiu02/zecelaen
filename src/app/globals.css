@@ -9,11 +9,6 @@
         src: url('/KaTeX_RO_Main-Regular.woff2');
     }
 
-    .bg-anti-math {
-        background-color: hsla(0, 0%, 98%, 0.8);
-        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
-    }
-
     html {
         -webkit-tap-highlight-color: transparent;
     }
@@ -30,6 +25,13 @@
             linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
             linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
     }
+
+    .bg-anti-math {
+        /* background-color: hsla(0, 0%, 98%, 0.8);
+        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8) */
+        filter: drop-shadow(0px 0px 10px hsl(0, 0%, 98%)) drop-shadow(5px 0px 5px hsl(0, 0%, 98%)) drop-shadow(-5px 0px 5px hsl(0, 0%, 98%)) drop-shadow(0px 5px 5px hsl(0, 0%, 98%)) drop-shadow(0px -5px 5px hsl(0, 0%, 98%));
+    }
+    
 
     .balance-lines {
         text-wrap: balance;
