@@ -60,7 +60,7 @@ $\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lu
 ### a.
 
 (1p) Deoarece $\triangle ABC$ este isoscel $\Rightarrow \angle ABC = \angle ACB \Rightarrow \angle DBC = \angle ECB$
-(1p) Dar $BC = BC$, $DB = AB = AC = CE \Rightarrow \triangle BDC = \triangle CEB \Rightarrow BE = CD$
+(1p) Dar $BC = BC$, $DB = AB = AC = CE \xRightarrow{\text{LUL}} \triangle BDC \equiv \triangle CEB \Rightarrow BE = CD$
 
 ### b.
 
@@ -78,21 +78,21 @@ Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $O
 ### b.
 
 (1p) $CE$ este mediană în $\triangle CBA$, $CF = \frac{2}{3} CE$, deci punctul $F$ este centrul de greutate al $\triangle CBA$
-(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $BO este mediană în $\triangle CBA$
-$\Rightarrow F \in BO$
-Dar $O \in BD$ $\Rightarrow FBD$ sunt coliniare
+(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $BO este mediană în $\triangle CBA$ $\Rightarrow F \in BO$
+Dar $O \in BD$ $\Rightarrow F \in BD$ $\Rightarrow$ punctele $B$, $F$, $D$ sunt coliniare
 
 ## 6.
 
 ### a.
 
-(1p) $\triangle ABCD$ piramidă patrulateră regulată $\Rightarrow \angle VAB = \angle VBA \Rightarrow \triangle VAB$ este isoscel
+(1p) $ ABCD$ piramidă patrulateră regulată $\Rightarrow \angle VAB = \angle VBA \Rightarrow \triangle VAB$ este isoscel
+$\Rightarrow \angle VAB = \angle VBA$ = 70$^\circ$
 (1p) Atunci $\angle AVB = 180^\circ - (\angle VAB + \angle VBA) = 180^\circ - 140^\circ = 40^\circ$
 
 ### b.
 
 (1p) Desfășurăm în plan fețele $VAB$, $VBC$ și $VCD$ atunci suma $AE + EF + FD$ rămâne neschimbată după desfășurare. 
 (1p) Această sumă este minimă dacă $A, E, F, D$ sunt coliniare. 
-Dar $\triangle VAD$ obținut după desfășurare este isoscel cu $\angle VAD = 3 \cdot 40^\circ = 120^\circ$. Atunci
+Dar $\triangle VAD$ obținut după desfășurare este isoscel cu $\angle AVD = 3 \cdot 40^\circ = 120^\circ$. Atunci
 $\angle VDA = \angle VAD = 30^\circ$. Ducem $VM \perp AD, M \in AD$, în $\triangle VMA(\angle M = 90^\circ, \angle A = 30^\circ) \Rightarrow VM = \frac{1}{2} VA = 6 \text{cm}$, deci
 $AM^2 = VA^2 - VM^2 \Rightarrow AM = \sqrt{144 - 36} = \sqrt{108} = 6\sqrt{3} \text{cm}$, deci $AD = 12\sqrt{3} \text{cm}$
