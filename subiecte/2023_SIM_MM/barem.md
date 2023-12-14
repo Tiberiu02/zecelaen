@@ -23,6 +23,7 @@
 ### a.
 
 (2p) Presupunem că lungimea traseului este de $100 \text{ km}$. Atunci în prima zi parcurge $\frac{1}{4} \cdot 100 = 25 \text{ km}$ și rămân $100 - 25 = 75 \text{ km}$. În a doua zi parcurge $\frac{2}{3} \cdot 75 = 50 \text{ km}$ și rămân pentru a treia zi $25 \text{ km}$ ceea ce este fals. Deci lungimea nu poate fi $100 \text{ km}$.
+$\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lungimea drumului nu poate fi 100 km se punctează cu 2 pct.}$
 
 ### b.
 
@@ -34,7 +35,7 @@
 
 ### a.
 
-(1p) $a = \frac{9\sqrt{3}}{3} - \frac{3}{2} \sqrt{3} + \sqrt{8}$
+(1p) $a = \frac{9\sqrt{3}}{3} - \frac{3}{2} \sqrt\frac{4}{3} + \sqrt{8}$
 (1p) $a = 3\sqrt{3} - \sqrt{3} + 2\sqrt{2} = 2\sqrt{3} + 2\sqrt{2}$
 
 ### b.
@@ -63,22 +64,23 @@
 
 ### b.
 
-(1p) Din a. $\Rightarrow \angle DCB = \angle ECB \Rightarrow \angle OBC = \angle OCB$
-(1p) $\Rightarrow OB = OC = OE \Rightarrow OD = OE$
+(1p) Din a. $\Rightarrow \angle DCB = \angle EBC \Rightarrow \angle OBC = \angle OCB \Rightarrow\triangle OBC $ este isoscel
+$\Rightarrow OB = OC = OE \Rightarrow OD = OE$
 Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $OA$ este mediatoarea lui $DE$ $\Rightarrow OA \perp DE$
 
 ## 5.
 
 ### a.
 
-(1p) $ABCD$ paralelogram $\Rightarrow \triangle ABC = \triangle DCA$
-(1p) Dar $CE$ este mediană în $\triangle ACB \Rightarrow A_{CEB} = \frac{1}{2} A_{BAC} = 8 \text{cm}^2$
+(1p) $ABCD$ paralelogram $\Rightarrow \triangle BAC = \triangle DAC$ $\Rightarrow A_{BAC} = A_{DCA} =\frac{1}{2} A_{ABCD} = 16 \text{cm}^2$
+(1p) Dar $CE$ este mediană în $\triangle CAB \Rightarrow A_{CEB} = \frac{1}{2} A_{BAC} = 8 \text{cm}^2$
 
 ### b.
 
-(1p) $CE$ este mediană în $\triangle ACB$, $CF = \frac{2}{3} CE$, deci punctul $F$ este centrul de greutate al $\triangle ACB$
-(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow F \in BO$
-Dar $O \in BD \Rightarrow FBD$ sunt coliniare
+(1p) $CE$ este mediană în $\triangle CBA$, $CF = \frac{2}{3} CE$, deci punctul $F$ este centrul de greutate al $\triangle CBA$
+(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $BO este mediană în $\triangle CBA$
+$\Rightarrow F \in BO$
+Dar $O \in BD$ $\Rightarrow FBD$ sunt coliniare
 
 ## 6.
 

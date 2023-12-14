@@ -2,7 +2,7 @@
 
 ## 1. 5p
 
-Rezultatul calculului $\frac{1}{2} + \frac{1}{3} + \frac{1}{6}$ este egal cu:
+Rezultatul calculului $\frac{1}{2} + \frac{1}{3} + \frac{1}{6}$ este:
 
 a. $\frac{3}{11}$
 b. $1$
@@ -11,7 +11,7 @@ d. $\frac{7}{6}$
 
 ## 2. 5p
 
-Cel mai mare număr întreg din intervalul $[-3, 4]$ este:
+Cel mai mare număr întreg din intervalul $[-3, 4 )$ este:
 
 a. $4$
 b. $-3$
@@ -38,7 +38,7 @@ d. $3$
 
 ## 5. 5p
 
-În tabelul de mai jos sunt prezentate temperaturile maxime măsurate într-o săptămână.
+Temperatura maximă măsurată este prezentată în tabelul următor:
 
 $\begin{array}{|c|c|c|c|c|c|}
 \hline
@@ -57,7 +57,7 @@ d. Marți și Joi
 
 ## 6. 5p
 
-Dacă numerele reale $a$ și $b$ sunt direct proporționale cu $2$ și $3$, iar $a + 2b = 20$, atunci egalitatea $a + 2b = 30$ este:
+Dacă numerele reale $a$ și $b$ sunt direct proporționale cu $2$ și $3$, iar $a + b = 20$, atunci egalitatea $a + 2b = 30$ este:
 
 a. Adevărată
 b. Falsă
@@ -108,7 +108,7 @@ d. $6$ cm
 
 ## 5. 5p
 
-Fie $AB$ diametrul în cercul de centru $O$ și rază $10$ cm și $CD \perp AB$. Dacă $AC = 10\sqrt{3}$ cm, atunci aria triunghiului $\triangle ADC$ este:
+Fie $AB$ diametrul în cercul de centru $O$ și rază $10$ cm și $CD \perp AB$. Dacă $AC = 10\sqrt{3}$ cm, atunci aria triunghiului $\ ADC$ este:
 
 ![Imagine](img/2-5.png)
 
@@ -166,7 +166,7 @@ Aflați cardinalul mulțimii $A \cap B$.
 
 ## 4. 5p
 
-În exteriorul triunghiului isoscel $\triangle ABC$ ($AB = AC$) se construiesc triunghiurile echilaterale $\triangle ABD$ și $\triangle ACE$. Notăm $BE \cap CD = \{O\}$.
+În exteriorul triunghiului isoscel $\ ABC$ ($AB = AC$) se construiesc triunghiurile echilaterale $\ ABD$ și $\ ACE$. Notăm $BE \cap CD = \{O\}$.
 
 ![Imagine](img/3-4.png)
 
