@@ -1,8 +1,11 @@
-import { getTest } from "@/tests/tests";
+import { getTest, testsById } from "@/tests/tests";
 import { Exercise } from "./Exercise";
 
 export async function Test({ testId }: { testId: string }) {
+  const examMeta = testsById[testId];
   const exam = getTest(testId);
+
+  console.log(testId, examMeta);
 
   for await (const section of exam.sections) {
     for await (const exercise of section.questions) {
@@ -40,6 +43,7 @@ export async function Test({ testId }: { testId: string }) {
               )}
               image={question.image}
               imageSize={question.imageSize}
+              videoUrl={examMeta?.videos?.[sectionIndex]?.[questionIndex]}
             />
           ))}
         </div>
