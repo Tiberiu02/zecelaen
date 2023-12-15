@@ -20,7 +20,7 @@ d. $2$
 
 ## 3. 5p
 
-Dintre numerele $\sqrt{27}, 7, \frac{20}{3} și 4\sqrt{3}$ mai mare este:
+Dintre numerele $\sqrt{27}, 7, \frac{20}{3}$ și $4\sqrt{3}$ mai mare este:
 
 a. $\frac{20}{3}$
 b. $\sqrt{27}$
@@ -54,7 +54,8 @@ $\begin{array}{|c|c|c|c|c|}
 \hline
 \text{Andrei} & \text{Bogdan} & \text{Ciprian} & \text{Dan} \\
 \hline
- \frac{16}{6} = \frac{9}{24} & \frac{9}{6} = \frac{24}{16} & \frac{6}{24} = \frac{9}{16} & \frac{9}{24} = \frac{6}{16} \\
+ \frac{16}{6} = \frac{9}{24} & \frac{9}{6} = \frac{24}{16} & \frac{6}{24} 
+ = \frac{9}{16} & \frac{9}{24} = \frac{6}{16} \\
 \hline
 \end{array}$
 
@@ -78,9 +79,7 @@ b. Adevărată
 
 În figura alăturată este reprezentat segmentul $AB$ cu lungimea de $10$ cm.
 
-Punctul $A$ este mijlocul segmentului $CB$, iar punctul $D$ este simetricul punctului $C$ față de punctul $B$.
-
-Lungimea segmentului $AD$ este:
+Punctul $A$ este mijlocul segmentului $CB$, iar punctul $D$ este simetricul punctului $C$ față de punctul $B$. Lungimea segmentului $AD$ este:
 
 a. $10$ cm
 b. $20$ cm
@@ -152,13 +151,13 @@ d. $72$ cm
 
 ## 1. 5p
 
-Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unui zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu ($2509$m), parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu ($2544$m), iar în a treia etapă a mers cu $50\%$ mai mult decât în a doua etapă, mergând până pe vârful Dara ($2500$m).
+Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unui zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu $2509$m, parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu $2544$m, iar în a treia etapă a mers cu $50\%$ mai mult decât în a doua etapă, mergând până pe vârful Dara $2500$m.
 
-### a. (2p) a
+### a. 2p
 
 Verifică dacă distanța parcursă în cea de-a treia etapă este mai mare decât cea parcursă în primele două etape la un loc ?
 
-### b. (3p) b
+### b. 3p
 
 Știind că lungimea traseului este de $27$ km, determinați care este distanța parcursă în a doua etapă.
 
@@ -166,11 +165,11 @@ Verifică dacă distanța parcursă în cea de-a treia etapă este mai mare dec�
 
 Se consideră mulțimile: $ A = \{x \in \mathbb{R} /|x + 1| \leq 3\} $ și $ B = \{x \in \mathbb{R} \mid -1 < \frac{2x-1}{-3}\leq -1 $}.
 
-### a. (2p) a
+### a. 2p
 
 Verificați dacă $0 \in A$.
 
-### b. (3p) b
+### b. 3p
 
 Determinați $A \cap B$.
 
@@ -178,11 +177,11 @@ Determinați $A \cap B$.
 
 Se dau numerele $a = \sqrt{3} (4\sqrt{2} + 3\sqrt{3}) - 2(\sqrt{24} + 3)$ și $b = \left|5 - 3\sqrt{3} \right|+ 2 \left(\frac{3}{2} - \frac{\sqrt{3}}{2} \right)\ + \frac{\sqrt{12}}{\sqrt{3}}$.
 
-### a. (2p) a
+### a. 2p
 
 Să se arate că $a = 3$.
 
-### b. (3p) b
+### b. 3p
 
 Determinați cel mai mic număr real nenul $n$ pentru care $n \cdot a \cdot b \in \mathbb{N}$.
 
@@ -190,11 +189,11 @@ Determinați cel mai mic număr real nenul $n$ pentru care $n \cdot a \cdot b \i
 
 În triunghiul echilateral $ABC$, se consideră $D$ și $E$ mijloacele segmentelor $BC$ și $BD$ astfel încât $BE=3$cm.
 
-### a. (2p) a
+### a. 2p
 
 Arătați că perimetrul triunghiului $ABC$ este de $36$ cm;
 
-### b. (3p) b
+### b. 3p
 
 Aflați distanța de la punctul $C$ la dreapta $AE$.
 
@@ -204,11 +203,11 @@ Aflați distanța de la punctul $C$ la dreapta $AE$.
 
 În cercul de centru $O$ și rază $8$ cm, se consideră diametrele $AC$ și $BD$ astfel încât unghiul $AOB$ să fie de $60^\circ$.
 
-### a. (2p) a
+### a. 2p
 
 Aflați măsura arcului $BC$;
 
-### b. (3p) b
+### b. 3p
 
 Fie $M$ și $N$ picioarele perpendicularelor duse din $A$ pe $BD$ și respectiv, din $D$ pe $AC$. Să se afle perimetrul triunghiului $MON$.
 
@@ -218,11 +217,11 @@ Fie $M$ și $N$ picioarele perpendicularelor duse din $A$ pe $BD$ și respectiv,
 
 Fie piramida patrulateră regulată $VABCD$ în care $VB=CD=6$cm și $M$ este mijlocul laturii $CD$.
 
-### a. (2p) a
+### a. 2p
 
 Arătați că aria unei fețe laterale este $9\sqrt{3}$;
 
-### b. (3p) b
+### b. 3p
 
 Aflați sinusul unghiului dintre dreptele $VM$ și $BD$.
 
