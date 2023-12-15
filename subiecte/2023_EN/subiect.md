@@ -38,7 +38,7 @@ d. 12
 
 ## 5. 5p
 
-Profesorul întreabă care este cel mai mare număr întreg din intervalul (2, -5). Răspunsurile date de elevii Andreea, Marina, David și Vlad sunt prezentate în tabelul de mai jos:
+Profesorul întreabă care este cel mai mare număr întreg din intervalul (-2, 5). Răspunsurile date de elevii Andreea, Marina, David și Vlad sunt prezentate în tabelul de mai jos:
 
 $\begin{array}{|c|c|c|c|}
 \hline
