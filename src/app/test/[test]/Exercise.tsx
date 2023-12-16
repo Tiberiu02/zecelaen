@@ -7,6 +7,7 @@ import { useState } from "react";
 import { FaAngleDown, FaAngleUp, FaStar, FaVideo } from "react-icons/fa6";
 import { BlockMath } from "react-katex";
 import { twMerge } from "tailwind-merge";
+import YouTube from "react-youtube";
 
 function parseKatex(str: string) {
   return (
@@ -24,7 +25,7 @@ function parseKatex(str: string) {
                   )}
                 >
                   <BlockMath
-                    math={`\\def,{{\\char\`,}} {${s.replaceAll(
+                    math={`\\def\\arraystretch{1.5} \\def,{{\\char\`,}} {${s.replaceAll(
                       ", ",
                       ",\\text{ }"
                     )}}`}
@@ -70,6 +71,7 @@ export function Exercise({
   image,
   imageSize,
   subExercises,
+  videoUrl,
 }: {
   description: string;
   points?: number;
@@ -86,6 +88,7 @@ export function Exercise({
       points: number;
     }[];
   }[];
+  videoUrl?: string;
 }) {
   const [chosen, setChosen] = useState<number | null>(null);
   const [score, setScore] = useState<number | null>(null);
@@ -128,7 +131,7 @@ export function Exercise({
         {image && (
           <img
             src={image}
-            className="self-center w-full"
+            className="self-center w-full grayscale"
             style={{ maxWidth: `${imageSize || 20}rem` }}
           />
         )}
@@ -197,13 +200,36 @@ export function Exercise({
           ))}
         </div>
       )}
-      {showSolution && (
+      {showSolution && videoUrl && (
         <div className="flex flex-col gap-4 mt-8">
           <div className="font-semibold text-lg">Rezolvare</div>
 
-          <div className="bg-blue-500 text-white aspect-video w-full rounded-2xl flex items-center justify-center gap-4 flex-col">
-            <FaVideo className="text-3xl" />
-            <div>video will be here</div>
+          <div className="relative w-screen self-center sm:w-full shadow overflow-hidden sm:rounded-2xl bg-black">
+            <svg
+              className="spinner absolute top-1/2 left-1/2 transform -mx-6 -my-6 w-12 h-12"
+              width="65px"
+              height="65px"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                fill="none"
+                stroke-width="6"
+                stroke-linecap="round"
+                cx="33"
+                cy="33"
+                r="30"
+              ></circle>
+            </svg>
+            <YouTube
+              videoId={videoUrl?.split("=").at(-1) || ""}
+              className="relative w-full aspect-video" // -my-[3%]"
+              iframeClassName="h-full w-full" //h-[1000%] w-[1000%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.1]"
+              opts={{
+                playerVars: { rel: 0 },
+              }}
+              title="YouTube video player"
+            />
           </div>
         </div>
       )}
@@ -276,7 +302,7 @@ export function Exercise({
           </div>
         </div>
       )}
-      {(chosen != null || !options) && (
+      {((chosen != null && videoUrl) || !options) && (
         <button
           className="flex w-fit self-center duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50 whitespace-nowrap"
           onClick={() => setShowSolution(!showSolution)}

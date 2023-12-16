@@ -9,11 +9,6 @@
         src: url('/KaTeX_RO_Main-Regular.woff2');
     }
 
-    .bg-anti-math {
-        background-color: hsla(0, 0%, 98%, 0.8);
-        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8)
-    }
-
     html {
         -webkit-tap-highlight-color: transparent;
     }
@@ -30,8 +25,49 @@
             linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
             linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
     }
+
+    .bg-anti-math {
+        /* background-color: hsla(0, 0%, 98%, 0.8);
+        box-shadow: 0px 0px 10px 5px hsla(0, 0%, 98%, 0.8) */
+        filter: drop-shadow(0px 0px 10px hsl(0, 0%, 98%)) drop-shadow(5px 0px 5px hsl(0, 0%, 98%)) drop-shadow(-5px 0px 5px hsl(0, 0%, 98%)) drop-shadow(0px 5px 5px hsl(0, 0%, 98%)) drop-shadow(0px -5px 5px hsl(0, 0%, 98%));
+    }
+    
+
+    .balance-lines {
+        text-wrap: balance;
+    }
 }
 
 .katex {
     font-family: "KatexRO", sans-serif !important;
+}
+
+.spinner {
+  animation: rotator 1.4s linear infinite;
+  stroke: #fff;
+}
+
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.spinner > circle {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash 1.4s ease-in-out infinite;
+}
+
+@keyframes dash {
+ 0% { stroke-dashoffset: 187; }
+ 50% {
+   stroke-dashoffset: 46.75;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: 187;
+   transform:rotate(450deg);
+ }
 }

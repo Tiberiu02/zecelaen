@@ -55,6 +55,16 @@ export const tests = [
     fullName: "Simulare Dolj Evaluarea Națională Matematică 2023",
     id: "2023_SIM_DJ",
     date: "07.02.2023",
+    videos: [
+      [
+        "https://www.youtube.com/watch?v=Y9uCQbCRxDQ",
+        "https://www.youtube.com/watch?v=hcEKa0uQzM4",
+        "https://www.youtube.com/watch?v=pXMEw_y1UsA",
+        "https://www.youtube.com/watch?v=pj41Rbbxa-o",
+        "https://www.youtube.com/watch?v=haWbElpIdz4",
+        "https://www.youtube.com/watch?v=8IihCgdbZn4",
+      ],
+    ],
   },
   {
     name: "Simulare Ilfov",
@@ -84,9 +94,15 @@ export const tests = [
     name: "Simulare Giurgiu",
     fullName: "Simulare Giurgiu Evaluarea Națională Matematică 2023",
     id: "2023_SIM_GR",
-    date: "20.02.2023"
+    date: "20.02.2023",
   },
-] as const;
+] as {
+  name: string;
+  fullName: string;
+  id: string;
+  date: string;
+  videos?: string[][];
+}[];
 
 export function getKey(name: string) {
   return name
@@ -111,6 +127,10 @@ export const testsByYear = tests.reduce((acc, test) => {
 
 export const testsByKey = Object.fromEntries(
   tests.map((test) => [getKey(test.fullName), test])
+);
+
+export const testsById = Object.fromEntries(
+  tests.map((test) => [test.id, test])
 );
 
 export function getTest(id: string) {

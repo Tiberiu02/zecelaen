@@ -1,6 +1,10 @@
-import { LCG, PCG } from "random-seedable";
-import { CSSProperties } from "react";
+"use client";
+
+import { PCG } from "random-seedable";
+import { useContext } from "react";
+import type { CSSProperties } from "react";
 import { twMerge } from "tailwind-merge";
+import { HoverContext } from "./Button";
 
 function createTrianglePath(
   centerX: number,
@@ -80,6 +84,7 @@ function createTrianglePath(
 
   return path;
 }
+
 function createSquarePath(
   centerX: number,
   centerY: number,
@@ -190,36 +195,13 @@ function createEllipsePath(
   return path;
 }
 
-function createCirclePath(
+function createFatEllipsePath(
   cx: number,
   cy: number,
   radius: number,
   angle: number
 ) {
   return createEllipsePath(cx, cy, radius * 0.9, angle, 0.8);
-}
-
-function blendMax(color1: string, color2: string) {
-  const c1 = color1.replace("#", "");
-  const c2 = color2.replace("#", "");
-
-  const r1 = parseInt(c1.substring(0, 2), 16);
-  const g1 = parseInt(c1.substring(2, 4), 16);
-  const b1 = parseInt(c1.substring(4, 6), 16);
-
-  const r2 = parseInt(c2.substring(0, 2), 16);
-  const g2 = parseInt(c2.substring(2, 4), 16);
-  const b2 = parseInt(c2.substring(4, 6), 16);
-
-  const r = Math.max(r1, r2);
-  const g = Math.max(g1, g2);
-  const b = Math.max(b1, b2);
-
-  const rHex = r.toString(16).padStart(2, "0");
-  const gHex = g.toString(16).padStart(2, "0");
-  const bHex = b.toString(16).padStart(2, "0");
-
-  return `#${rHex}${gHex}${bHex}`;
 }
 
 function numFromStr(str: string) {
@@ -230,40 +212,6 @@ function numFromStr(str: string) {
   return num;
 }
 
-function hexToRgb(hex: string) {
-  const c = hex.replace("#", "");
-  const r = parseInt(c.substring(0, 2), 16);
-  const g = parseInt(c.substring(2, 4), 16);
-  const b = parseInt(c.substring(4, 6), 16);
-  return [r, g, b];
-}
-
-function rgbToHex(r: number, g: number, b: number) {
-  const rHex = r.toString(16).padStart(2, "0");
-  const gHex = g.toString(16).padStart(2, "0");
-  const bHex = b.toString(16).padStart(2, "0");
-  return `#${rHex}${gHex}${bHex}`;
-}
-
-function hardLightComputeTopColor(baseColor: string, desiredColor: string) {
-  const base = hexToRgb(baseColor);
-  const desired = hexToRgb(desiredColor);
-
-  const top = [];
-  for (let i = 0; i < 3; i++) {
-    if (desired[i] <= base[i]) {
-      const ratio = desired[i] / base[i];
-      top[i] = 128 * ratio;
-    } else {
-      const ratio = (255 - desired[i]) / (255 - base[i]);
-      top[i] = 255 - 128 * ratio;
-    }
-    top[i] = Math.round(top[i]);
-  }
-
-  return rgbToHex(top[0], top[1], top[2]);
-}
-
 export function SubLogo({
   className = "",
   seed,
@@ -271,6 +219,8 @@ export function SubLogo({
   className?: string;
   seed: number | string;
 }) {
+  const isHovered = useContext(HoverContext);
+
   if (typeof seed === "string") seed = numFromStr(seed);
   const random = new PCG(seed);
 
@@ -334,7 +284,7 @@ export function SubLogo({
       : shape1.type === "square"
       ? createSquarePath
       : shape1.type === "circle"
-      ? createCirclePath
+      ? createFatEllipsePath
       : createEllipsePath
   )(shape1.cx, shape1.cy, shape1.radius, shape1.rotation);
   const pathShape2 = (
@@ -343,7 +293,7 @@ export function SubLogo({
       : shape2.type === "square"
       ? createSquarePath
       : shape2.type === "circle"
-      ? createCirclePath
+      ? createFatEllipsePath
       : createEllipsePath
   )(shape2.cx, shape2.cy, shape2.radius, shape2.rotation);
 
@@ -356,14 +306,18 @@ export function SubLogo({
       xmlns="http://www.w3.org/2000/svg"
       className={twMerge(
         className,
-        "group-hover:rotate-45 rotate-0 duration-150"
+        "rotate-0 duration-150",
+        isHovered && "rotate-45"
       )}
     >
       <defs>
         <clipPath id={`clip-path-${seed}`}>
           <path
             d={pathShape1}
-            className={`duration-150 rotate-0 group-hover:[transform:var(--clip-path-transform)]`}
+            className={twMerge(
+              "duration-150 rotate-0",
+              isHovered && "[transform:var(--clip-path-transform)]"
+            )}
             style={
               {
                 "--clip-path-transform": `translate(${shape2.cx}px,${
@@ -382,7 +336,7 @@ export function SubLogo({
       <path
         d={pathShape1}
         fill={logoColors[0]}
-        className=" group-hover:-rotate-[90deg] duration-150"
+        className={twMerge("duration-150", isHovered && "-rotate-[90deg]")}
         style={{
           transformOrigin: `${shape1.cx}px ${shape1.cy}px`,
         }}
@@ -390,7 +344,10 @@ export function SubLogo({
       <path
         d={pathShape2}
         fill={logoColors[2]}
-        className="mix-ble group-hover:-rotate-[90deg] duration-150"
+        className={twMerge(
+          "mix-ble duration-150",
+          isHovered && "-rotate-[90deg]"
+        )}
         style={{
           transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
         }}
@@ -400,7 +357,7 @@ export function SubLogo({
         fill={logoColors[1]}
         stroke={logoColors[1]}
         strokeWidth="3"
-        className="group-hover:-rotate-[90deg] duration-150"
+        className={twMerge("duration-150", isHovered && "-rotate-[90deg]")}
         clipPath={`url(#clip-path-${seed})`}
         style={{
           transformOrigin: `${shape2.cx}px ${shape2.cy}px`,
