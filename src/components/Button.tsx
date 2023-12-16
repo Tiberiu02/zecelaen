@@ -1,7 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { createContext, useState } from "react";
 import { twMerge } from "tailwind-merge";
+
+export const HoverContext = createContext(false);
 
 export function Button({
   children,
@@ -20,19 +22,15 @@ export function Button({
     <div
       className={twMerge(
         "rounded-full border-[2px] duration-150 shadow bg-white border-gray-200",
-        active &&
-          "cursor-pointer hover:bg-gray-100 hover:shadow-none hover:translate-y-[2px]",
+        active && "cursor-pointer",
         pressed && active && "bg-gray-100 shadow-none translate-y-[2px]",
         className
       )}
       onClick={onClick}
-      onPointerDown={() => setPressed(true)}
-      onPointerUp={() => setPressed(false)}
+      onPointerEnter={() => setPressed(true)}
       onPointerLeave={() => setPressed(false)}
-      onPointerCancel={() => setPressed(false)}
-      onPointerOut={() => setPressed(false)}
     >
-      {children}
+      <HoverContext.Provider value={pressed}>{children}</HoverContext.Provider>
     </div>
   );
 }
