@@ -25,7 +25,7 @@ function parseKatex(str: string) {
                   )}
                 >
                   <BlockMath
-                    math={`\\def,{{\\char\`,}} {${s.replaceAll(
+                    math={`\\def\\arraystretch{1.5} \\def,{{\\char\`,}} {${s.replaceAll(
                       ", ",
                       ",\\text{ }"
                     )}}`}
