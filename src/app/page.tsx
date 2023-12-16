@@ -117,11 +117,10 @@ export default async function Page() {
           <div className="text-lg">
             Mă numesc <b>Tiberiu Mușat</b>, am {ageTM} de ani, și sunt creatorul
             Zece la EN. Am învățat la Colegiul Național de Informatică Tudor
-            Vianu, iar acum studiez inteligența artificială în Elveția. În liceu
-            am obținut două medalii de argint la Olimpiada Internațională de
-            Informatică (Singapore 2021, Tokyo 2018) și mai multe premii la
-            concursuri internaționale și naționale de informatică, fizică și
-            matematică.
+            Vianu, iar acum studiez informatica în Elveția. În liceu am obținut
+            două medalii de argint la Olimpiada Internațională de Informatică
+            (Singapore 2021, Tokyo 2018) și mai multe premii la concursuri
+            internaționale și naționale de informatică, fizică și matematică.
             <br />
             <br />
             Sunt convins că tehnologia poate avea un rol major în procesul
