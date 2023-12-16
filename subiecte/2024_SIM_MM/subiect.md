@@ -73,6 +73,8 @@ b. $2$ cm
 c. $3$ cm
 d. $1,5$ cm
 
+![Imagine](img/2-1.png)
+
 ## 2. 5p
 
 În figura alăturată, punctele $A, O, B$ sunt coliniare, în această ordine, iar măsura unghiului $COD$ este egală cu $100^\circ$. Măsura unghiului format de bisectoarele unghiurilor $AOC$ și $BOD$ este egală cu:
@@ -81,6 +83,8 @@ a. $100^\circ$
 b. $130^\circ$
 c. $140^\circ$
 d. $120^\circ$
+
+![Imagine](img/2-2.png)
 
 ## 3. 5p
 
@@ -91,6 +95,8 @@ b. $15\sqrt{5}$ cm
 c. $12\sqrt{2}$ cm
 d. $15\sqrt{3}$ cm
 
+![Imagine](img/2-3.png)
+
 ## 4. 5p
 
 Triunghiul $ABC$ are perimetrul egal cu 40 cm. Fie $M$ și $N$ mijloacele laturilor $AB$, respectiv $AC$, iar punctul $D$ este proiecția punctului $A$ pe dreapta $BC$. Perimetrul triunghiului $MND$ este egal cu:
@@ -100,6 +106,8 @@ b. $30$ cm
 c. $10$ cm
 d. $15$ cm
 
+![Imagine](img/2-4.png)
+
 ## 5. 5p
 
 Fie $AB$ diametrul în cercul de centru $O$ și rază de lungime egală cu 5 cm. Dacă $CD \perp AB$ și lungimea segmentului $AC$ este egală cu 8 cm, atunci aria pătratului $ACBD$ este egală cu:
@@ -108,6 +116,8 @@ a. $24$ cm²
 b. $25$ cm²
 c. $20$ cm²
 d. $48$ cm²
+
+![Imagine](img/2-5.png)
 
 ## 6. 5p
 
@@ -160,6 +170,8 @@ Determinați $(A \cap B) \cap \mathbb{Z}$.
 
 În figura alăturată, $ABCD$ este un trapez dreptunghic cu $AB = 8$ cm, $BC = CD = 5$ cm.
 
+![Imagine](img/3-4.png)
+
 ### a. 2p
 
 Arătați că aria trapezului $ABCD$ este egală cu 26 cm²;
@@ -172,6 +184,8 @@ Dacă punctul $M$ aparține segmentului $AB$ astfel încât lungimea segmentului
 
 Se consideră triunghiul echilateral $ABC$. Punctele $D$ și $E$ sunt situate pe latura $BC$, astfel încât $BD = DE = EC = 6$ cm.
 
+![Imagine](img/3-5.png)
+
 ### a. 2p
 
 Arătați că perimetrul triunghiului $ABC$ este egal cu 54 cm;
@@ -183,6 +197,8 @@ Calculați sinusul unghiului $\angle DAE$.
 ## 6. 5p
 
 În paralelipipedul dreptunghic $ABCD A'B'C'D'$, cu diagonala $AC'$ de 100 cm, avem $AB = 64$ cm, $BC = 48$ cm, $AA' = 60$ cm, iar $M$ este un punct pe muchia $BB'$.
+
+![Imagine](img/3-6.png)
 
 ### a. 2p
 
