@@ -20,7 +20,8 @@ export const tests = [
     id: "2024_SIM_MM",
     date: "13.12.2023",
   },
-  {name: "Simulare Sibiu",
+  {
+   name: "Simulare Sibiu",
    fullName: "Simulare SIBIU Evaluarea Națională Matematică 2024",
    id: "2024_SIM_SB",
    date: "15.12.2023",

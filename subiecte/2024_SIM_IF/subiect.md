@@ -50,12 +50,12 @@ d. $221$
 
 Patru elevi au format proporții cu numerele $6, 9, 16, 24$, conform datelor din tabel:
 
-$\begin{array}{|c|c|c|c|c|}
+$\begin{array}{|c|c|c|c|}
 \hline
 \text{Andrei} & \text{Bogdan} & \text{Ciprian} & \text{Dan} \\
 \hline
- \frac{16}{6} = \frac{9}{24} & \frac{9}{6} = \frac{24}{16} & \frac{6}{24} 
- = \frac{9}{16} & \frac{9}{24} = \frac{6}{16} \\
+ \large \frac{16}{6} = \frac{9}{24} & \large \frac{9}{6} = \frac{24}{16} & \large \frac{6}{24} 
+ = \frac{9}{16} & \large \frac{9}{24} = \frac{6}{16} \\
 \hline
 \end{array}$
 
