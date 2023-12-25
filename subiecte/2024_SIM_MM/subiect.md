@@ -152,7 +152,7 @@ Arătați că $x = 9 + 6\sqrt{2}$;
 
 ### b. 3p
 
-Determinați numărul pozitiv $y$ pentru care media geometrică a numerelor $x$ și $y$ este $\sqrt{36} + 27\sqrt{2}$.
+Determinați numărul pozitiv $y$ pentru care media geometrică a numerelor $x$ și $y$ este $\sqrt{{36} + 27\sqrt{2}}$.
 
 ## 3. 5p
 
