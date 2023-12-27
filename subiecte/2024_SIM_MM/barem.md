@@ -36,13 +36,15 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 ### a.
 
-(1p) $x = \sqrt{144 + 2\sqrt{18} - (\sqrt{3})^2} = \sqrt{144 + 2\cdot3\sqrt{2} - 3} = \sqrt{141 + 6\sqrt{2}}$
+(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$
 
 (1p) $x = 9 + 6\sqrt{2}$
 
 ### b.
 
-(1p) $\sqrt{x \cdot y} = \sqrt{36 + 27\sqrt{2}} = \sqrt{9(4 + 3\sqrt{2})} = 3\sqrt{4 + 3\sqrt{2}}$
+(1p) $\sqrt{x \cdot y} = \sqrt{36 + 27\sqrt{2}} \Rightarrow y(9 + 6\sqrt{2}) = 9(4 + 3\sqrt{2})$
+
+(1p) $3y(3+2\sqrt{2})$ = $9\sqrt{2}(3+2\sqrt{2})$
 
 (1p) $y = 3\sqrt{2}$
 
