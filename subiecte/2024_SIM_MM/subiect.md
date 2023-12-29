@@ -38,7 +38,7 @@ d. $4$
 
 ## 5. 5p
 
-Un obiect costă 200 lei. Afirmatia: „După o scumpire de 15% prețul obiectului va fi 215 lei.” este:
+Un obiect costă 200 lei. Afirmația: „După o scumpire de 15% prețul obiectului va fi 215 lei.” este:
 
 a. adevărată
 b. falsă
@@ -110,7 +110,7 @@ d. $15$ cm
 
 ## 5. 5p
 
-Fie $AB$ diametrul în cercul de centru $O$ și rază de lungime egală cu 5 cm. Dacă $CD \perp AB$ și lungimea segmentului $AC$ este egală cu 8 cm, atunci aria pătratului $ACBD$ este egală cu:
+Fie $AB$ diametrul în cercul de centru $O$ și rază de lungime egală cu 5 cm. Dacă $CD \perp AB$ și lungimea segmentului $AC$ este egală cu 8 cm, atunci aria patrulaterului $ACBD$ este egală cu:
 
 a. $24$ cm²
 b. $25$ cm²
@@ -152,7 +152,7 @@ Arătați că $x = 9 + 6\sqrt{2}$;
 
 ### b. 3p
 
-Determinați numărul pozitiv $y$ pentru care media geometrică a numerelor $x$ și $y$ este $\sqrt{36} + 27\sqrt{2}$.
+Determinați numărul pozitiv $y$ pentru care media geometrică a numerelor $x$ și $y$ este $\sqrt{{36} + 27\sqrt{2}}$.
 
 ## 3. 5p
 
