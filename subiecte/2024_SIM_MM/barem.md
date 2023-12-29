@@ -36,7 +36,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 ### a.
 
-(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$
+(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$ - 3 
 
 (1p) $x = 9 + 6\sqrt{2}$
 

@@ -32,6 +32,8 @@
 
 (1p) $x = 2\text{km}$
 
+Etapa a II a: $10\text{km}$
+
 ## 2.
 
 ### a.
