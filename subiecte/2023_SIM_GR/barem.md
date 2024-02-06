@@ -46,16 +46,16 @@ $E(x) = x(x^2 + 3x + 2)$
 ### b.
 
 (1p) $E(n) = n(n + 1)(n + 2)$,
-(1p) Produsul a două numere naturale consecutive este divizibil cu 2,
+(1p) Produsul a două numere naturale consecutive este divizibil cu 2.
 Produsul a trei numere naturale consecutive este divizibil cu 3.
-Deci $E(n) \vdots 6 $
+Deci $E(n) \Div 6 $
 
 ## 3.
 
 ### a.
 
 (1p) $a = 3 \cdot 6\sqrt{3} + 2 \cdot 8\sqrt{3} - 4 \cdot 2\sqrt{3} - 2 \cdot 5\sqrt{3}$
- $a = 18\sqrt{3} + 16\sqrt{3} - 8\sqrt{3} - 10\sqrt{3}$
+$a = 18\sqrt{3} + 16\sqrt{3} - 8\sqrt{3} - 10\sqrt{3}$
 (1p) $a = 16\sqrt{3}$
 
 ### b.

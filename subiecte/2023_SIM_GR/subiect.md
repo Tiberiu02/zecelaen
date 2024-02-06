@@ -164,7 +164,7 @@ Demonstrează că $E(x) = x(x + 1)(x + 2)$, pentru orice număr real $x$.
 
 ### b. 2p
 
-Demonstrează că $E(n) : 6$, pentru orice număr natural $n$.
+Demonstrează că $E(n) \Div 6$, pentru orice număr natural $n$.
 
 ## 3. 5p
 
@@ -182,6 +182,8 @@ Verificați dacă media geometrică a numerelor $a$ și $b$ aparține intervalul
 
 Se dă cercul $\mathscr{C}(O, r)$ și punctul $C \in \mathscr{C}(O, r)$, $AB$ diametru cu $AC = OA = 6$ cm. Aflați:
 
+![Imagine](img/3-4.png)
+
 ### a. 2p
 
 Măsurile unghiurilor $\triangle ABC$;
@@ -192,7 +194,9 @@ Aflați aria porțiunii hașurate.
 
 ## 5. 5p
 
-În figura alăturată este reprezentată o grădină $ABECD$, unde $ABCD$ este dreptunghi, iar $BCE$ este un triunghi echilateral. Segmentele $AE, AC$ și $BC$ reprezintă niște alei, iar $\{P\}=AE \cap BC$. Se știe că $AB = 16$ m, iar aleile $AC$ și $BC$ sunt perpendiculare.
+În figura alăturată este reprezentată o grădină $ABECD$, unde $ABCD$ este dreptunghi, iar $BCE$ este un triunghi echilateral. Segmentele $AE, AC$ și $BC$ reprezintă niște alei, iar $\{P\}=AE \cap BC$. Se știe că $AB = 16$ m, iar aleile $AC$ și $EC$ sunt perpendiculare.
+
+![Imagine](img/3-5.png)
 
 ### a. 2p
 
@@ -205,6 +209,8 @@ Arată că lungimea segmentului $BP$ este mai mică decât $6$ m.
 ## 6. 5p
 
 Fie $VABC$ o piramidă triunghiulară regulată cu muchia laterală $VA=15$ cm și muchia bazei $AB = 18$ cm. Pe muchia $VC$ se consideră punctul $P$ astfel încât $VP = 5$ cm.
+
+![Imagine](img/3-6.png)
 
 ### a. 2p
 
