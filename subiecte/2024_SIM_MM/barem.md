@@ -36,13 +36,15 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 ### a.
 
-(1p) $x = \sqrt{144 + 2\sqrt{18} - (\sqrt{3})^2} = \sqrt{144 + 2\cdot3\sqrt{2} - 3} = \sqrt{141 + 6\sqrt{2}}$
+(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$ - 3 
 
 (1p) $x = 9 + 6\sqrt{2}$
 
 ### b.
 
-(1p) $\sqrt{x \cdot y} = \sqrt{36 + 27\sqrt{2}} = \sqrt{9(4 + 3\sqrt{2})} = 3\sqrt{4 + 3\sqrt{2}}$
+(1p) $\sqrt{x \cdot y} = \sqrt{36 + 27\sqrt{2}} \Rightarrow y(9 + 6\sqrt{2}) = 9(4 + 3\sqrt{2})$
+
+(1p) $3y(3+2\sqrt{2})$ = $9\sqrt{2}(3+2\sqrt{2})$
 
 (1p) $y = 3\sqrt{2}$
 
@@ -58,9 +60,9 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $2 < 3x + 8 \leq 26$
 
-(1p) $-2 \leq x \leq 6 \Rightarrow B = [-2,6]$
+(1p) $-2 \leq x \leq 6 \Rightarrow B = (-2,6]$
 
-(1p) $A \cap B = [-2,1] \Rightarrow (A \cap B) \cap \mathbb{Z} = \{-1,0,1\}$
+(1p) $A \cap B = (-2,1] \Rightarrow (A \cap B) \cap \mathbb{Z} = \{-1,0,1\}$
 
 ## 4.
 
@@ -68,7 +70,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) Fie $CE \perp AB$, $E \in AB$, în $\triangle CEB$, $CE = 4$ cm
 
-(1p) $A_{\triangle CEB} = \frac{(AB+CD)\cdot CE}{2} = \frac{(8+5)\cdot 4}{2} = \frac{52}{2} = 26$ cm²
+(1p) $A_{ABCD} = \frac{(AB+CD)\cdot CE}{2} = \frac{(8+5)\cdot 4}{2} = \frac{52}{2} = 26$ cm²
 
 ### b.
 
@@ -84,7 +86,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $BC = 18$ cm
 
-(1p) $P_{\triangle ABC} = 3 \cdot 18$ cm = $54$ cm
+(1p) $P_{\ ABC} = 3 \cdot 18$ cm = $54$ cm
 
 ### b.
 
@@ -92,7 +94,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $AD = \sqrt{AM^2 + DM^2} = \sqrt{252}$ cm
 
-(1p) $A_{\triangle DAE} = \frac{252 \cdot \sin(\angle DAE)}{2} = \frac{252 \cdot \frac{3\sqrt{3}}{14}}{2} = 27\sqrt{3}$ cm² $\Rightarrow \sin(\angle DAE) = \frac{3\sqrt{3}}{14}$
+(1p) $A_{\triangle DAE} = \frac{252 \cdot \sin(\angle DAE)}{2} = \frac{252 \cdot \frac{3\sqrt{3}}{14}}{2} = 27\sqrt{3}$  $\Rightarrow \sin(\angle DAE) = \frac{3\sqrt{3}}{14}$
 
 ## 6.
 
@@ -104,8 +106,8 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 ### b.
 
-(1p) Fețele $A'BB'$ și $B'CC'$ ale paralelipipedului dreptunghic $ABCD A'B'C'D'$ se desfășoară pentru a forma dreptunghiul $ACC'A'$ cu lățimea $AA' = 60$ cm și lungimea $AC = 112$ cm. Pentru a obține valoarea minimă a perimetrului triunghiului $A'MC$, punctul $M$ trebuie să fie situat pe diagonala $A'C$ din dreptunghiul $ACC'A'$.
+(1p) Fețele $A'ABB'$ și $B'BCC'$ ale paralelipipedului dreptunghic $ABCDA'B'C'D'$ se desfășoară pentru a forma dreptunghiul $ACC'A'$ cu lățimea $AA' = 60$ cm și lungimea $AC = 112$ cm. Pentru a obține valoarea minimă a perimetrului triunghiului $A'MC$, punctul $M$ trebuie să fie situat pe diagonala $A'C$ din dreptunghiul $ACC'A'$.
 
 (1p) Perimetrul triunghiului $A'MC$ este $P = 100 + 4\sqrt{1009}$ cm.
 
-(1p) Avem: $42^2 \cdot 1009 = 16144 > 16129 = 127^2 \Rightarrow 4\sqrt{1009} > 127 \Rightarrow 100 + 4\sqrt{1009} > 227 \Rightarrow$ valoarea perimetrului triunghiului $A'MC$ nu poate fi mai mică decât $227$ cm.
+(1p) Avem: $4^2 \cdot 1009 = 16144 > 16129 = 127^2 \Rightarrow 4\sqrt{1009} > 127 \Rightarrow 100 + 4\sqrt{1009} > 227 \Rightarrow$ valoarea perimetrului triunghiului $A'MC$ nu poate fi mai mică decât $227$ cm.

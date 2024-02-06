@@ -16,9 +16,15 @@ export const tests = [
   },
   {
     name: "Simulare Maramureș",
-    fullName: "Simulare MARAMUREȘ Evaluarea Națională Matematică 2024",
+    fullName: "Simulare Maramureș Evaluarea Națională Matematică 2024",
     id: "2024_SIM_MM",
     date: "13.12.2023",
+  },
+  {
+    name: "Simulare Sibiu",
+    fullName: "Simulare Sibiu Evaluarea Națională Matematică 2024",
+    id: "2024_SIM_SB",
+    date: "15.12.2023",
   },
   {
     name: "Evaluarea Națională",

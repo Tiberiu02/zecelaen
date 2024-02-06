@@ -50,12 +50,12 @@ d. $221$
 
 Patru elevi au format proporții cu numerele $6, 9, 16, 24$, conform datelor din tabel:
 
-$\begin{array}{|c|c|c|c|c|}
+$\begin{array}{|c|c|c|c|}
 \hline
 \text{Andrei} & \text{Bogdan} & \text{Ciprian} & \text{Dan} \\
 \hline
- \frac{16}{6} = \frac{9}{24} & \frac{9}{6} = \frac{24}{16} & \frac{6}{24} 
- = \frac{9}{16} & \frac{9}{24} = \frac{6}{16} \\
+ \large \frac{16}{6} = \frac{9}{24} & \large \frac{9}{6} = \frac{24}{16} & \large \frac{6}{24} 
+ = \frac{9}{16} & \large \frac{9}{24} = \frac{6}{16} \\
 \hline
 \end{array}$
 
@@ -151,7 +151,7 @@ d. $72$ cm
 
 ## 1. 5p
 
-Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unui zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu $2509$m, parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu $2544$m, iar în a treia etapă a mers cu $50\%$ mai mult decât în a doua etapă, mergând până pe vârful Dara $2500$m.
+Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unui zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu (2509m), parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu (2544m), iar în a treia etapă a mers cu 50% mai mult decât în a doua etapă, mergând până pe vârful Dara (2500m).
 
 ### a. 2p
 
@@ -163,7 +163,7 @@ Verifică dacă distanța parcursă în cea de-a treia etapă este mai mare dec�
 
 ## 2. 5p
 
-Se consideră mulțimile: $ A = \{x \in \mathbb{R} /|x + 1| \leq 3\} $ și $ B = \{x \in \mathbb{R} \mid -1 < \frac{2x-1}{-3}\leq -1 $}.
+Se consideră mulțimile: $ A = \{x \in \mathbb{R} /|x + 1| < 3\} $ și $ B = \{x \in \mathbb{R} / -1 < \frac{2x-1}{-3}\leq 1 $}.
 
 ### a. 2p
 
