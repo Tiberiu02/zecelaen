@@ -117,6 +117,32 @@ export const tests = [
     fullName: "Simulare Giurgiu Evaluarea Națională Matematică 2023",
     id: "2023_SIM_GR",
     date: "20.02.2023",
+    videos: [
+      [
+        "https://youtu.be/ZM2JKrscVDY",
+        "https://youtu.be/mn1-xxwNgug",
+        "https://youtu.be/xAIgrwbDpN4",
+        "https://youtu.be/038IOYM665w",
+        "https://youtu.be/z5EnE3LMlQ4",
+        "https://youtu.be/iY-fVCfC3D8",
+      ],
+      [
+        "https://youtu.be/I1CP289omnI",
+        "https://youtu.be/aldJwwajdbE",
+        "https://youtu.be/BhLvNKzmpSI",
+        "https://youtu.be/Mq1DQGxyqSQ",
+        "https://youtu.be/yorKrA3yHi4",
+        "https://youtu.be/D2K6Vbyen50",
+      ],
+      [
+        "https://youtu.be/YE2GgKgFVhg",
+        "https://youtu.be/scplliaeXKQ",
+        "https://youtu.be/j6RPXW8kF4A",
+        "https://youtu.be/CDk_kE5tArA",
+        "https://youtu.be/5NRHu1fi7og",
+        "https://youtu.be/SyK_5U6lazw",
+      ],
+    ],
   },
 ] as {
   name: string;
