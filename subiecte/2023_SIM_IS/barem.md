@@ -68,7 +68,7 @@
 
 (1p) Se obține $n \in \{-1, 0, 1, 2, 3, 4\}$.
 
-(Obs Dacă se obțin toate valorile lui $n$ prin încercări se acordă 1p.)
+(Obs. Dacă se obțin toate valorile lui $n$ prin încercări se acordă 1p.)
 
 ## 4.
 
@@ -112,9 +112,9 @@ $\Rightarrow BN = NQ = 2$cm $\Rightarrow MQ = (2\sqrt{3} - 2)$cm.
 
 ### a.
 
-(1p) $QP \parallel AB'$ ($QP$ linie mijlocie în triunghiul $C'A'B'$)
+(1p) $QP \parallel A'B'$ ($QP$ linie mijlocie în triunghiul $C'A'B'$)
 
-$AB' \parallel AB$ ($A'B'BA$ dreptunghi), deci $QP \parallel AB$,
+$A'B' \parallel AB$ ($A'B'BA$ dreptunghi), deci $QP \parallel AB$,
 
 $PN \parallel C'B$ ($PN$ linie mijlocie în triunghiul $C'B'B$)
 
