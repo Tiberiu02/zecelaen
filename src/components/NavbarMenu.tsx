@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaDivide } from "react-icons/fa";
-import { FaSchool, FaDiscord } from "react-icons/fa6";
+import { FaSchool, FaDiscord, FaBookOpen, FaBook } from "react-icons/fa6";
 
 export function NavbarMenu() {
   const [showMenu, setShowMenu] = useState(false);
@@ -36,6 +36,12 @@ export function NavbarMenu() {
               target="_blank"
             >
               <FaSchool /> Top Licee
+            </a>
+            <a
+              className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
+              href="/resurse-utile"
+            >
+              <FaBook /> Resurse Utile
             </a>
             <a
               className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
