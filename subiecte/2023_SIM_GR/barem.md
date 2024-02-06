@@ -48,7 +48,7 @@ $E(x) = x(x^2 + 3x + 2)$
 (1p) $E(n) = n(n + 1)(n + 2)$,
 (1p) Produsul a două numere naturale consecutive este divizibil cu 2.
 Produsul a trei numere naturale consecutive este divizibil cu 3.
-Deci $E(n) \Div 6 $
+Deci $E(n)$\Div 6 $
 
 ## 3.
 

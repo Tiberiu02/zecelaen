@@ -65,7 +65,7 @@ $\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lu
 ### b.
 
 (1p) Din a. $\Rightarrow \angle DCB = \angle EBC \Rightarrow \angle OBC = \angle OCB \Rightarrow\triangle OBC $ este isoscel
-$\Rightarrow OB = OC = OE \Rightarrow OD = OE$
+$\Rightarrow OB = OC \Rightarrow OD = OE$
 Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $OA$ este mediatoarea lui $DE$ $\Rightarrow OA \perp DE$
 
 ## 5.
@@ -78,15 +78,15 @@ Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $O
 ### b.
 
 (1p) $CE$ este mediană în $\triangle CBA$, $CF = \frac{2}{3} CE$, deci punctul $F$ este centrul de greutate al $\triangle CBA$
-(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $BO este mediană în $\triangle CBA$ $\Rightarrow F \in BO$
+(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $ BO este mediană în $\triangle CBA$ $\Rightarrow F \in BO$
 Dar $O \in BD$ $\Rightarrow F \in BD$ $\Rightarrow$ punctele $B$, $F$, $D$ sunt coliniare
 
 ## 6.
 
 ### a.
 
-(1p) $ ABCD$ piramidă patrulateră regulată $\Rightarrow \angle VAB = \angle VBA \Rightarrow \triangle VAB$ este isoscel
-$\Rightarrow \angle VAB = \angle VBA$ = 70$^\circ$
+(1p) $ VABCD$ piramidă patrulateră regulată $\Rightarrow \ VA =  VB \Rightarrow \triangle VAB$ este isoscel
+$\Rightarrow \angle VAB = \angle VBA$ = $70^\circ$
 (1p) Atunci $\angle AVB = 180^\circ - (\angle VAB + \angle VBA) = 180^\circ - 140^\circ = 40^\circ$
 
 ### b.

@@ -148,7 +148,7 @@ Mai multe persoane doresc să cumpere un obiect. Dacă fiecare persoană dă câ
 
 ### a. 2p
 
-Este posibil ca prețul obiectului să fie 190 de lei? Justifică răspunsul dat.
+Este posibil ca prețul obiectului să fie 190 de lei? 
 
 ### b. 3p
 
