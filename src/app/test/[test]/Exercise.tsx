@@ -222,7 +222,11 @@ export function Exercise({
               ></circle>
             </svg>
             <YouTube
-              videoId={videoUrl?.split("=").at(-1) || ""}
+              videoId={
+                videoUrl.includes("=")
+                  ? videoUrl.split("=").at(-1)
+                  : videoUrl.split("/").at(-1)
+              }
               className="relative w-full aspect-video" // -my-[3%]"
               iframeClassName="h-full w-full" //h-[1000%] w-[1000%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.1]"
               opts={{
