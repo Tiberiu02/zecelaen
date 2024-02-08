@@ -68,7 +68,7 @@ d. Diana
 
 ## 6. 5p
 
-Sebastian are $180$ de lei, iar Adrian, colegul lui, are $120$ de lei. Adrian afirmă: „Dacă i-aș da lui Sebastian o șesime din banii mei, atunci suma mea de bani ar fi jumătate din suma lui”. Afirmatia lui Adrian este:
+Sebastian are $180$ de lei, iar Adrian, colegul lui, are $120$ de lei. Adrian afirmă: „Dacă i-aș da lui Sebastian o șesime din banii mei, atunci suma mea de bani ar fi jumătate din suma lui”. Afirmația lui Adrian este:
 
 a. adevărată
 b. falsă
