@@ -34,7 +34,7 @@
 
 (1p) $x = 500$ deci Tudor are $300$ de lei.
 
-(OBS. Dacă se încearcă rezolvarea cu sistem de ecuații, scrierea corectă a sistemului se punctează cu 2p)
+OBS. (Dacă se încearcă rezolvarea cu sistem de ecuații, scrierea corectă a sistemului se punctează cu 2p)
 
 ## 2.
 
