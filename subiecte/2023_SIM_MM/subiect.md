@@ -172,7 +172,7 @@ Aflați cardinalul mulțimii $A \cap B$.
 
 ### a. 2p
 
-Să se arate că $BE = CD$.
+Să se arate că $BE \equiv CD$.
 
 ### b. 3p
 
