@@ -92,7 +92,7 @@ OBS. (Dacă se încearcă rezolvarea cu sistem de ecuații, scrierea corectă a 
 
 (1p) $\angle BAC = 15^\circ \Rightarrow \angle ACB = 75^\circ \Rightarrow \angle CBM = 15^\circ$
 
-$\angle BCD = 90^\circ$, $BC = CD \Rightarrow \triangle BCD$ dreptunghic isoscel $\Rightarrow \angle CBD = 45^\circ$
+$\angle BCD = 90^\circ$, $BC \equiv CD \Rightarrow \triangle BCD$ dreptunghic isoscel $\Rightarrow \angle CBD = 45^\circ$
 
 (1p) Se obține $\angle MBN = 60^\circ \Rightarrow \angle BMN = 30^\circ$.
 
@@ -100,13 +100,13 @@ $\angle BCD = 90^\circ$, $BC = CD \Rightarrow \triangle BCD$ dreptunghic isoscel
 
 (1p) Fie $MP \perp BC, P \in BC \Rightarrow d(M, BC) = MP$.
 
-Cum $\angle BMN = 30^\circ$, $BN = 2$cm $\Rightarrow MB = 4$cm și $MN = 2\sqrt{3}$cm.
+Cum $\angle BMN = 30^\circ$, $BN = 2cm$ $\Rightarrow$ MB = 4cm și $MN = 2\sqrt{3}cm$.
 
 (1p) Notând cu $\{Q\} = MN \cap BC \Rightarrow \triangle BNQ$ dreptunghic isoscel
 
-$\Rightarrow BN = NQ = 2$cm $\Rightarrow MQ = (2\sqrt{3} - 2)$cm.
+$\Rightarrow BN = NQ = 2cm $ $\Rightarrow MQ = (2\sqrt{3} - 2)cm$.
 
-(1p) Cum $\triangle MQP$ este dreptunghic isoscel și $MQ = (2\sqrt{3} - 2)$cm $\Rightarrow MP = (\sqrt{6} - \sqrt{2})$cm
+(1p) Cum $\triangle MQP$ este dreptunghic isoscel și $MQ = (2\sqrt{3} - 2)cm$ $\Rightarrow MP = (\sqrt{6} - \sqrt{2})cm$
 
 ## 6.
 
