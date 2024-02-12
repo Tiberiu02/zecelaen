@@ -59,20 +59,20 @@ $\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lu
 
 ### a.
 
-(1p) Deoarece $\triangle ABC$ este isoscel $\Rightarrow \angle ABC = \angle ACB \Rightarrow \angle DBC = \angle ECB$
-(1p) Dar $BC = BC$, $DB = AB = AC = CE \xRightarrow{\text{LUL}} \triangle BDC \equiv \triangle CEB \Rightarrow BE = CD$
+(1p) Deoarece $\triangle ABC$ este isoscel $\Rightarrow \angle ABC  \equiv\angle ACB \Rightarrow \angle DBC \equiv\angle ECB$
+(1p) Dar $BC \equiv BC$, $DB \equiv AB \equiv AC \equiv CE \xRightarrow{\text{LUL}} \triangle BDC \equiv \triangle CEB \Rightarrow BE \equiv CD$
 
 ### b.
 
-(1p) Din a. $\Rightarrow \angle DCB = \angle EBC \Rightarrow \angle OBC = \angle OCB \Rightarrow\triangle OBC $ este isoscel
-$\Rightarrow OB = OC \Rightarrow OD = OE$
+(1p) Din a. $\Rightarrow \angle DCB \equiv \angle EBC \Rightarrow \angle OBC \equiv \angle OCB \Rightarrow\triangle OBC $ este isoscel
+$\Rightarrow OB \equiv OC \Rightarrow OD  \equiv OE$
 Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $OA$ este mediatoarea lui $DE$ $\Rightarrow OA \perp DE$
 
 ## 5.
 
 ### a.
 
-(1p) $ABCD$ paralelogram $\Rightarrow \triangle BAC = \triangle DAC$ $\Rightarrow A_{BAC} = A_{DCA} =\frac{1}{2} A_{ABCD} = 16 \text{cm}^2$
+(1p) $ABCD$ paralelogram $\Rightarrow \triangle BAC \equiv\triangle DCA$ $\Rightarrow A_{BAC} = A_{DCA} =\frac{1}{2} A_{ABCD} = 16 \text{cm}^2$
 (1p) Dar $CE$ este mediană în $\triangle CAB \Rightarrow A_{CEB} = \frac{1}{2} A_{BAC} = 8 \text{cm}^2$
 
 ### b.

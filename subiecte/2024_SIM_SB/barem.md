@@ -22,7 +22,7 @@
 
 ### a.
 
-(1p) $a - 8 = \frac{1}{b + 12}$
+(1p) $\frac{a - 8}{b+12} = 1$
 
 (1p) $a - 8 = b + 12 \Rightarrow a = b + 20$, deci numerele nu pot fi egale.
 
@@ -46,7 +46,7 @@
 
 (1p) $1 \leq \frac{3x + 2}{5} < 4 \Leftrightarrow 5 \leq 3x + 2 < 20$
 
-(1p) $3 \leq 3x < 18 \Leftrightarrow 1 \leq x < 6 \Rightarrow B = [1;6]$
+(1p) $3 \leq 3x < 18 \Leftrightarrow 1 \leq x < 6 \Rightarrow B = [1;6)$
 
 (1p) $A \cap B = [1;4]$
 
@@ -54,13 +54,13 @@
 
 ### a.
 
-(1p) $a = \frac{18}{\sqrt{50}} - \frac{10}{\sqrt{18}} \cdot 30 \Leftrightarrow a = \left( \frac{18}{5\sqrt{2}} - \frac{10}{3\sqrt{2}} \right) \cdot 30$
+(1p) $a = \left( \frac{18}{\sqrt{50}} - \frac{10}{\sqrt{18}} \right)\cdot 30 \Leftrightarrow a = \left( \frac{18}{5\sqrt{2}} - \frac{10}{3\sqrt{2}} \right) \cdot 30$
 
-(1p) $a = \frac{54 - 50}{15\sqrt{2}} \cdot 30 \Leftrightarrow a = \frac{4\sqrt{2}}{30} \Leftrightarrow a = 4\sqrt{2}$.
+(1p) $a = \frac{54 - 50}{15\sqrt{2}} \cdot 30 \Leftrightarrow a = \frac{4\sqrt{2}}{30}\cdot 30 \Leftrightarrow a = 4\sqrt{2}$.
 
 ### b.
 
-(1p) $b = \sqrt{20^2 - 16^2} \cdot \frac{\sqrt{3}}{4\sqrt{3}} \Leftrightarrow b = \frac{\sqrt{3}}{12}$
+(1p) $b = \sqrt{20^2 - 16^2} \cdot \frac{1}{4\sqrt{3}} \Leftrightarrow b = 12\frac{\sqrt{3}}{12}  \Leftrightarrow b = \sqrt{3}$
 
 (1p) $a\sqrt{2} - b\sqrt{3} = 4\sqrt{2} \cdot \sqrt{2} - \sqrt{3} \cdot \sqrt{3} = 8 - 3 = 5$
 
@@ -102,13 +102,13 @@
 
 ### a.
 
-(1p) $S_{\text{muchi}} = 6 \cdot l$
+(1p) $S_{\text{muchii}} = 6 \cdot l$
 
-(1p) $S_{\text{muchi}} = 6 \cdot 6\sqrt{3} = 36\sqrt{3}$ cm².
+(1p) $S_{\text{muchii}} = 6 \cdot 6\sqrt{3} = 36\sqrt{3}$ cm.
 
 ### b.
 
-(1p) $\triangle ABC$ echilateral, $AM$ mediană $\Rightarrow AM = \frac{l\sqrt{3}}{2} = \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$, $ABCD$ echilateral, $DM$ mediană $\Rightarrow DM = \frac{l\sqrt{3}}{2} = 9$ și $\triangle AMD$ este isoscel
+(1p) $\triangle ABC$ echilateral, $AM$ mediană $\Rightarrow AM = \frac{l\sqrt{3}}{2} = \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$, $\triangle ABCD$ echilateral, $DM$ mediană $\Rightarrow DM = \frac{l\sqrt{3}}{2} =  \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$ $\Rightarrow \triangle AMD$ este isoscel
 
 (1p) $\triangle AMD$ isoscel ($AM = MD$), construim $ME$ înălțime $\Rightarrow ME$ mediană. Aplicând teorema lui Pitagora în triunghiul $DME$ obținem $ME = 3\sqrt{6}$ cm.
 

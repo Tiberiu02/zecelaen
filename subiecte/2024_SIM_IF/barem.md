@@ -110,8 +110,8 @@ Etapa a II a: $10\text{km}$
 
 (1p) Fie $N$ mijlocul lui $BC$ $\Rightarrow MN$ linie mijlocie în $\triangle BCD$ $\Rightarrow MN = 3\sqrt{2}$ și $MN$ este paralel cu $BD$ $\Rightarrow \angle(VM; BD) = \angle(VM; MN) = \angle VMN$
 
- $VM = VN$ $\Rightarrow \triangle VMN$ este isoscel și dacă $VP$ este înălțime $\Rightarrow VP$ este mediană $\Rightarrow P$ este mijlocul lui $MN$
+ $VM = VN$ $\Rightarrow \triangle VMN$ este isoscel și dacă $VP$ este înălțime $\Rightarrow VP$ este mediană $\Rightarrow P$ este mijlocul lui $MN$ $\Rightarrow$
 
-(1p) $\frac{VP}{2} = \frac{3\sqrt{10}}{2}$
+(1p) $VP = \frac{3\sqrt{10}}{2}$
 
 (1p) $\sin(\angle VMN) = \frac{VP}{PM} = \frac{\sqrt{30}}{6}$

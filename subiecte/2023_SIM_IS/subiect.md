@@ -51,9 +51,9 @@ d. $9$
 
 $\begin{array}{|c|c|c|c|c|c|c|c|}
 \hline
-\text{Ziua} & \text{L} & \text{M} & \text{M} & \text{J} & \text{V} & \text{S} & \text{D} \\
+\bold{Ziua} & \text{L} & \text{M} & \text{M} & \text{J} & \text{V} & \text{S} & \text{D} \\
 \hline
-\text{Temperatura} & -4^\circ\text{C} & -3^\circ\text{C} & -2^\circ\text{C} & 1^\circ\text{C} & x^\circ\text{C} & 1^\circ\text{C} & 2^\circ\text{C} \\
+\bold{Temperatura} & -4^\circ\text{C} & -3^\circ\text{C} & -2^\circ\text{C} & 1^\circ\text{C} & x^\circ\text{C} & 1^\circ\text{C} & 2^\circ\text{C} \\
 \hline
 \end{array}$
 
@@ -200,7 +200,7 @@ Dacă $BN = 2$ cm, află distanța de la $M$ la dreapta $BC$.
 
 ## 6. 5p
 
-În figura alăturată este desenată o prismă triunghiulară regulată $ABC A'B'C'$ cu $AB = 8$ m și $AA' = 6$ m. Punctele $N$, $P$ și $Q$ sunt mijloacele segmentelor $BB'$, $BC'$, respectiv $A'C'$.
+În figura alăturată este desenată o prismă triunghiulară regulată $ABC A'B'C'$ cu $AB = 8$ m și $AA' = 6$ m. Punctele $N$, $P$ și $Q$ sunt mijloacele segmentelor $BB'$, $B'C'$, respectiv $A'C'$.
 
 ![Imagine](img/3-6.jpg)
 
