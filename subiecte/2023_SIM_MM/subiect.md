@@ -172,7 +172,7 @@ Aflați cardinalul mulțimii $A \cap B$.
 
 ### a. 2p
 
-Să se arate că $BE = CD$.
+Să se arate că $BE \equiv CD$.
 
 ### b. 3p
 
@@ -180,7 +180,7 @@ Demonstrați că $OA \perp DE$.
 
 ## 5. 5p
 
-Se consideră paralelogramul $ABCD$ având aria $32cm^2$. Fie $E$ mijlocul segmentului $AB$ și $F$ $\in$ $CE$ astfel încât $CF = 2EF$.
+Se consideră paralelogramul $ABCD$ având aria $32cm^2$. Fie $E$ mijlocul segmentului $AB$ și $F$ $\in$ $CE$ astfel încât $CF = 2FE$.
 
 ![Imagine](img/3-5.png)
 

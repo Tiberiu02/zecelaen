@@ -16,15 +16,15 @@ export const tests = [
   },
   {
     name: "Simulare Maramureș",
-    fullName: "Simulare MARAMUREȘ Evaluarea Națională Matematică 2024",
+    fullName: "Simulare Maramureș Evaluarea Națională Matematică 2024",
     id: "2024_SIM_MM",
     date: "13.12.2023",
   },
   {
-   name: "Simulare Sibiu",
-   fullName: "Simulare SIBIU Evaluarea Națională Matematică 2024",
-   id: "2024_SIM_SB",
-   date: "15.12.2023",
+    name: "Simulare Sibiu",
+    fullName: "Simulare Sibiu Evaluarea Națională Matematică 2024",
+    id: "2024_SIM_SB",
+    date: "15.12.2023",
   },
   {
     name: "Evaluarea Națională",
@@ -70,6 +70,22 @@ export const tests = [
         "https://www.youtube.com/watch?v=haWbElpIdz4",
         "https://www.youtube.com/watch?v=8IihCgdbZn4",
       ],
+      [
+        "https://youtu.be/eAmgx28ef0Y",
+        "https://youtu.be/Hyv0YAzlpXw",
+        "https://youtu.be/PRMZCrcMEIA",
+        "https://youtu.be/-rVnulzw-EI",
+        "https://youtu.be/8Ug-pwxfpo8",
+        "https://youtu.be/d58w6GXPHNk",
+      ],
+      [
+        "https://youtu.be/dSzVNix_qGo",
+        "https://youtu.be/GcRrvtlwgCc",
+        "https://youtu.be/vT4WjAX6Ox0",
+        "https://youtu.be/68bPh-hFKws",
+        "https://youtu.be/-GMMzrmaXvI",
+        "https://youtu.be/6unuuoaSIXk",
+      ],
     ],
   },
   {
@@ -101,6 +117,32 @@ export const tests = [
     fullName: "Simulare Giurgiu Evaluarea Națională Matematică 2023",
     id: "2023_SIM_GR",
     date: "20.02.2023",
+    videos: [
+      [
+        "https://youtu.be/ZM2JKrscVDY",
+        "https://youtu.be/mn1-xxwNgug",
+        "https://youtu.be/xAIgrwbDpN4",
+        "https://youtu.be/038IOYM665w",
+        "https://youtu.be/z5EnE3LMlQ4",
+        "https://youtu.be/iY-fVCfC3D8",
+      ],
+      [
+        "https://youtu.be/I1CP289omnI",
+        "https://youtu.be/aldJwwajdbE",
+        "https://youtu.be/BhLvNKzmpSI",
+        "https://youtu.be/Mq1DQGxyqSQ",
+        "https://youtu.be/yorKrA3yHi4",
+        "https://youtu.be/D2K6Vbyen50",
+      ],
+      [
+        "https://youtu.be/YE2GgKgFVhg",
+        "https://youtu.be/scplliaeXKQ",
+        "https://youtu.be/j6RPXW8kF4A",
+        "https://youtu.be/CDk_kE5tArA",
+        "https://youtu.be/5NRHu1fi7og",
+        "https://youtu.be/SyK_5U6lazw",
+      ],
+    ],
   },
 ] as {
   name: string;

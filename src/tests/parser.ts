@@ -183,7 +183,6 @@ export function parseSubiect(subiectMd: string, baremMd: string): Exam {
       }
     } else {
       if (line.trim() !== "") {
-        // console.log("extra line", line);
         if (currentSubQuestion) {
           const lastSolutionItem = currentSubQuestion.solution.at(-1);
           if (lastSolutionItem) {

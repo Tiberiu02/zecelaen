@@ -18,18 +18,19 @@ export function generateStaticParams() {
 }
 
 export default async function Page({ params }: { params: { test: string } }) {
-  const test = testsByKey[params.test];
+  const testKey = params.test;
+  const test = testsByKey[testKey];
   const progress = true;
 
-  const pdfSubiect = `/pdf/${test.id}/subiect.pdf`;
-  const pdfBarem = `/pdf/${test.id}/barem.pdf`;
+  const pdfSubiect = `/pdf/${test.id}/${testKey}.pdf`;
+  const pdfBarem = `/pdf/${test.id}/${testKey}-barem.pdf`;
 
   return (
     <main className="bg-math min-h-screen flex flex-col items-center">
       <NavBar />
 
       <div className="flex flex-col items-center md:px-4 w-full max-w-5xl">
-        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pt-6 pb-6 md:pb-4">
+        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pt-6 pb-6 md:pb-4 max-md:shadow-none max-md:border-b-2 border-gray-200">
           <div className="flex flex-row items-center gap-6 w-full px-1">
             <SubLogo
               seed={test.id}
@@ -65,16 +66,13 @@ export default async function Page({ params }: { params: { test: string } }) {
           </div>
           <div className="w-full mt-6 text-base grid grid-cols-1 md:flex flex-wrap items-center justify-between font-medium gap-2 text-black/60">
             <div className="grid grid-cols-2 gap-2">
-              <a href={pdfSubiect} download={`${test.fullName} - ZeceLaEN.pdf`}>
+              <a href={pdfSubiect} download={`${test.fullName}.pdf`}>
                 <Button className="flex gap-2 py-1 px-4 items-center justify-center">
                   <HiDownload className="shrink-0" />
                   Subiect
                 </Button>
               </a>
-              <a
-                href={pdfBarem}
-                download={`${test.fullName} - BAREM - ZeceLaEN.pdf`}
-              >
+              <a href={pdfBarem} download={`Barem ${test.fullName}.pdf`}>
                 <Button className="flex gap-2 py-1 px-4 items-center justify-center">
                   <HiDownload className="shrink-0" />
                   Barem
@@ -88,7 +86,7 @@ export default async function Page({ params }: { params: { test: string } }) {
           </div>
         </Card>
 
-        <div className="flex gap-2 flex-col w-full">
+        <div className="flex md:gap-2 flex-col w-full">
           <Test testId={test.id} />
         </div>
 

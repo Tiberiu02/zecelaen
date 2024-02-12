@@ -25,7 +25,7 @@ function parseKatex(str: string) {
                   )}
                 >
                   <BlockMath
-                    math={`\\def\\arraystretch{1.5} \\def,{{\\char\`,}} {${s.replaceAll(
+                    math={`\\def\\arraystretch{1.5} \\def,{{\\char\`,}} \\def\\Div{{\\space\\raisebox{-0.1em}{$\\vdots$}\\space}} {${s.replaceAll(
                       ", ",
                       ",\\text{ }"
                     )}}`}
@@ -114,7 +114,7 @@ export function Exercise({
 
   return (
     <Card
-      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6"
+      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6 max-md:shadow-none max-md:border-b-2 border-gray-200"
       cardRef={cardRef}
     >
       <div className="flex justify-between font-bold text-lg gap-4">
@@ -222,7 +222,11 @@ export function Exercise({
               ></circle>
             </svg>
             <YouTube
-              videoId={videoUrl?.split("=").at(-1) || ""}
+              videoId={
+                videoUrl.includes("=")
+                  ? videoUrl.split("=").at(-1)
+                  : videoUrl.split("/").at(-1)
+              }
               className="relative w-full aspect-video" // -my-[3%]"
               iframeClassName="h-full w-full" //h-[1000%] w-[1000%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.1]"
               opts={{
