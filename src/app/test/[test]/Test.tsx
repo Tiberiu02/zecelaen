@@ -5,8 +5,6 @@ export async function Test({ testId }: { testId: string }) {
   const examMeta = testsById[testId];
   const exam = getTest(testId);
 
-  console.log(testId, examMeta);
-
   for await (const section of exam.sections) {
     for await (const exercise of section.questions) {
       if (exercise.image) {
@@ -22,10 +20,13 @@ export async function Test({ testId }: { testId: string }) {
   return (
     <>
       {exam.sections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="flex flex-col items-center gap-2">
-          <h2 className="text-base w-fit md:w-fit self-center text-center font-semibold bg-white rounded-full md:text-left text-black/40 mt-8 mb-2 py-2 px-4 border-[1px] border-gray-200 shadow">
-            {section.title}
-          </h2>
+        <div key={sectionIndex} className="flex flex-col items-center md:gap-2">
+          <div className="max-md:border-b-2 border-gray-200 w-full flex flex-col items-center max-md:py-2">
+            {/* <h2 className="text-base md:w-fit self-center text-center font-semibold bg-white md:rounded-full text-black/40 md:mt-8 md:my-2 py-2 px-4 md:border-[1px] border-gray-200 md:shadow max-md:border-b-2 max-md:w-full max-md:bg-gray-50 max-md:text-black max-md:text-xl"> */}
+            <h2 className="text-base w-fit self-center text-center font-medium bg-white rounded-full text-neutral-700 mt-8 my-2 py-2 px-5 border-[1px] border-gray-200 shadow">
+              {section.title}
+            </h2>
+          </div>
           {section.questions.map(async (question, questionIndex) => (
             <Exercise
               key={questionIndex}

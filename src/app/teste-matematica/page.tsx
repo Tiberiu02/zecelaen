@@ -1,11 +1,12 @@
 import { twMerge } from "tailwind-merge";
-import { TbDiscountCheckFilled } from "react-icons/tb";
+import { TbDiscountCheckFilled, TbVideoOff } from "react-icons/tb";
 import { SubLogo } from "../../components/SubLogo";
 import { getKey, tests, testsByYear } from "@/tests/tests";
 import { Fragment } from "react";
 import { NavBar } from "../../components/NavBar";
 import { fullDate } from "@/tests/fullDate";
 import { Button } from "@/components/Button";
+import { FaVideoSlash } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -31,22 +32,29 @@ export default function Home() {
                   subs.length == 1 && "md:grid-cols-1 md:max-w-md"
                 )}
               >
-                {subs.map((s, i) => (
-                  <a key={i} href={`/test/${getKey(s.fullName)}`}>
-                    <Button className="group flex items-center flex-row px-6 py-4 gap-8">
-                      <SubLogo seed={s.id} className="w-8 h-8" />
-                      <div className="flex mr-auto flex-col justify-between">
-                        <div className="text-xl font-normal">{s.name}</div>
-                        <div className="w-fit font-semibold text-sm opacity-40">
-                          {fullDate(s.date)}
+                {subs
+                  .sort((a, b) => (b.videos ? 1 : 0) - (a.videos ? 1 : 0))
+                  .map((s, i) => (
+                    <a key={i} href={`/test/${getKey(s.fullName)}`}>
+                      <Button className="group flex items-center flex-row px-6 py-4 gap-6">
+                        <SubLogo seed={s.id} className="w-8 h-8" />
+                        <div className="flex mr-auto flex-col justify-between">
+                          <div className="text-lg sm:text-xl font-normal">
+                            {s.name}
+                            {!s.videos && (
+                              <TbVideoOff className="inline ml-2 opacity-30 mt-[-3px] sm:-mt-1" />
+                            )}
+                          </div>
+                          <div className="w-fit font-semibold text-sm opacity-40">
+                            {fullDate(s.date)}
+                          </div>
                         </div>
-                      </div>
-                      {null && (
-                        <TbDiscountCheckFilled className="text-green-500 text-4xl" />
-                      )}
-                    </Button>
-                  </a>
-                ))}
+                        {null && (
+                          <TbDiscountCheckFilled className="text-green-500 text-4xl" />
+                        )}
+                      </Button>
+                    </a>
+                  ))}
               </div>
             </Fragment>
           ))}

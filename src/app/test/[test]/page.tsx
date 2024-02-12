@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: { test: string } }) {
       <NavBar />
 
       <div className="flex flex-col items-center md:px-4 w-full max-w-5xl">
-        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pt-6 pb-6 md:pb-4">
+        <Card className="w-full md:mt-8 text-lg font-medium text-left text-black justify-center flex flex-col items-center p-4 pt-6 pb-6 md:pb-4 max-md:shadow-none max-md:border-b-2 border-gray-200">
           <div className="flex flex-row items-center gap-6 w-full px-1">
             <SubLogo
               seed={test.id}
@@ -86,7 +86,7 @@ export default async function Page({ params }: { params: { test: string } }) {
           </div>
         </Card>
 
-        <div className="flex gap-2 flex-col w-full">
+        <div className="flex md:gap-2 flex-col w-full">
           <Test testId={test.id} />
         </div>
 

@@ -59,11 +59,11 @@ function Resource({
 
 export default async function Page() {
   return (
-    <main className="bg-math min-h-screen flex flex-col items-center">
+    <main className="md:bg-math min-h-screen flex flex-col items-center">
       <NavBar />
 
-      <div className="flex flex-col items-center px-4 w-full max-w-5xl">
-        <div className="p-8 sm:px-12 sm:py-12 mt-8 gap-32 sm:gap-20 rounded-2xl text-lg text-left text-black justify-center flex flex-col bg-white border-[1px]  border-gray-200 shadow">
+      <div className="flex flex-col items-center md:px-4 w-full max-w-5xl">
+        <div className="p-8 sm:px-12 sm:py-12 mt-8 gap-32 sm:gap-20 rounded-2xl text-lg text-left text-black justify-center flex flex-col bg-white md:border-[1px] border-gray-200 md:shadow">
           <div className="flex flex-col items-ceneter gap-8">
             <div className="text-3xl self-center font-semibold [text-wrap:balance] text-center">
               Resurse utile

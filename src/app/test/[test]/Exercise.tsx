@@ -114,7 +114,7 @@ export function Exercise({
 
   return (
     <Card
-      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6"
+      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6 max-md:shadow-none max-md:border-b-2 border-gray-200"
       cardRef={cardRef}
     >
       <div className="flex justify-between font-bold text-lg gap-4">
