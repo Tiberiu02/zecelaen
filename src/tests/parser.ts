@@ -1,5 +1,3 @@
-import fs from "fs";
-
 interface SubQuestion {
   label: string;
   points: number;

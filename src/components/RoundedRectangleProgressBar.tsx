@@ -16,9 +16,13 @@ export function RoundedRectangleProgressBar({
   progressRed: number;
 }) {
   const progressLengthGreen =
-    2 * (width + height - 2 * borderRadius) * (progressGreen / 100);
+    2 *
+    (width + height - 4 * borderRadius + Math.PI * borderRadius) *
+    (progressGreen / 100);
   const progressLengthRed =
-    2 * (width + height - 2 * borderRadius) * (progressRed / 100);
+    2 *
+    (width + height - 4 * borderRadius + Math.PI * borderRadius) *
+    (progressRed / 100);
 
   // Path for the entire rounded rectangle
   const fullPath = `M ${borderRadius},0
@@ -45,24 +49,28 @@ export function RoundedRectangleProgressBar({
       }`}
     >
       <path d={fullPath} stroke="#eee" strokeWidth={thickness} fill="none" />
-      <path
-        d={fullPath}
-        stroke="#5dd35b"
-        strokeWidth={thickness}
-        fill="none"
-        strokeDasharray={`0,${progressLengthRed},${progressLengthGreen},${
-          2 * (width + height)
-        }`}
-        strokeLinecap="round"
-      />
-      <path
-        d={fullPath}
-        stroke="#FF6767"
-        strokeWidth={thickness}
-        fill="none"
-        strokeDasharray={`${progressLengthRed},${2 * (width + height)}`}
-        strokeLinecap="round"
-      />
+      {progressGreen && (
+        <path
+          d={fullPath}
+          stroke="#5dd35b"
+          strokeWidth={thickness}
+          fill="none"
+          strokeDasharray={`0,${progressLengthRed},${progressLengthGreen},${
+            2 * (width + height)
+          }`}
+          strokeLinecap="round"
+        />
+      )}
+      {progressRed && (
+        <path
+          d={fullPath}
+          stroke="#FF6767"
+          strokeWidth={thickness}
+          fill="none"
+          strokeDasharray={`${progressLengthRed},${2 * (width + height)}`}
+          strokeLinecap="round"
+        />
+      )}
     </svg>
   );
 }
