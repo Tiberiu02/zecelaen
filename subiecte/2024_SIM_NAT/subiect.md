@@ -2,7 +2,7 @@
 
 ## 1. 5p
 
-Rezultatul calculului $52 - 2 \cdot (25 - 5)$ este egal cu:
+Rezultatul calculului $52 - 2 \cdot (25 - 5)$ este:
 
 a. $12$
 b. $92$
@@ -40,9 +40,16 @@ d. $[1, +\infty)$
 
 Patru elevi, Ana, Ioan, Dana și Vlad determină numărul $a = 2 - 4\sqrt{3} + 2(\sqrt{12} + 1)$. Rezultatele obținute de cei patru elevi sunt prezentate în tabelul de mai jos:
 
-|       | Ana | Ioan | Dana | Vlad |
-|-------|-----|------|------|------|
-| **a** | 0   | 4    | $4\sqrt{3}$ | $8\sqrt{3}$ |
+$\begin{array}{|c|c|c|c|}
+\hline
+\text{Ana} & \text{Ioan} & \text{Dana} & \text{Vlad} \\
+\hline
+\ 0 & 4 & 4\sqrt{3} & 8\sqrt{3} \\
+\hline
+\end{array}$
+
+
+
 
 Conform informațiilor din tabel, elevul care a determinat corect numărul $a$ este:
 
@@ -55,7 +62,9 @@ d. Vlad
 
 În diagrama de mai jos sunt prezentate rezultatele obținute de elevii unei clase, la un test de matematică.
 
-Afirmatia: „Conform informațiilor din diagramă, jumătate din numărul elevilor acestei clase a obținut la testul de matematică cel puțin nota 8.” este:
+Afirmația: „Conform informațiilor din diagramă, jumătate din numărul elevilor acestei clase a obținut la testul de matematică cel puțin nota 8.” este:
+
+![Imagine](img/1-6.png)
 
 a. adevărată
 b. falsă
@@ -75,7 +84,7 @@ d. $9$ cm
 
 ## 2. 5p
 
-În figura alăturată sunt reprezentate unghiurile adiacente complementare $AOB$ și $BOC$. Semidreapta $OM$ este bisectoarea unghiului $AOB$ și $BOC = 3 \cdot AOM$. Măsura unghiului $AOB$ este egală cu:
+În figura alăturată sunt reprezentate unghiurile adiacente complementare $AOB$ și $BOC$. Semidreapta $OM$ este bisectoarea unghiului $AOB$ și $ \angle BOC = 3 \cdot\angle AOM$. Măsura unghiului $AOB$ este egală cu:
 
 ![Imagine](img/2-2.png)
 
@@ -86,7 +95,7 @@ d. $54^\circ$
 
 ## 3. 5p
 
-În figura alăturată este reprezentat triunghiul $ABC$ cu $AB = 10$ cm și $AC' = 12$ cm. Semidreapta $BE$ este bisectoarea unghiului $ABC$ și semidreapta $CI$ este bisectoarea unghiului $ACB$. Paralela prin punctul $I$ la dreapta $BC$ intersectează dreptele $AB$ și $AC$ în punctele $D$, respectiv $E$. Perimetrul triunghiului $ADE$ este egal cu:
+În figura alăturată este reprezentat triunghiul $ABC$ cu $AB = 10$ cm și $AC = 12$ cm. Semidreapta $BI$ este bisectoarea unghiului $ACB$ și semidreapta $CI$ este bisectoarea unghiului $ACB$. Paralela prin punctul $I$ la dreapta $BC$ intersectează dreptele $AB$ și $AC$ în punctele $D$, respectiv $E$. Perimetrul triunghiului $ADE$ este egal cu:
 
 ![Imagine](img/2-3.png)
 
@@ -97,7 +106,7 @@ d. $24$ cm
 
 ## 4. 5p
 
-În figura alăturată este reprezentat dreptunghiul $ABCD$, cu $AB = 3\sqrt{2}$ cm și triunghiul $BEC$ dreptunghic în $E$. Punctul $F$ este mijlocul segmentului $BC$ și $EF = 4$ cm. Aria trapezului $ACFD$ este egală cu:
+În figura alăturată este reprezentat dreptunghiul $ABCD$, cu $AB = 3\sqrt{2}$ cm și triunghiul $BEC$ dreptunghic în $E$. Punctul $F$ este mijlocul segmentului $BC$ și $EF = 4$ cm. Aria trapezului $AFCD$ este egală cu:
 
 ![Imagine](img/2-4.png)
 
@@ -119,7 +128,7 @@ d. $150^\circ$
 
 ## 6. 5p
 
-În figura alăturată este reprezentată piramida patrulateră regulată $VABCD$ cu baza $ABCD$, $VA = 4B$ și $O$ este punctul de intersecție a dreptelor $AC'$ și $BD$. Dacă punctul $M$ este mijlocul segmentului $VB$, atunci măsura unghiului dreptelor $OM$ și $CD$ este egală cu:
+În figura alăturată este reprezentată piramida patrulateră regulată $VABCD$ cu baza $ABCD$, $VA = 4B$ și $O$ este punctul de intersecție a dreptelor $AC$ și $BD$. Dacă punctul $M$ este mijlocul segmentului $VB$, atunci măsura unghiului dreptelor $OM$ și $CD$ este egală cu:
 
 ![Imagine](img/2-6.png)
 
@@ -156,7 +165,7 @@ Arată că numărul $N = E(n) + 6$ este divizibil cu 10, pentru orice număr nat
 
 ## 3. 5p
 
-Se consideră numărul natural $abc$ cu $a, b, c$ cifre nenule, unde $a = \frac{5}{2} \left( \frac{1}{3} + \frac{1}{6} \right) - \frac{2}{3} \times \frac{1}{3}$ și $b = (3 \cdot 3^2 \cdot 3^3 \cdot 3^4) : 9^4 - 2^5 \cdot 5^7$.
+Se consideră numărul natural $abc$ cu $a, b, c$ cifre nenule, unde $a = \ 5 \left( \frac{1}{3} + \frac{1}{6} + \frac{1}{6} \right) -  \frac{2}{3} : \frac {1}{3}$ și $b = (3 \cdot 3^2 \cdot 3^3 \cdot 3^4) : 9^4 - 25^4 : 5^7$.
 
 ### a. 2p
 
