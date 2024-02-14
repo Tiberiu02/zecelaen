@@ -67,7 +67,7 @@ a = 11b + 2 \\
 
 (1p) $|2x - 1| = 5 \Rightarrow x \in \{-2; 3\}$
 
-(1p) $x \in \mathbb{R} \backslash \{-5; -2; 5\} \Rightarrow S = \{3\}$
+(1p) $x \in \mathbb{R} / \{-5; -2; 5\} \Rightarrow S = \{3\}$
 
 ## 4.
 

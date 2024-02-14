@@ -2,12 +2,13 @@
 
 ## 1. 5p
 
-Se dă mulțimea $A = \left\{ (-3)^2, -\left(\frac{1}{4}\right)^{-2}, \left(\frac{1}{2}\right)^{-1}, -\frac{6}{-2}, \sqrt[3]{\frac{75}{\sqrt[4]{48}}}, \sqrt{5}, \sqrt{0,09} \right\}$. Mulțimea $A \cap \mathbb{N}$ este egală cu:
+Se dă mulțimea $A  =  \left\{ (-3)^2; -\sqrt{\frac{1}{4}}; (-2)^3; \left(\frac{1}{2}\right)^{-1}; \frac{-6}{-2}; \sqrt{\frac{75}{48}}; \sqrt{5}; \sqrt{0,09} \right\}$.
+Mulțimea $A \cap \mathbb{N}$ este egală cu:
 
-a. $\tiny \left\{ (-3)^2, (-2)^3, -\frac{6}{-2} \right\}$
-b. $\tiny \left\{ (-3)^2, \left(-\frac{1}{2}\right)^3, -\frac{6}{-2} \right\}$
-c. $\tiny \left\{ (-3)^2, \left(\frac{1}{2}\right)^{-1}, -\frac{6}{-2} \right\}$
-d. $\tiny \left\{ (-3)^2, -\frac{6}{-2} \right\}$
+a. $\tiny \left\{ (-3)^2; (-2)^3; \frac{-6}{-2} \right\}$
+b. $\tiny \left\{ (-3)^2; (-2)^3;  \left(\frac{1}{2}\right)^ {-1}; \frac{-6}{-2} \right\}$
+c. $\tiny \left\{ (-3)^2; \left(\frac{1}{2}\right)^{-1}; \frac{-6}{-2} \right\}$
+d. $\tiny \left\{ (-3)^2; \frac{-6}{-2} \right\}$
 
 ## 2. 5p
 
@@ -138,7 +139,7 @@ Determină cele două numere.
 
 ## 2. 5p
 
-Fie mulțimile $A = \left\{ x \in \mathbb{R} | |2x - 1| \leq 7 \right\}$ și $B = \left\{ x \in \mathbb{R} | \frac{1}{5} \leq 3x + 2 < 4 \right\}$.
+Fie mulțimile $A = \left\{ x \in \mathbb{R} | |2x - 1| \leq 7 \right\}$ și $B = \left\{ x \in \mathbb{R} | 1\leq \frac {3x + 2}{5}< 4 \right\}$.
 
 ### a. 2p
 
@@ -150,7 +151,7 @@ Calculează mulțimea $C$, unde $C = A \cap B$.
 
 ## 3. 5p
 
-Fie numerele $a = (\frac{18}{\sqrt{50}} - \frac{10}{\sqrt{18}})\cdot 30$ și $b = \sqrt{20^2 - 16^2} - \frac{1}{4\sqrt{3}}$.
+Fie numerele $a = (\frac{18}{\sqrt{50}} - \frac{10}{\sqrt{18}})\cdot 30$ și $b = \sqrt{20^2 - 16^2} \cdot \frac{1}{4\sqrt{3}}$.
 
 ### a. 2p
 
@@ -180,7 +181,7 @@ Arată că tangenta unghiului $MDC$ este egală cu $\frac{4}{3}$.
 
 ### a. 2p
 
-Arată că aria trapezului $ABCD$ este $128\sqrt{2}$ cm².
+Arată că aria trapezului $ABCD$ este $128\sqrt{2}$ cm$^2$.
 
 ![Imagine](img/3-5.png)
 

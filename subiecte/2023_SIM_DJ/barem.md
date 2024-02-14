@@ -94,9 +94,10 @@
 
 (1p) Cum $AB \parallel CD \Rightarrow \frac{DO}{BO}=\frac{CD}{AB}=\frac{1}{2}$, iar $\frac{DF}{AF}=\frac{2\sqrt{2}}{4\sqrt{2}}=\frac{1}{2} \Rightarrow \frac{DO}{BO}=\frac{DF}{AF}$, așadar $FO \parallel AB \parallel CD$
 
-(1p) $FO \parallel AB$ $\Rightarrow$ $FO \perp AD$, așadar $\angle OFC = 90^\circ - \angle CFD$ și $\angle OFB = 90^\circ - \angle AFB$.
+(1p) Cum $FO \parallel AB$ $\Rightarrow$ $FO \perp AD$, așadar $\angle OFC = 90^\circ - \angle CFD$ și $\angle OFB = 90^\circ - \angle AFB$.
 
-(1p) $\frac{DF}{AF}=\frac{DC}{AB}$ și $\angle FDC = \angle FAB \Rightarrow \triangle FDC \sim \triangle FAB \Rightarrow \angle DFC \equiv \angle AFB \Rightarrow \angle OFC \equiv \angle OFB$, deci $FO$ este bisectoarea unghiului $CFB$.
+(1p) $\frac{DF}{AF}=\frac{DC}{AB}$ și $\angle FDC = \angle FAB \Rightarrow \triangle FDC \sim \triangle FAB \Rightarrow \angle DFC \equiv \angle AFB \Rightarrow \angle OFC \equiv \angle OFB$,  $\Rightarrow$
+ $FO$ este bisectoarea unghiului $CFB$.
 
 ## 6.
 

@@ -41,7 +41,7 @@ $\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lu
 ### b.
 
 (1p) $b = 2\sqrt{3} + 2\sqrt{2}$
-(1p) $m_g = \sqrt{ab} = \sqrt{(2\sqrt{3} - 2\sqrt{2})(2\sqrt{3} + 2\sqrt{2})} = \sqrt{12 - 8} = \sqrt{4} = 2 \in \mathbb{N}$
+(2p) $m_g = \sqrt{ab} = \sqrt{(2\sqrt{3} - 2\sqrt{2})(2\sqrt{3} + 2\sqrt{2})} = \sqrt{12 - 8} = \sqrt{4} = 2 \in \mathbb{N}$
 
 ## 3.
 
@@ -59,40 +59,44 @@ $\text{Obs. rezolvarea  completă a punctului b și specificarea faptului că lu
 
 ### a.
 
-(1p) Deoarece $\triangle ABC$ este isoscel $\Rightarrow \angle ABC = \angle ACB \Rightarrow \angle DBC = \angle ECB$
-(1p) Dar $BC = BC$, $DB = AB = AC = CE \xRightarrow{\text{LUL}} \triangle BDC \equiv \triangle CEB \Rightarrow BE = CD$
+(1p) Deoarece $\triangle ABC$ este isoscel $\Rightarrow \angle ABC  \equiv\angle ACB \Rightarrow \angle DBC \equiv\angle ECB$
+(1p) Dar $BC \equiv BC$, $DB \equiv AB \equiv AC \equiv CE \xRightarrow{\text{LUL}} \triangle BDC \equiv \triangle CEB \Rightarrow BE \equiv CD$
 
 ### b.
 
-(1p) Din a. $\Rightarrow \angle DCB = \angle EBC \Rightarrow \angle OBC = \angle OCB \Rightarrow\triangle OBC $ este isoscel
-$\Rightarrow OB = OC = OE \Rightarrow OD = OE$
-Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $OA$ este mediatoarea lui $DE$ $\Rightarrow OA \perp DE$
+(1p) Din a. $\Rightarrow \angle DCB \equiv \angle EBC \Rightarrow \angle OBC \equiv \angle OCB \Rightarrow\triangle OBC $ este isoscel
+
+(1p) $\Rightarrow OB \equiv OC \Rightarrow OD \equiv OE$
+
+(1p) Atunci triunghiurile $ODE$ și $ADE$ sunt isoscele cu baza comună $DE$, deci $OA$ este mediatoarea lui $DE$ $\Rightarrow OA \perp DE$
 
 ## 5.
 
 ### a.
 
-(1p) $ABCD$ paralelogram $\Rightarrow \triangle BAC = \triangle DAC$ $\Rightarrow A_{BAC} = A_{DCA} =\frac{1}{2} A_{ABCD} = 16 \text{cm}^2$
+(1p) $ABCD$ paralelogram $\Rightarrow \triangle BAC \equiv\triangle DCA$ $\Rightarrow A_{BAC} = A_{DCA} =\frac{1}{2} A_{ABCD} = 16 \text{cm}^2$
 (1p) Dar $CE$ este mediană în $\triangle CAB \Rightarrow A_{CEB} = \frac{1}{2} A_{BAC} = 8 \text{cm}^2$
 
 ### b.
 
 (1p) $CE$ este mediană în $\triangle CBA$, $CF = \frac{2}{3} CE$, deci punctul $F$ este centrul de greutate al $\triangle CBA$
-(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $BO este mediană în $\triangle CBA$ $\Rightarrow F \in BO$
-Dar $O \in BD$ $\Rightarrow F \in BD$ $\Rightarrow$ punctele $B$, $F$, $D$ sunt coliniare
+
+(1p) Fie $\{O\} = AC \cap BD$. Cum $ABCD$ este paralelogram $\Rightarrow O$ este mijlocul $AC$ $\Rightarrow $ BO este mediană în $\triangle CBA$ $\Rightarrow F \in BO$
+
+(1p) Dar $O \in BD$ $\Rightarrow F \in BD$ $\Rightarrow$ punctele $B$, $F$, $D$ sunt coliniare
 
 ## 6.
 
 ### a.
 
-(1p) $ ABCD$ piramidă patrulateră regulată $\Rightarrow \angle VAB = \angle VBA \Rightarrow \triangle VAB$ este isoscel
-$\Rightarrow \angle VAB = \angle VBA$ = 70$^\circ$
+(1p) $ VABCD$ piramidă patrulateră regulată $\Rightarrow \ VA =  VB \Rightarrow \triangle VAB$ este isoscel
+$\Rightarrow \angle VAB = \angle VBA$ = $70^\circ$
 (1p) Atunci $\angle AVB = 180^\circ - (\angle VAB + \angle VBA) = 180^\circ - 140^\circ = 40^\circ$
 
 ### b.
 
-(1p) Desfășurăm în plan fețele $VAB$, $VBC$ și $VCD$ atunci suma $AE + EF + FD$ rămâne neschimbată după desfășurare. 
-(1p) Această sumă este minimă dacă $A, E, F, D$ sunt coliniare. 
-Dar $\triangle VAD$ obținut după desfășurare este isoscel cu $\angle AVD = 3 \cdot 40^\circ = 120^\circ$. Atunci
+(1p) Desfășurăm în plan fețele $VAB$, $VBC$ și $VCD$ atunci suma $AE + EF + FD$ rămâne neschimbată după desfășurare.
+Această sumă este minimă dacă $A, E, F, D$ sunt coliniare.
+(2p) Dar $\triangle VAD$ obținut după desfășurare este isoscel cu $\angle AVD = 3 \cdot 40^\circ = 120^\circ$. Atunci
 $\angle VDA = \angle VAD = 30^\circ$. Ducem $VM \perp AD, M \in AD$, în $\triangle VMA(\angle M = 90^\circ, \angle A = 30^\circ) \Rightarrow VM = \frac{1}{2} VA = 6 \text{cm}$, deci
 $AM^2 = VA^2 - VM^2 \Rightarrow AM = \sqrt{144 - 36} = \sqrt{108} = 6\sqrt{3} \text{cm}$, deci $AD = 12\sqrt{3} \text{cm}$

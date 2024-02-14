@@ -113,10 +113,10 @@ d. $20$ m
 
 ![Imagine](img/2-4.png)
 
-a. $30$ cm²
-b. $40$ cm²
-c. $50$ cm²
-d. $25$ cm²
+a. $30$ cm$^2$
+b. $40$ cm$^2$
+c. $50$ cm$^2$
+d. $25$ cm$^2$
 
 ## 5. 5p
 
@@ -148,7 +148,7 @@ Mai multe persoane doresc să cumpere un obiect. Dacă fiecare persoană dă câ
 
 ### a. 2p
 
-Este posibil ca prețul obiectului să fie 190 de lei? Justifică răspunsul dat.
+Este posibil ca prețul obiectului să fie 190 de lei?
 
 ### b. 3p
 

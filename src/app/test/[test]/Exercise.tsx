@@ -3,11 +3,15 @@
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaAngleDown, FaAngleUp, FaStar, FaVideo } from "react-icons/fa6";
 import { BlockMath } from "react-katex";
 import { twMerge } from "tailwind-merge";
 import YouTube from "react-youtube";
+import { useAtom } from "jotai";
+import { getExerciseAtom } from "@/storage/exercises";
+import { useStats } from "@/storage/stats";
+import { getExamAtom } from "@/storage/exams";
 
 function parseKatex(str: string) {
   return (
@@ -72,6 +76,8 @@ export function Exercise({
   imageSize,
   subExercises,
   videoUrl,
+  examId,
+  sectionIndex,
 }: {
   description: string;
   points?: number;
@@ -89,11 +95,25 @@ export function Exercise({
     }[];
   }[];
   videoUrl?: string;
+  examId: string;
+  sectionIndex: number;
 }) {
-  const [chosen, setChosen] = useState<number | null>(null);
-  const [score, setScore] = useState<number | null>(null);
   const [showSolution, setShowSolution] = useState(false);
   const [cardRef] = useAutoAnimate();
+
+  const [enableUpdates, setEnableUpdates] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setEnableUpdates(true);
+    }, 500);
+  }, []);
+
+  const [exerciseChoice, setExerciseChoice] = useAtom(
+    getExerciseAtom(examId, sectionIndex, index)
+  );
+  const [examData, setExamData] = useAtom(getExamAtom(examId));
+  const { incrementStars } = useStats();
 
   const className = {
     options: [
@@ -114,7 +134,7 @@ export function Exercise({
 
   return (
     <Card
-      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6"
+      className="w-full flex flex-col gap-0 p-2 md:py-5 py-6 px-6 max-md:shadow-none max-md:border-b-2 border-gray-200"
       cardRef={cardRef}
     >
       <div className="flex justify-between font-bold text-lg gap-4">
@@ -136,6 +156,7 @@ export function Exercise({
           />
         )}
       </h3>
+
       {subExercises &&
         subExercises.map((sub, i) => (
           <div key={i}>
@@ -174,19 +195,39 @@ export function Exercise({
             <Button
               className={twMerge(
                 "flex w-full gap-4 items-center text-xl py-1 pl-2 pr-4",
-                chosen == i &&
+                exerciseChoice == i &&
                   (correct == i
                     ? "bg-[#d6ffd5] border-[#8ce98b] shadow-[#8ce98b]"
                     : "bg-[#ffe6e6] border-[#fcc3c3] shadow-[#fcc3c3]")
               )}
-              active={chosen == null}
-              onClick={chosen == null ? () => setChosen(i) : undefined}
+              active={exerciseChoice == null}
+              onClick={
+                exerciseChoice == null
+                  ? () => {
+                      setExerciseChoice(i);
+                      if (points) {
+                        if (correct == i) {
+                          incrementStars(points);
+                          setExamData({
+                            incorrect: examData.incorrect,
+                            correct: examData.correct + points,
+                          });
+                        } else if (points) {
+                          setExamData({
+                            incorrect: examData.incorrect + points,
+                            correct: examData.correct,
+                          });
+                        }
+                      }
+                    }
+                  : undefined
+              }
               key={i}
             >
               <div
                 className={twMerge(
-                  "h-7 w-7 border-2 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
-                  chosen == null
+                  "h-7 w-7 shrink-0 border-2 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
+                  exerciseChoice == null
                     ? className.options[i]
                     : i == correct
                     ? "border-[#98eb96] bg-[#5dd35b]"
@@ -227,12 +268,11 @@ export function Exercise({
                   ? videoUrl.split("=").at(-1)
                   : videoUrl.split("/").at(-1)
               }
-              className="relative w-full aspect-video" // -my-[3%]"
-              iframeClassName="h-full w-full" //h-[1000%] w-[1000%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.1]"
+              className="relative w-full aspect-video"
+              iframeClassName="h-full w-full"
               opts={{
                 playerVars: { rel: 0 },
               }}
-              title="YouTube video player"
             />
           </div>
         </div>
@@ -272,18 +312,18 @@ export function Exercise({
           )}
         </div>
       )}
-      {score != null && (
+      {!options && exerciseChoice != null && (
         <div
           className={twMerge(
             "flex flex-row items-center justify-end gap-1 mt-8",
-            className.score[score]
+            className.score[exerciseChoice]
           )}
         >
           <FaStar className="text-xl mt-[-2px]" />
-          <div className="font-bold text-lg">{score}</div>
+          <div className="font-bold text-lg">{exerciseChoice}</div>
         </div>
       )}
-      {showSolution && !options && score == null && (
+      {showSolution && !options && exerciseChoice == null && (
         <div className="flex flex-col gap-4 mt-8">
           <div className="font-bold text-lg">Estimare punctaj</div>
           <div className="font-normal text-lg">
@@ -296,7 +336,16 @@ export function Exercise({
                   "flex justify-center w-full gap-2 group items-center text-xl py-2",
                   className.score[i]
                 )}
-                onClick={() => setScore(p)}
+                onClick={() => {
+                  setExerciseChoice(p);
+                  if (p > 0) {
+                    incrementStars(p);
+                    setExamData({
+                      incorrect: examData.incorrect + 5 - p,
+                      correct: examData.correct + p,
+                    });
+                  }
+                }}
                 key={i}
               >
                 <FaStar />
@@ -306,7 +355,7 @@ export function Exercise({
           </div>
         </div>
       )}
-      {((chosen != null && videoUrl) || !options) && (
+      {enableUpdates && ((exerciseChoice != null && videoUrl) || !options) && (
         <button
           className="flex w-fit self-center duration-150 justify-center gap-2 text-lg mt-6 items-center font-semibold text-black/40 hover:text-black/50 whitespace-nowrap"
           onClick={() => setShowSolution(!showSolution)}

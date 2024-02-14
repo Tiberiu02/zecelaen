@@ -36,7 +36,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 ### a.
 
-(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$ - 3 
+(1p) $x = \sqrt{144} + 2\sqrt{18} - (\sqrt{3})^2 = 12 + 2\cdot3\sqrt2 - 3 = 12 + 6\sqrt{2}$ - 3
 
 (1p) $x = 9 + 6\sqrt{2}$
 
@@ -60,7 +60,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $2 < 3x + 8 \leq 26$
 
-(1p) $-2 \leq x \leq 6 \Rightarrow B = (-2,6]$
+(1p) $-2 < x \leq 6 \Rightarrow B = (-2,6]$
 
 (1p) $A \cap B = (-2,1] \Rightarrow (A \cap B) \cap \mathbb{Z} = \{-1,0,1\}$
 
@@ -70,7 +70,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) Fie $CE \perp AB$, $E \in AB$, în $\triangle CEB$, $CE = 4$ cm
 
-(1p) $A_{ABCD} = \frac{(AB+CD)\cdot CE}{2} = \frac{(8+5)\cdot 4}{2} = \frac{52}{2} = 26$ cm²
+(1p) $A_{ABCD} = \frac{(AB+CD)\cdot CE}{2} = \frac{(8+5)\cdot 4}{2} = \frac{52}{2} = 26$ cm$^2$
 
 ### b.
 
@@ -94,7 +94,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $AD = \sqrt{AM^2 + DM^2} = \sqrt{252}$ cm
 
-(1p) $A_{\triangle DAE} = \frac{252 \cdot \sin(\angle DAE)}{2} = \frac{252 \cdot \frac{3\sqrt{3}}{14}}{2} = 27\sqrt{3}$  $\Rightarrow \sin(\angle DAE) = \frac{3\sqrt{3}}{14}$
+(1p) $A_{\triangle DAE} = \frac{252 \cdot \sin(\angle DAE)}{2} = \frac{252 \cdot \frac{3\sqrt{3}}{14}}{2} = 27\sqrt{3}$ $\Rightarrow \sin(\angle DAE) = \frac{3\sqrt{3}}{14}$
 
 ## 6.
 

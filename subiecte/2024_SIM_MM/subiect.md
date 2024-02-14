@@ -112,16 +112,18 @@ d. $15$ cm
 
 Fie $AB$ diametrul în cercul de centru $O$ și rază de lungime egală cu 5 cm. Dacă $CD \perp AB$ și lungimea segmentului $AC$ este egală cu 8 cm, atunci aria patrulaterului $ACBD$ este egală cu:
 
-a. $24$ cm²
-b. $25$ cm²
-c. $20$ cm²
-d. $48$ cm²
+a. $24$ cm$^2$
+b. $25$ cm$^2$
+c. $20$ cm$^2$
+d. $48$ cm$^2$
 
 ![Imagine](img/2-5.png)
 
 ## 6. 5p
 
-Aria bazei unui tetraedru regulat este egală cu $9\sqrt{3}$ cm². Suma lungimilor muchiilor laterale este egală cu:
+Aria bazei unui tetraedru regulat este egală cu $9\sqrt{3}$ cm$^2$. Suma lungimilor muchiilor laterale este egală cu:
+
+![Imagine](img/2-6.png)
 
 a. $16\sqrt{3}$ cm
 b. $30$ cm
@@ -174,7 +176,7 @@ Determinați $(A \cap B) \cap \mathbb{Z}$.
 
 ### a. 2p
 
-Arătați că aria trapezului $ABCD$ este egală cu 26 cm²;
+Arătați că aria trapezului $ABCD$ este egală cu 26 cm$^2$;
 
 ### b. 3p
 

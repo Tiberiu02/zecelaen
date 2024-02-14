@@ -48,7 +48,7 @@ $E(x) = x(x^2 + 3x + 2)$
 (1p) $E(n) = n(n + 1)(n + 2)$,
 (1p) Produsul a două numere naturale consecutive este divizibil cu 2.
 Produsul a trei numere naturale consecutive este divizibil cu 3.
-Deci $E(n) \Div 6 $
+Deci $E(n)$\Div 6 $
 
 ## 3.
 
@@ -74,19 +74,19 @@ $\angle ACB = \frac{1}{2} \widehat{AB} = \frac{180^\circ}{2} = 90^\circ$
 
 ### b.
 
-(1p) $BC = 6\sqrt{3}$, $\mathcal{A}_{\triangle ABC} = 18\sqrt{3}$ cm²
-(1p) $CO$ mediană $\Rightarrow \mathcal{A}_{\triangle ABC} = \frac{1}{2} \mathcal{A}_{\triangle ABC} = 9\sqrt{3}$ cm²
-(1p) $\mathcal{A}_{sector} = 12\pi$ cm²
-(1p) $\mathcal{A}_{hasurată} = \mathcal{A}_{sector} - \mathcal{A}_{\triangle ABC} = 12\pi - 9\sqrt{3} = 3(4\pi - 3\sqrt{3})$ cm²
+(1p) $BC = 6\sqrt{3}$, $\mathcal{A}_{\triangle ABC} = 18\sqrt{3}$ cm$^2$
+$CO$ mediană $\Rightarrow \mathcal{A}_{\triangle ABC} = \frac{1}{2} \mathcal{A}_{\triangle ABC} = 9\sqrt{3}$ cm$^2$
+(1p) $\mathcal{A}_{sector} = 12\pi$ cm$^2$
+(1p) $\mathcal{A}_{hasurată} = \mathcal{A}_{sector} - \mathcal{A}_{\triangle ABC} = 12\pi - 9\sqrt{3} = 3(4\pi - 3\sqrt{3})$ cm$^2$
 
 ## 5.
 
 ### a.
 
 (1p) Dacă $AC \perp CE$ $\Rightarrow \angle ACB = 30^\circ$
-$\mathcal{A}_{\triangle BEC} = \frac{l^2\sqrt{3}}{4} = 192\sqrt{3}$ m²
+$\mathcal{A}_{\triangle BEC} = \frac{l^2\sqrt{3}}{4} = 192\sqrt{3}$ m$^2$
 (1p) $\mathcal{A}_{ABCD} = L \cdot l$
-$\mathcal{A}_{grădină} = 448\sqrt{3}$ m²
+$\mathcal{A}_{grădină} = 448\sqrt{3}$ m$^2$
 
 ### b.
 

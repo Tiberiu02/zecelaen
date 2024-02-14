@@ -72,7 +72,7 @@
 
 (1p) $\angle PAD = 90^\circ + 60^\circ = 150^\circ$, $AD = AP$ $\Rightarrow$ triunghiul $\triangle APD$ isoscel, deci $\angle ADP \equiv \angle APD$
 
-(1) $\angle APD = 15^\circ$ $\Rightarrow$ $\angle DPB = 60^\circ - 15^\circ = 45^\circ$
+(1p) $\angle APD = 15^\circ$ $\Rightarrow$ $\angle DPB = 60^\circ - 15^\circ = 45^\circ$
 
 ### b.
 

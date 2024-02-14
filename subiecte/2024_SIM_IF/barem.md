@@ -32,7 +32,7 @@
 
 (1p) $x = 2\text{km}$
 
-Etapa a II a: $10\text{km}$
+(1p) Etapa a II a: $10\text{km}$
 
 ## 2.
 
@@ -40,7 +40,7 @@ Etapa a II a: $10\text{km}$
 
 (1p) $|0 + 1| = 1$
 
-(1p) $1 < 3.0 \in A$
+(1p) $1 < 3;$ $0 \in A$
 
 ### b.
 
@@ -78,9 +78,9 @@ Etapa a II a: $10\text{km}$
 
 (1p) $A_{\triangle AEC} = \frac{AD \cdot EC}{2} = 27\sqrt{3}$
 
-(1p) $A_{\triangle AEC} = \frac{AE \cdot d(C; AE)}{2} $
+(1p) $A\_{\triangle AEC} = \frac{AE \cdot d(C; AE)}{2} $
 
-(1p) $d(C; AE) = \frac{18\sqrt{39}}{13}$ 
+(1p) $d(C; AE) = \frac{18\sqrt{39}}{13}$
 
 ## 5.
 
@@ -94,7 +94,7 @@ Etapa a II a: $10\text{km}$
 
 (1p) $\triangle AOB$ este echilateral $\Rightarrow AM$ este mediana $\Rightarrow M$ este mijlocul lui $OB$
 
-(1p) $MN$ este linie mijlocie  $\triangle BOC$ $\Rightarrow MN = \frac{BC}{2} = \frac{AD}{2}$
+(1p) $MN$ este linie mijlocie $\triangle BOC$ $\Rightarrow MN = \frac{BC}{2} = \frac{AD}{2}$
 
 (1p) $AD = 8\sqrt{3} \Rightarrow MN = 4\sqrt{3}$
 
@@ -110,8 +110,8 @@ Etapa a II a: $10\text{km}$
 
 (1p) Fie $N$ mijlocul lui $BC$ $\Rightarrow MN$ linie mijlocie în $\triangle BCD$ $\Rightarrow MN = 3\sqrt{2}$ și $MN$ este paralel cu $BD$ $\Rightarrow \angle(VM; BD) = \angle(VM; MN) = \angle VMN$
 
- $VM = VN$ $\Rightarrow \triangle VMN$ este isoscel și dacă $VP$ este înălțime $\Rightarrow VP$ este mediană $\Rightarrow P$ este mijlocul lui $MN$
+$VM = VN$ $\Rightarrow \triangle VMN$ este isoscel și dacă $VP$ este înălțime $\Rightarrow VP$ este mediană $\Rightarrow P$ este mijlocul lui $MN$ $\Rightarrow$
 
-(1p) $\frac{VP}{2} = \frac{3\sqrt{10}}{2}$
+(1p) $VP = \frac{3\sqrt{10}}{2}$
 
 (1p) $\sin(\angle VMN) = \frac{VP}{PM} = \frac{\sqrt{30}}{6}$

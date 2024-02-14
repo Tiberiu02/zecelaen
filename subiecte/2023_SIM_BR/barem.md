@@ -68,13 +68,13 @@
 
 ### a.
 
-(1p) Teorema lui Pitagora în $\triangle ABC \Rightarrow AB^2 + AC^2 = BC^2 \Rightarrow BC = 20$ cm.
+(1p) Teorema lui Pitagora în $\triangle ABC : AB^2 + AC^2 = BC^2 \Rightarrow BC = 20$ cm.
 
 (1p) $P_{\triangle ABC} = 16 + 12 + 20 = 48$ cm.
 
 ### b.
 
-(1p) $\frac{AE}{AC} = \frac{AF}{AB}$ și $\angle BAC = \angle FAE \Rightarrow \triangle ABC \sim \triangle AFE \Rightarrow \angle AEF = \angle ACB $ și $ \angle AFE = \angle ABC$
+(1p) $\frac{AE}{AC} = \frac{AF}{AB}$ și $\angle BAC = \angle FAE \Rightarrow \triangle ABC \sim \triangle AFE \Rightarrow \angle AEF = \angle ACB $ și $\Rightarrow$ $ \angle AFE = \angle ABC$
 
 (1p) $\angle PAF = \angle ABC$ și $\angle PAE = \angle ACB$ (au același complement) $\Rightarrow$
 
@@ -84,7 +84,7 @@
 
 ### a.
 
-(1p) Teorema lui Pitagora în $\triangle ABD \Rightarrow AB^2 + AD^2 = BD^2 \Rightarrow BD = 4\sqrt{3}$ cm
+(1p) Teorema lui Pitagora în $\triangle ABD : AB^2 + AD^2 = BD^2 \Rightarrow BD = 4\sqrt{3}$ cm
 
 (1p) $\mathcal{A}_{ABCD} = AB \cdot AD = 16\sqrt{3}$ cm$^2$
 
