@@ -68,7 +68,7 @@ export default function Home() {
             </Fragment>
           ))}
         <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
-          <span className="text-2xl">©</span> 2023 ZeceLaEN.ro
+          <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
         </div>
       </div>
     </main>

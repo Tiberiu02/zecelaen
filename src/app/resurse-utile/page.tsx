@@ -1,6 +1,5 @@
 import {
   FaEarthAfrica,
-  FaEarthEurope,
   FaFacebook,
   FaHeart,
   FaInstagram,
@@ -158,6 +157,12 @@ export default async function Page() {
                 text: "Youtube",
                 color: "#F00",
               },
+              {
+                href: "https://www.matematicadeacasa.ro/",
+                Icon: FaEarthAfrica,
+                text: "matematicadeacasa.ro",
+                color: "#54A0FF",
+              },
             ]}
           >
             <span className="font-bold">Claudia Cilibia</span> este creatoarea
@@ -310,7 +315,7 @@ export default async function Page() {
               },
               {
                 href: "https://eromana.ro/",
-                Icon: FaEarthEurope,
+                Icon: FaEarthAfrica,
                 text: "eromana.ro",
                 color: "#54A0FF",
               },
@@ -333,7 +338,7 @@ export default async function Page() {
               },
               {
                 href: "https://succeslaexamen.ro/",
-                Icon: FaEarthEurope,
+                Icon: FaEarthAfrica,
                 text: "succeslaexamen.ro",
                 color: "#54A0FF",
               },
@@ -360,7 +365,7 @@ export default async function Page() {
               },
               {
                 href: "https://voxvalachorum.ro/",
-                Icon: FaEarthEurope,
+                Icon: FaEarthAfrica,
                 text: "voxvalachorum.ro",
                 color: "#54A0FF",
               },
@@ -385,7 +390,7 @@ export default async function Page() {
             links={[
               {
                 href: "https://www.edupedu.ro/",
-                Icon: FaEarthEurope,
+                Icon: FaEarthAfrica,
                 text: "edupedu.ro",
                 color: "#54A0FF",
               },
@@ -405,7 +410,7 @@ export default async function Page() {
             links={[
               {
                 href: "https://www.bacplus.ro/",
-                Icon: FaEarthEurope,
+                Icon: FaEarthAfrica,
                 text: "bacplus.ro",
                 color: "#54A0FF",
               },
@@ -421,7 +426,7 @@ export default async function Page() {
 
         <div className="flex flex-col gap-4 items-center">
           <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
-            <span className="text-2xl">©</span> 2023 ZeceLaEN.ro
+            <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
           </div>
         </div>
       </div>

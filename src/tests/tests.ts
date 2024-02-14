@@ -7,6 +7,32 @@ export const tests = [
     fullName: "Simulare Evaluarea Națională Matematică 2024",
     id: "2024_SIM_NAT",
     date: "06.02.2024",
+    videos: [
+      [
+        "https://youtu.be/d2gUsHfX2WA",
+        "https://youtu.be/Zg0DRxQhFF8",
+        "https://youtu.be/i0AIpKJGgbg",
+        "https://youtu.be/ICs6xzWNZzU",
+        "https://youtu.be/Y6D0w0pSjm8",
+        "https://youtu.be/UGUwarsplDA",
+      ],
+      [
+        "https://youtu.be/lY9ddeHLLhc",
+        "https://youtu.be/hq8OZ8h2WN4",
+        "https://youtu.be/_vsI2NwZCsY",
+        "https://youtu.be/Kd7Mi0N-DL8",
+        "https://youtu.be/RKzf-dEDhOs",
+        "https://youtu.be/7IBMEgO3zig",
+      ],
+      [
+        "https://youtu.be/3YX3jWUcjpE",
+        "https://youtu.be/YWh91UICDqU",
+        "https://youtu.be/tu66CpuU_nY",
+        "https://youtu.be/N7z5-K5KYPg",
+        "https://youtu.be/UwkTjF7PXrg",
+        "https://youtu.be/q1-q9pWiizQ",
+      ],
+    ],
   },
   {
     name: "Subiect Model",

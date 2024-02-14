@@ -107,10 +107,10 @@ d. $24$ cm
 
 ![Imagine](img/2-4.png)
 
-a. $6\sqrt{2}$ cm²
-b. $12\sqrt{2}$ cm²
-c. $18\sqrt{2}$ cm²
-d. $24\sqrt{2}$ cm²
+a. $6\sqrt{2}$ cm$^2$
+b. $12\sqrt{2}$ cm$^2$
+c. $18\sqrt{2}$ cm$^2$
+d. $24\sqrt{2}$ cm$^2$
 
 ## 5. 5p
 
@@ -125,7 +125,7 @@ d. $150^\circ$
 
 ## 6. 5p
 
-În figura alăturată este reprezentată piramida patrulateră regulată $VABCD$ cu baza $ABCD$, $VA = 4B$ și $O$ este punctul de intersecție a dreptelor $AC$ și $BD$. Dacă punctul $M$ este mijlocul segmentului $VB$, atunci măsura unghiului dreptelor $OM$ și $CD$ este egală cu:
+În figura alăturată este reprezentată piramida patrulateră regulată $VABCD$ cu baza $ABCD$, $VA = AB$ și $O$ este punctul de intersecție a dreptelor $AC$ și $BD$. Dacă punctul $M$ este mijlocul segmentului $VB$, atunci măsura unghiului dreptelor $OM$ și $CD$ este egală cu:
 
 ![Imagine](img/2-6.png)
 
@@ -162,7 +162,7 @@ Arată că numărul $N = E(n) + 6$ este divizibil cu 10, pentru orice număr nat
 
 ## 3. 5p
 
-Se consideră numărul natural $abc$ cu $a, b, c$ cifre nenule, unde $a = \ 5 \left( \frac{1}{3} + \frac{1}{6} + \frac{1}{6} \right) -  \frac{2}{3} : \frac {1}{3}$ și $b = (3 \cdot 3^2 \cdot 3^3 \cdot 3^4) : 9^4 - 25^4 : 5^7$.
+Se consideră numărul natural $\overline{abc}$ cu $a, b, c$ cifre nenule, unde $a = 5 \cdot \left( \frac{1}{2} + \frac{1}{3} + \frac{1}{6} \right) -  \frac{2}{3} : \frac {1}{3}$ și $b = (3 \cdot 3^2 \cdot 3^3 \cdot 3^4) : 9^4 - 25^4 : 5^7$.
 
 ### a. 2p
 
@@ -170,7 +170,7 @@ Arată că $a = 3$.
 
 ### b. 3p
 
-Determină numărul $abc$, știind că numerele $ac$ și $cb$ sunt direct proporționale cu numerele 4 și 3.
+Determină numărul $\overline{abc}$, știind că numerele $\overline{ac}$ și $\overline{cb}$ sunt direct proporționale cu numerele 4 și 3.
 
 ## 4. 5p
 
