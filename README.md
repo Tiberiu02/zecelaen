@@ -25,11 +25,12 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 Before launch:
 
 - verificari automate teste (puncte, imagini)
-- Gamification features
-- youtube upload script
+- [x] Gamification features![alt text](image.png)
+- [?] youtube upload script
 - deploy on bunny
-- simulare 2024 + video
-- video EN 2023
+- [x] simulare 2024 + video
+- [x] video EN 2023
+- [x] Google Analytics
 - SEO
 
 After launch:
