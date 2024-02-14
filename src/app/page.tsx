@@ -133,7 +133,7 @@ export default async function Page() {
       </div>
 
       <div className="flex flex-col gap-4 items-center">
-        <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
+        <div className="mb-4 mt-28 font-medium text-black/40 flex items-center gap-1">
           <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
         </div>
       </div>
