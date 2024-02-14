@@ -36,3 +36,9 @@ Before launch:
 After launch:
 
 - pagina despre evaluare
+
+Tech debt:
+
+- video links in separate files
+- footer component
+- layout of single pages
