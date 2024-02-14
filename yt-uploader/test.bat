@@ -1,0 +1,1 @@
+python upload_video.py --file="C:\Users\musat\Videos\ZeceLaEN\2023_EN\1-1.mkv" --title="Test video" --description="Test descriere" --category="27" --privacyStatus="unlisted"

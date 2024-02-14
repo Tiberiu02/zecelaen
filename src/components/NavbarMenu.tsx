@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaDivide } from "react-icons/fa";
@@ -24,31 +25,31 @@ export function NavbarMenu() {
             onClick={() => setShowMenu(false)}
             className="absolute z-50 text-gray-500 w-64 text-base top-[100%] right-0 p-0 bg-white border-gray-200 border-[2px] rounded-tr-xl overflow-hidden shadow-lg rounded-xl flex flex-col"
           >
-            <a
+            <Link
               className="flex gap-3 p-2 pt-3 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
               href="/teste-matematica"
             >
               <FaDivide /> Teste Matematică
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
               href="https://bacplus.ro/top_licee/2023"
               target="_blank"
             >
               <FaSchool /> Top Licee
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
               href="/resurse-utile"
             >
               <FaBook /> Resurse Utile
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex gap-3 p-2 px-4 items-center hover:bg-gray-100 bg-white hover:text-black duration-150"
               href="/discord"
             >
               <FaDiscord /> Discord
-            </a>
+            </Link>
           </div>
         </>
       )}

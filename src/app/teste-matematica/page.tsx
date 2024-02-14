@@ -6,7 +6,8 @@ import { Fragment } from "react";
 import { NavBar } from "../../components/NavBar";
 import { fullDate } from "@/tests/fullDate";
 import { Button } from "@/components/Button";
-import { FaVideoSlash } from "react-icons/fa6";
+import Link from "next/link";
+import { ExamProgressIndicatorMinimal } from "@/components/ExamProgressIndicator";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         </div>
       </h1>
 
-      <div className="flex flex-col gap-4 items-center max-w-4xl w-full px-4">
+      <div className="flex flex-col gap-4 items-center max-w-4xl w-full px-2 sm:px-4">
         {Object.entries(testsByYear)
           .sort((a, b) => parseInt(b[0]) - parseInt(a[0]))
           .map(([byear, subs]) => (
@@ -28,32 +29,33 @@ export default function Home() {
               </h1>
               <div
                 className={twMerge(
-                  "grid w-full max-w-md md:max-w-none md:grid-cols-[1fr_1fr] gap-4 md:[&>*:nth-child(even)]:translate-y-[16px] md:hover:[&>*:nth-child(even)]:translate-y-[18px]",
-                  subs.length == 1 && "md:grid-cols-1 md:max-w-md"
+                  "grid w-full max-w-md lg:max-w-none lg:grid-cols-[1fr_1fr] gap-4 lg:[&>*:nth-child(even)]:translate-y-[16px] lg:hover:[&>*:nth-child(even)]:translate-y-[18px]",
+                  subs.length == 1 && "lg:grid-cols-1 lg:max-w-md"
                 )}
               >
                 {subs
                   .sort((a, b) => (b.videos ? 1 : 0) - (a.videos ? 1 : 0))
                   .map((s, i) => (
-                    <a key={i} href={`/test/${getKey(s.fullName)}`}>
-                      <Button className="group flex items-center flex-row px-6 py-4 gap-6">
-                        <SubLogo seed={s.id} className="w-8 h-8" />
+                    <Link key={i} href={`/test/${getKey(s.fullName)}`}>
+                      <Button className="group flex items-center flex-row px-4 sm:px-6 py-4 gap-4 sm:gap-6">
+                        <SubLogo
+                          seed={s.id}
+                          className="w-6 h-6 sm:w-8 sm:h-8"
+                        />
                         <div className="flex mr-auto flex-col justify-between">
-                          <div className="text-lg sm:text-xl font-normal">
-                            {s.name}
+                          <div className="text-base sm:text-xl font-normal">
+                            {s.name}{" "}
                             {!s.videos && (
-                              <TbVideoOff className="inline ml-2 opacity-30 mt-[-3px] sm:-mt-1" />
+                              <TbVideoOff className="inline opacity-30 mt-[-3px] sm:-mt-1" />
                             )}
                           </div>
-                          <div className="w-fit font-semibold text-sm opacity-40">
+                          <div className="w-fit font-semibold text-xs sm:text-sm opacity-40">
                             {fullDate(s.date)}
                           </div>
                         </div>
-                        {null && (
-                          <TbDiscountCheckFilled className="text-green-500 text-4xl" />
-                        )}
+                        <ExamProgressIndicatorMinimal examId={s.id} />
                       </Button>
-                    </a>
+                    </Link>
                   ))}
               </div>
             </Fragment>
