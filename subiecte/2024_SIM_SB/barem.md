@@ -94,7 +94,7 @@
 
 (1p) $ABCD$ este trapez isoscel $\Rightarrow CE = \frac{AB - DC}{2} = \frac{24 - 8}{2} = 8$ cm. Aplicând teorema lui Pitagora în triunghiul $DMC$ obținem $BC = 8\sqrt{3}$ cm.
 
-(1p) $AB \parallel DC \Rightarrow \triangle MDC \cong \triangle MAB \Rightarrow \frac{MD}{MA} = \frac{DC}{AB} = \frac{MC}{MB}$, de unde $MA = MB = 12\sqrt{3}$ cm
+(1p) $AB \parallel DC \overset{T.F.A} \Rightarrow \triangle MDC \cong \triangle MAB \Rightarrow \frac{MD}{MA} = \frac{DC}{AB} = \frac{MC}{MB}$, de unde $MA = MB = 12\sqrt{3}$ cm
 
 (1p) $P_{\triangle MAB} = MA + MB + AB = 24\sqrt{3} + 24$ cm
 

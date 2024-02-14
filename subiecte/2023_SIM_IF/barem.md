@@ -69,7 +69,7 @@ $l = 430$ lei
 
 ### a.
 
-(1p) $\angle BCD = 120^\circ \Rightarrow \angle CBA = 60^\circ \Rightarrow \angle BCF = 30^\circ$
+(1p) $\angle BCD = 120^\circ \Rightarrow \angle CBA = 60^\circ \Rightarrow \angle BCF = 30^\circ \Rightarrow $ 
 $BF = 6 \text{ cm}$
 (1p) $CF^2 + FB^2 = BC^2 \Rightarrow CF = 6\sqrt{3} \text{ cm}$
 

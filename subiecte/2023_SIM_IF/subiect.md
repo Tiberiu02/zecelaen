@@ -146,7 +146,7 @@ Să se determine suma de bani pe care o are Lia.
 
 ## 2. 5p
 
-Se dau numerele $a = \left( 2 \frac{1}{3} + \frac{4}{5} : \frac{8}{15} \right) \cdot \left( \frac{-12}{23} \right)$ și $b = \frac{-2}{2-\sqrt{2}} + 6\sqrt{6} : \left( -2\sqrt{3} \right) + \frac{4}{\sqrt{2}}$
+Se dau numerele $a = \left( 2 \frac{1}{3} + \frac{4}{5} : \frac{8}{15} \right) \cdot \left( \frac{-12}{23} \right)$ și $b = \frac{2}{2-\sqrt{2}} + 6\sqrt{6} : \left( -2\sqrt{3} \right) + \frac{4}{\sqrt{2}}$
 
 ### a. 2p
 
@@ -176,7 +176,7 @@ Să se determine suma numerelor reale $a$ și $b$ pentru care $E(x) = (x+a)(x+b)
 
 ### a. 2p
 
-Calculează $CF$
+Calculați $CF$
 
 ### b. 3p
 
