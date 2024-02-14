@@ -1,20 +1,20 @@
 # Subiectul I
 
-1. b
-2. c
-3. b
+1. a
+2. d
+3. c
 4. d
-5. a
-6. b
+5. d
+6. a
 
 # Subiectul al II-lea
 
-1. a
-2. d
-3. b
+1. d
+2. b
+3. c
 4. c
-5. b
-6. c
+5. c
+6. d
 
 # Subiectul al III-lea
 
@@ -22,85 +22,92 @@
 
 ### a.
 
-(1p) $\frac{30}{100} \left( x - \frac{20}{100} \cdot x \right) = \frac{24x}{100}$ este suma cheltuită de Mihai în a doua zi, unde $x$ reprezintă întreaga sumă de bani
+(1p) Restul împărțirii lui $53$ la $18$ este $17$
 
-(1p) $\frac{24x}{100} < \frac{25x}{100} = \frac{1}{4} \cdot x$, de unde obținem că Mihai nu a cheltuit în a doua zi un sfert din întreaga sumă de bani
+(1p) $17 \neq 5$, deci Maria nu poate avea în bibliotecă $53$ de cărți.
 
 ### b.
 
-(1p) $\frac{x}{5} + \frac{6x}{25} + \left( \frac{6x}{25} + 20 \right) + 44 = x$
+(1p) $n = 8c_1 + 5 = 12c_2 + 5 = 18c_3 + 5$, unde $n$ este numărul cărților din bibliotecă, iar $c_1, c_2, c_3$ sunt numere naturale.
 
-(1p) $\frac{17x}{25} + 64 = x$
+(1p) $n - 5$ este multiplu comun al numerelor $8, 12$ și $18$, deci $n = 72k + 5$, unde $k$ este număr natural.
 
-(1p) $x = 200$ de lei
+(1p) Cum $n$ este cel mai mic număr natural de trei cifre cu proprietățile din enunț, obținem $n = 149$.
 
 ## 2.
 
 ### a.
 
-(1p) $\frac{x}{9+3x} - \frac{2}{x+3} + \frac{3}{x^2+3x} = \frac{x}{3(x+3)} - \frac{2}{x+3} + \frac{3}{x(x+3)}$
-
-(1p) $=\frac{x^2 - 6x + 9}{3x(x+3)} = \frac{(x-3)^2}{3x(x+3)}$, pentru orice număr real $x$, $x \neq -3$ și $x \neq 0$
+(1p) $E(0) = (2 \cdot 0 + 3)^2 + (0 - 2)(0 + 2) - 3(1 - 0) + 2 =$
+(1p) $= 9 - 4 - 3 + 2 = 4$.
 
 ### b.
 
-(1p) $E(x) = \frac{(x-3)^2}{3x(x+3)} = \frac{1}{x+3}$, pentru orice număr real $x$, $x \neq -3$, $x \neq 0$, $x \neq 3$
+(1p) $E(n) + 6 = 4n^2 + 12n + 9 + 2n^4 - 4 - 3n + 2 + 6 = 5n^2 + 15n + 10$, pentru orice număr natural $n$.
 
-(1p) $5 \cdot E(n) = \frac{5}{n+3}$ este număr natural, deci $n+3 = 1$ sau $n+3 = 5$, și, cum $n$ este număr natural, obținem $n = 2$
+(1p) $N = 5(n^2 + 3n + 2) = 5(n + 1)(n + 2)$, pentru orice număr natural $n$.
+
+(1p) Cum $n + 1$ și $n + 2$ sunt numere naturale consecutive, obținem $(n + 1)(n + 2) : 2$, deci $N : 10$.
 
 ## 3.
 
 ### a.
 
-(1p) $f(-2) = 0$
-
-(1p) $2023 \cdot f(-2) = 2023 \cdot 0 = 0$
+(1p) $a = 5 \cdot \left(\frac{3}{6} + \frac{2}{6} + \frac{1}{6}\right) - 2 \cdot \frac{3}{1} =$
+(1p) $= 5 - 2 = 3$.
 
 ### b.
 
-(1p) $A(-2,0)$ și $B(0,2)$ sunt punctele de intersecție a graficului funcției $f$ cu axele $Ox$, respectiv $Oy$
+(1p) $3c$ și $3b$ sunt direct proporționale cu numerele $4$ și $3$ $\Rightarrow \frac{3c}{4} = \frac{3b}{3}$.
 
-(1p) În triunghiul dreptunghic isoscel $\triangle AOB$, $OM$ mediană, deci $OM$ bisectoare $\Rightarrow \angle MOB = 45^\circ$
+(1p) $b = 3 \cdot 10 \cdot 3^8 - 5^8 \cdot 5^7 = 9 - 5 = 4$.
 
-(1p) $NP \perp Ox$, $P \in Ox$ $\Rightarrow P(3,0)$, iar $\angle MON = \angle MOB + \angle BOP + \angle PON = 45^\circ + 90^\circ + 45^\circ = 180^\circ$, de unde rezultă că punctele $N$, $O$ și $M$ sunt coliniare
+(1p) $37c = 74$ $\Rightarrow$ $c = 2$, de unde obținem $abc = 342$.
 
 ## 4.
 
 ### a.
 
-(1p) În triunghiul dreptunghic $ABC$, $AC = \sqrt{AB^2 + BC^2} = \sqrt{12^2 + 9^2} = 15\text{cm}$
+(1p) $\angle ABE = \angle EBC = 20^\circ$, deci $\angle BMD = 70^\circ$.
 
-(1p) $QN \parallel AB \parallel CD$, $PM \parallel BC \parallel AD$ și $\angle QAM = \angle PCN = 90^\circ$, deci $AMEQ$ și $CNEP$ sunt dreptunghiuri
+(1p) $\angle BMD = \angle EMA = 70^\circ$.
 
 ### b.
 
-(1p) $PC \parallel AM$ $\Rightarrow$ $\triangle PEC \sim \triangle MEA$ $\Rightarrow$ $\frac{PE}{ME} = \frac{PC}{AM} = \frac{EC}{EA} = \frac{1}{2}$
+(1p) $EF \perp BC$, $AD \parallel BC$ $\Rightarrow$ $EF \parallel AD$.
 
-(1p) $ME = 2 \cdot PE$, $AM = 2 \cdot PC$ $\Rightarrow$ $\mathcal{A}_{MEQ} = AM \cdot ME = 4 \cdot PC \cdot PE = 4 \cdot \mathcal{A}_{CNEP}$
+(1p) $\angle AEB = 70^\circ$ $\Rightarrow$ $\angle AEM = \angle EMA$ $\Rightarrow$ $\triangle AEM$ este isoscel, deci $AE = AM$.
+
+(1p) $\triangle EFB = \triangle EAB$ $\Rightarrow$ $EF = EA$ și, cum $AM = EA$ și $EF \parallel AM$, obținem că $\triangle AMFE$ este romb.
 
 ## 5.
 
 ### a.
 
-(1p) În triunghiul dreptunghic $ABC$, $AC = \sqrt{AB^2 + BC^2} = 4\sqrt{2}\text{cm}$
+(1p) $AB = 3 \cdot AP$
 
-(1p) $\mathcal{P}_{ABC} = AB + AC + BC = 2\sqrt{2} + 4\sqrt{2} + 2\sqrt{6} = 2\sqrt{2}(3 + \sqrt{3})\text{cm}$
+(1p) $3 \cdot AP = 15$, de unde obținem $AP = 5$ cm.
 
 ### b.
 
-(1p) $EM$ mediană în triunghiul dreptunghic isoscel $\triangle AEB$ $\Rightarrow$ $EM = \frac AB{2} = \sqrt{2} \text{cm}$, $BE$ bisectoarea $\angle ABC$, $EM \perp AB$, $ME = AB$ și $EN \perp BC$, $N \in BC$, de unde obținem $EM = EN = \sqrt{2} \text{cm}$
+(1p) $\triangle ANP \sim \triangle CND$ $\Rightarrow$ $\frac{AN}{CN} = \frac{NP}{ND} = \frac{AP}{CD} = \frac{1}{3}$, deci $AN = \frac{1}{4} AC$, și cum $AO = \frac{1}{2} AC$, obținem $AN = NO$.
 
-(1p) $\mathcal{A}{AEC} = \mathcal{A}{ABC} - \mathcal{A}{AMEB} - \mathcal{A}{BEC} = \frac{AB \cdot BC}{2} - \frac{AB \cdot EM}{2} - \frac{BC \cdot EN}{2} = 2(\sqrt{3} - 1)\text{cm}^2$
+(1p) $PS \perp AN$, $S \in AN$ și $DV \perp NO$, $V \in NO$ și, cum $\triangle SNP \sim \triangle NVD$, obținem $\frac{PS}{DV} = \frac{NP}{ND} = \frac{1}{3}$.
 
-(1p) $\mathcal{A}_{AEC} = AC \cdot EP$, unde $EP \perp AC$, $P \in AC$, de unde $EP = \frac{\sqrt{6} - \sqrt{2}}{\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{2}\text{cm}$
+(1p) $\frac{\mathcal{A}_{\triangle ANP}}{\mathcal{A}_{\triangle DNO}} = \frac{ \frac{ AN \cdot PS }{2} }{ \frac{NO \cdot DV}{2} } = \frac{AN}{NO} \cdot \frac{PS}{DV} = \frac{1}{3}$
 
-6.
-a.
-(1p) $\mathcal{A}_t = 2 \cdot (AB \cdot AA' + AB \cdot BC) = 2 \cdot (16 + 8 + 8) = 2 \cdot 32 = 64\text{cm}^2$
+## 6.
 
-b.
-(1p) $AB'C'D'$ este asemenea cu $AB'CC'$ $\Rightarrow B'D' = B'C$
+### a.
 
-(1p) În triunghiul dreptunghic $B'C'D'$, $BN = \frac{B'C'^2}{B'C}$, și în triunghiul dreptunghic $B'CC'$, $BN = BP$
+(1p) $MN$ este linie mijlocie în triunghiul $\triangle AAD'$ $\Rightarrow$ $MN = \frac{AD'}{2}$.
 
-(1p) În triunghiul $B'D'C$, $\frac{BN}{B'D'} = \frac{BP}{B'C}$ $\Rightarrow NP \parallel DC'$, $DC' \subset (ACD')$ $\Rightarrow NP \parallel (ACD')$
+(1p) $PQ$ este linie mijlocie în triunghiul $\triangle ADD'$ $\Rightarrow$ $PQ = \frac{AD'}{2}$, deci $MN = PQ$.
+
+### b.
+
+(1p) $MN \parallel AD'$, $PQ \parallel AD'$ $\Rightarrow$ $MN \parallel PQ$.
+
+(1p) $MPCB$ este paralelogram, deci $MB \parallel PC$ și, cum $MN \parallel MB = {M}$, $MN$, $MB \subset (MNB)$, $PQ \parallel PC = {P}$, $PQ$, $PC \subset (PQC)$, obținem $(MNB) \parallel (PQC)$.
+
+(1p) $CT \parallel (PQC)$ $\Rightarrow$ $CT \parallel (MNB)$.

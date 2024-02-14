@@ -268,12 +268,11 @@ export function Exercise({
                   ? videoUrl.split("=").at(-1)
                   : videoUrl.split("/").at(-1)
               }
-              className="relative w-full aspect-video" // -my-[3%]"
-              iframeClassName="h-full w-full" //h-[1000%] w-[1000%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[0.1]"
+              className="relative w-full aspect-video"
+              iframeClassName="h-full w-full"
               opts={{
                 playerVars: { rel: 0 },
               }}
-              title="YouTube video player"
             />
           </div>
         </div>

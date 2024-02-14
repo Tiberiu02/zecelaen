@@ -81,38 +81,32 @@ async function annotatePdf(
   console.log(`PDF file written to: ${destination}`);
 }
 
-// copyFile(
-//   "subiecte\\2023_SIM_GR\\pdf\\barem.pdf",
-//   "public\\pdf\\2023_SIM_GR\\simulare-giurgiu-evaluarea-nationala-matematica-2023-barem.pdf"
-// );
+tests.forEach((test) => {
+  const name = getKey(test.fullName);
+  const id = test.id;
 
-true &&
-  tests.forEach((test) => {
-    const name = getKey(test.fullName);
-    const id = test.id;
+  const testDir = sourceDir.replace("{id}", id);
+  const pathSubiect = path.join(testDir, "subiect.pdf");
+  const pathBarem = path.join(testDir, "barem.pdf");
 
-    const testDir = sourceDir.replace("{id}", id);
-    const pathSubiect = path.join(testDir, "subiect.pdf");
-    const pathBarem = path.join(testDir, "barem.pdf");
+  const destDir = path.join(destinationDir, id);
+  const destSubiect = path.join(destDir, `${name}.pdf`);
+  const destBarem = path.join(destDir, `${name}-barem.pdf`);
 
-    const destDir = path.join(destinationDir, id);
-    const destSubiect = path.join(destDir, `${name}.pdf`);
-    const destBarem = path.join(destDir, `${name}-barem.pdf`);
+  if (!fs.existsSync(destDir)) {
+    fs.mkdirSync(destDir, { recursive: true });
+  }
 
-    if (!fs.existsSync(destDir)) {
-      fs.mkdirSync(destDir, { recursive: true });
-    }
-
-    annotatePdf(
-      pathSubiect,
-      destSubiect,
-      test.fullName,
-      "Subiect descărcat de pe ZeceLaEN.ro"
-    );
-    annotatePdf(
-      pathBarem,
-      destBarem,
-      "Barem " + test.fullName,
-      "Barem descărcat de pe ZeceLaEN.ro"
-    );
-  });
+  annotatePdf(
+    pathSubiect,
+    destSubiect,
+    test.fullName,
+    "Subiect descărcat de pe ZeceLaEN.ro"
+  );
+  annotatePdf(
+    pathBarem,
+    destBarem,
+    "Barem " + test.fullName,
+    "Barem descărcat de pe ZeceLaEN.ro"
+  );
+});

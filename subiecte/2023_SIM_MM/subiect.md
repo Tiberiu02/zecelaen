@@ -90,6 +90,8 @@ d. $110^\circ$
 
 Fie $\triangle ABC$ în care $\angle A = 60^\circ$ și $\angle B =  \frac{\angle B + \angle C}{2}$. Dacă $BC = 2cm$, atunci perimetrul $\triangle ABC$ este:
 
+![Imagine](img/2-3.png)
+
 a. $7$ cm
 b. $5$ cm
 c. $6 + 2\sqrt{3}$ cm

@@ -123,6 +123,8 @@ d. $48$ cm²
 
 Aria bazei unui tetraedru regulat este egală cu $9\sqrt{3}$ cm². Suma lungimilor muchiilor laterale este egală cu:
 
+![Imagine](img/2-6.png)
+
 a. $16\sqrt{3}$ cm
 b. $30$ cm
 c. $12$ cm
