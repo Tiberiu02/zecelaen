@@ -157,6 +157,32 @@ export const tests = [
     fullName: "Simulare Iași Evaluarea Națională Matematică 2023",
     id: "2023_SIM_IS",
     date: "18.01.2023",
+    videos: [
+      [
+        "https://youtu.be/yOwOzmf2Kew",
+        "https://youtu.be/aH9WO5Oqqws",
+        "https://youtu.be/5kCWY0RIFtc",
+        "https://youtu.be/GMaTHRjGirs",
+        "https://youtu.be/2KuhJVRdPJQ",
+        "https://youtu.be/FOVyG6NQ4-I",
+      ],
+      [
+        "https://youtu.be/XDliiQa09y0",
+        "https://youtu.be/ptCk5As5dCM",
+        "https://youtu.be/JtY85YfDQqY",
+        "https://youtu.be/D6dAsMerNyg",
+        "https://youtu.be/8UeqwIOqHE8",
+        "https://youtu.be/zeEGLU3hIeY",
+      ],
+      [
+        "https://youtu.be/j0tLAWRk5X4",
+        "https://youtu.be/sojavNVQ0ys",
+        "https://youtu.be/GeJQwwwAhJI",
+        "https://youtu.be/ktFHnV21kQ8",
+        "https://youtu.be/yKP-rk1dr_c",
+        "https://youtu.be/4uCCNUJwFSc",
+      ],
+    ],
   },
   {
     name: "Simulare Brăila",
