@@ -4,6 +4,13 @@ import { FaExclamationCircle } from "react-icons/fa";
 import React from "react";
 import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/Button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Server Discord Zece la EN",
+  description:
+    "Hai cu noi pe Discord să discutăm despre Evaluarea Națională sau să ne spui ce vrei să adăugăm pe Zece La EN",
+};
 
 export default async function Page() {
   return (

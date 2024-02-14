@@ -13,6 +13,13 @@ import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/Button";
 import { twMerge } from "tailwind-merge";
 import { IconType } from "react-icons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Resurse utile pentru Evaluarea Națională",
+  description:
+    "Pe această pagină am adunat mai multe resurse digitale gratuite care s-ar putea să îți fie utile în pregătirea pentru Evaluarea Națională",
+};
 
 function Resource({
   imgSrc,

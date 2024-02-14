@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Quicksand, Rubik } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 import { twMerge } from "tailwind-merge";
