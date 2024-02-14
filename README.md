@@ -27,14 +27,15 @@ Before launch:
 - [x] verificari automate teste (puncte, imagini)
 - [x] Gamification features
 - [?] youtube upload script
-- deploy on bunny
 - [x] simulare 2024 + video
 - [x] video EN 2023
 - [x] Google Analytics
-- SEO
+- [x] SEO
 
 After launch:
 
+- deploy on bunny
+- yt upload script
 - pagina despre evaluare
 
 Tech debt:
