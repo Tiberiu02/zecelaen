@@ -7,7 +7,6 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa6";
-import { BiMath } from "react-icons/bi";
 import { FaRegSmileWink } from "react-icons/fa";
 
 import React from "react";
@@ -15,7 +14,6 @@ import { NavBar } from "@/components/NavBar";
 import { Button } from "@/components/Button";
 import { twMerge } from "tailwind-merge";
 import { IconType } from "react-icons";
-import { CgMathPercent } from "react-icons/cg";
 
 function Resource({
   imgSrc,

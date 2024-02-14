@@ -14,12 +14,6 @@ export const metadata: Metadata = {
   title: "Teste Evaluarea Națională Matematică cu rezolvări video",
   description:
     "Teste oficiale Evaluarea Națională Matematică de la examenele și simulările din anii trecuți în format interactiv cu rezolvări video",
-  icons: [
-    {
-      url: "/favicon.ico",
-      type: "image/x-icon",
-    },
-  ],
 };
 
 export default function Home() {

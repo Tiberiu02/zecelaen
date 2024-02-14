@@ -10,11 +10,25 @@ import { Button } from "@/components/Button";
 import { ShareButtons } from "@/components/ShareButtons";
 import { Card } from "../../../components/Card";
 import { ExamProgressIndicator } from "@/components/ExamProgressIndicator";
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return Object.keys(testsByKey).map((test) => ({
     test,
   }));
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { test: string };
+}): Metadata {
+  const test = testsByKey[params.test];
+
+  return {
+    title: test.fullName,
+    description: `Rezolvă subiectul de la ${test.fullName} din ${test.date}`,
+  };
 }
 
 export default async function Page({ params }: { params: { test: string } }) {

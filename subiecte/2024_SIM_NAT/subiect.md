@@ -38,7 +38,7 @@ d. $[1, +\infty)$
 
 ## 5. 5p
 
-Patru elevi, Ana, Ioan, Dana și Vlad determină numărul $a = 2 - 4\sqrt{3} + 2(\sqrt{12} + 1)$. Rezultatele obținute de cei patru elevi sunt prezentate în tabelul de mai jos:
+Patru elevi, Ana, Ioan, Dana și Vlad determină numărul $a = \big |2 - 4\sqrt{3} \big | + 2(\sqrt{12} + 1)$. Rezultatele obținute de cei patru elevi sunt prezentate în tabelul de mai jos:
 
 $\begin{array}{|c|c|c|c|}
 \hline
@@ -70,7 +70,7 @@ b. falsă
 
 ## 1. 5p
 
-În figura alăturată punctele $A$, $B$, $C$, $D$ sunt coliniare, în această ordine, astfel încât $BC = 2AB$, $CD = 2BC$ și $AB = 2$ cm. Punctul $M$ este mijlocul segmentului $AB$ și punctul $N$ este mijlocul segmentului $CD$. Lungimea segmentului $MN$ este egală cu:
+În figura alăturată punctele $A$, $B$, $C$ și $D$ sunt coliniare, în această ordine, astfel încât $BC = 2 \cdot AB$, $CD = 2 \cdot BC$ și $AB = 2$ cm. Punctul $M$ este mijlocul segmentului $AB$ și punctul $N$ este mijlocul segmentului $CD$. Lungimea segmentului $MN$ este egală cu:
 
 ![Imagine](img/2-1.png)
 
@@ -92,7 +92,7 @@ d. $54^\circ$
 
 ## 3. 5p
 
-În figura alăturată este reprezentat triunghiul $ABC$ cu $AB = 10$ cm și $AC = 12$ cm. Semidreapta $BI$ este bisectoarea unghiului $ACB$ și semidreapta $CI$ este bisectoarea unghiului $ACB$. Paralela prin punctul $I$ la dreapta $BC$ intersectează dreptele $AB$ și $AC$ în punctele $D$, respectiv $E$. Perimetrul triunghiului $ADE$ este egal cu:
+În figura alăturată este reprezentat triunghiul $ABC$ cu $AB = 10$ cm și $AC = 12$ cm. Semidreapta $BI$ este bisectoarea unghiului $ABC$ și semidreapta $CI$ este bisectoarea unghiului $ACB$. Paralela prin punctul $I$ la dreapta $BC$ intersectează dreptele $AB$ și $AC$ în punctele $D$, respectiv $E$. Perimetrul triunghiului $ADE$ este egal cu:
 
 ![Imagine](img/2-3.png)
 
