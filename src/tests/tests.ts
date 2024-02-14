@@ -5,13 +5,13 @@ export const tests = [
   {
     name: "Simulare Națională",
     fullName: "Simulare Evaluarea Națională Matematică 2024",
-    id: "2024_MODEL",
+    id: "2024_SIM_NAT",
     date: "06.02.2024",
   },
   {
     name: "Subiect Model",
     fullName: "Subiect model Evaluarea Națională Matematică 2024",
-    id: "2024_SIM_NAT",
+    id: "2024_MODEL",
     date: "01.11.2023",
   },
   {
