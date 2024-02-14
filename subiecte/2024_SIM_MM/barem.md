@@ -60,7 +60,7 @@ $p\%$ din 2000 lei este $1280$ lei $\Rightarrow p = \frac{1280 \cdot 100}{2000} 
 
 (1p) $2 < 3x + 8 \leq 26$
 
-(1p) $-2 \leq x \leq 6 \Rightarrow B = (-2,6]$
+(1p) $-2 < x \leq 6 \Rightarrow B = (-2,6]$
 
 (1p) $A \cap B = (-2,1] \Rightarrow (A \cap B) \cap \mathbb{Z} = \{-1,0,1\}$
 

@@ -94,7 +94,7 @@
 
 (1p) $ABCD$ este trapez isoscel $\Rightarrow CE = \frac{AB - DC}{2} = \frac{24 - 8}{2} = 8$ cm. Aplicând teorema lui Pitagora în triunghiul $DMC$ obținem $BC = 8\sqrt{3}$ cm.
 
-(1p) $AB \parallel DC \Rightarrow \angle MDC \cong \angle MAB \Rightarrow \frac{MD}{MA} = \frac{DC}{AB} = \frac{MC}{MB}$, de unde $MA = MB = 12\sqrt{3}$ cm
+(1p) $AB \parallel DC \Rightarrow \triangle MDC \cong \triangle MAB \Rightarrow \frac{MD}{MA} = \frac{DC}{AB} = \frac{MC}{MB}$, de unde $MA = MB = 12\sqrt{3}$ cm
 
 (1p) $P_{\triangle MAB} = MA + MB + AB = 24\sqrt{3} + 24$ cm
 
@@ -108,7 +108,7 @@
 
 ### b.
 
-(1p) $\triangle ABC$ echilateral, $AM$ mediană $\Rightarrow AM = \frac{l\sqrt{3}}{2} = \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$, $\triangle ABCD$ echilateral, $DM$ mediană $\Rightarrow DM = \frac{l\sqrt{3}}{2} =  \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$ $\Rightarrow \triangle AMD$ este isoscel
+(1p) $\triangle ABC$ echilateral, $AM$ mediană $\Rightarrow AM = \frac{l\sqrt{3}}{2} = \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$, $\triangle BCD$ echilateral, $DM$ mediană $\Rightarrow DM = \frac{l\sqrt{3}}{2} =  \frac{6\sqrt{3} \cdot \sqrt{3}}{2} = 9$ $\Rightarrow \triangle AMD$ este isoscel
 
 (1p) $\triangle AMD$ isoscel ($AM = MD$), construim $ME$ înălțime $\Rightarrow ME$ mediană. Aplicând teorema lui Pitagora în triunghiul $DME$ obținem $ME = 3\sqrt{6}$ cm.
 
