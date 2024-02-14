@@ -221,6 +221,32 @@ export const tests = [
     fullName: "Simulare Maramureș Evaluarea Națională Matematică 2023",
     id: "2023_SIM_MM",
     date: "16.11.2022",
+    videos: [
+      [
+        "https://youtu.be/XrzVcPIB0Tk",
+        "https://youtu.be/sdPJvtMgRaA",
+        "https://youtu.be/ST3KITvE9e8",
+        "https://youtu.be/72kn0l4Ulrw",
+        "https://youtu.be/QYHbe5JnEDs",
+        "https://youtu.be/wEpTMedYFVY",
+      ],
+      [
+        "https://youtu.be/ojgFthJFsUw",
+        "https://youtu.be/sc797lqG4kg",
+        "https://youtu.be/LMWOcQ7hxDY",
+        "https://youtu.be/MDc0Ryqv-5U",
+        "https://youtu.be/T09e9qBpVyo",
+        "https://youtu.be/I8UZd28T9AQ",
+      ],
+      [
+        "https://youtu.be/Vuld3IuCbH8",
+        "https://youtu.be/w-rlSQVcfC4",
+        "https://youtu.be/2k6fY41ciRI",
+        "https://youtu.be/27zf0FOTfng",
+        "https://youtu.be/pgi6QAEfesY",
+        "https://youtu.be/2lD2SxEXoGs",
+      ],
+    ],
   },
   {
     name: "Simulare Giurgiu",
