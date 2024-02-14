@@ -114,10 +114,10 @@ d. $8$ cm
 
 În figura următoare este reprezentat rombul $ABCD$ cu măsura unghiului $BAD$ de $45^\circ$ și lungimea laturii $AB = 6$ cm. Aria rombului este egală cu:
 
-a. $18\sqrt{2}$ cm²
-b. $36\sqrt{2}$ cm²
-c. $18$ cm²
-d. $36$ cm²
+a. $18\sqrt{2}$ cm$^2$
+b. $36\sqrt{2}$ cm$^2$
+c. $18$ cm$^2$
+d. $36$ cm$^2$
 
 ![Imagine](img/2-4.png)
 
@@ -138,7 +138,7 @@ d. $4\sqrt{3}$ cm
 
 ## 6. 5p
 
-În figura alăturată este reprezentat un tetraedru regulat $ABCD$ cu aria unei fețe egală cu $36\sqrt{3}$ cm². Suma lungimilor tuturor muchiilor tetraedrului regulat este egală cu:
+În figura alăturată este reprezentat un tetraedru regulat $ABCD$ cu aria unei fețe egală cu $36\sqrt{3}$ cm$^2$. Suma lungimilor tuturor muchiilor tetraedrului regulat este egală cu:
 
 a. $6$ cm
 b. $12$ cm
@@ -226,5 +226,3 @@ Arătați că aria unei fețe laterale este $9\sqrt{3}$;
 Aflați sinusul unghiului dintre dreptele $VM$ și $BD$.
 
 ![Imagine](img/3-6.png)
-
-

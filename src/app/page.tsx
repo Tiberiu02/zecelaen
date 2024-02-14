@@ -45,9 +45,9 @@ export default async function Page() {
           </div>
           <div className="flex flex-col max-w-xl items-center sm:items-start">
             <h1 className="text-3xl lg:text-5xl font-bold text-black bg-anti-math text-center sm:text-left balance-lines">
-              Teste interactive cu
+              Teste interactive
               <br />
-              rezolvări video
+              cu rezolvări video
             </h1>
             <h2 className="text-xl lg:text-3xl font-normal text-black bg-anti-math mt-8 text-center sm:text-left balance-lines">
               Prima platformă educațională gratuită dedicată Evaluării Naționale

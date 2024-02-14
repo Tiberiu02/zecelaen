@@ -88,7 +88,7 @@
 
 (1p) $\mathcal{A}_{ABCD} = \frac{(AB + DC) \cdot CE}{2}$
 
-(1p) $\mathcal{A}_{ABCD} = \frac{(24 + 8) \cdot 8\sqrt{2}}{2} = 32 \cdot 4\sqrt{2} = 128\sqrt{2}$ cm²
+(1p) $\mathcal{A}_{ABCD} = \frac{(24 + 8) \cdot 8\sqrt{2}}{2} = 32 \cdot 4\sqrt{2} = 128\sqrt{2}$ cm$^2$
 
 ### b.
 
@@ -112,4 +112,4 @@
 
 (1p) $\triangle AMD$ isoscel ($AM = MD$), construim $ME$ înălțime $\Rightarrow ME$ mediană. Aplicând teorema lui Pitagora în triunghiul $DME$ obținem $ME = 3\sqrt{6}$ cm.
 
-(1p) $\mathcal{A}_{\triangle AMD} = \frac{AD \cdot ME}{2} = \frac{6\sqrt{3} \cdot 3\sqrt{6}}{2} = 27\sqrt{2}$ cm².
+(1p) $\mathcal{A}_{\triangle AMD} = \frac{AD \cdot ME}{2} = \frac{6\sqrt{3} \cdot 3\sqrt{6}}{2} = 27\sqrt{2}$ cm$^2$.

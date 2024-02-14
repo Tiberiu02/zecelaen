@@ -114,19 +114,19 @@ Fie $AB$ diametrul în cercul de centru $O$ și rază $10$ cm și $CD \perp AB$.
 
 ![Imagine](img/2-5.png)
 
-a. $24$ cm²
-b. $75$ cm²
-c. $75\sqrt{3}$ cm²
-d. $50\sqrt{3}$ cm²
+a. $24$ cm$^2$
+b. $75$ cm$^2$
+c. $75\sqrt{3}$ cm$^2$
+d. $50\sqrt{3}$ cm$^2$
 
 ## 6. 5p
 
 Suma muchiilor unui tetraedru regulat este $36cm$. Suma ariilor tuturor fețelor tetraedrului este:
 
-a. $36\sqrt{3}$ cm²
-b. $30$ cm²
-c. $12\sqrt{2}$ cm²
-d. $18$ cm²
+a. $36\sqrt{3}$ cm$^2$
+b. $30$ cm$^2$
+c. $12\sqrt{2}$ cm$^2$
+d. $18$ cm$^2$
 
 # Subiectul al III-lea
 
