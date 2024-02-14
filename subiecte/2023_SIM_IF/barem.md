@@ -75,7 +75,7 @@ $BF = 6 \text{ cm}$
 
 ### b.
 
-(1p) $CD = DB \Rightarrow \triangle CDB \text{ isoscel de bază } DB \Rightarrow \angle CBD = \angle CDB = 30^\circ$
+(1p) $CD = DB \Rightarrow \triangle CDB \text{ isoscel de bază } DB \Rightarrow \angle CBD = \angle CDB = 30^\circ \Rightarrow \angle DBA = 30^\circ$
 (1p) $DB = 2DS = 12\sqrt{3} \text{ cm}, \text{ unde } DS \perp AB$
 (1p) Fie $CP \perp DB \Rightarrow d(C, DB) = CP$
 $CP = \frac{BC}{2} = 6 \text{ cm}$
