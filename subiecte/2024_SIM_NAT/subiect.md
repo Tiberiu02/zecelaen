@@ -22,10 +22,10 @@ d. $6$
 
 Se consideră mulțimile $A = \{1, 2, 3, 4, 5, 6\}$ și $B = \{0, 2, 4, 6, 8\}$. Intersecția mulțimilor $A$ și $B$ este mulțimea:
 
-a. $\{0, 2, 4, 6, 8\}$
-b. $\{0, 1, 2, 3, 4, 5, 6, 8\}$
-c. $\{2, 4, 6\}$
-d. $\{0, 2, 4, 6\}$
+a. {0, 2, 4, 6, 8}
+b. {0, 1, 2, 3, 4, 5, 6, 8}
+c. {2, 4, 6}
+d. {0, 2, 4, 6}
 
 ## 4. 5p
 
@@ -47,9 +47,6 @@ $\begin{array}{|c|c|c|c|}
 \ 0 & 4 & 4\sqrt{3} & 8\sqrt{3} \\
 \hline
 \end{array}$
-
-
-
 
 Conform informațiilor din tabel, elevul care a determinat corect numărul $a$ este:
 

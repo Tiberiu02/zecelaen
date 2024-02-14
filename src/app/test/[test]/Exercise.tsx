@@ -226,7 +226,7 @@ export function Exercise({
             >
               <div
                 className={twMerge(
-                  "h-7 w-7 border-2 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
+                  "h-7 w-7 shrink-0 border-2 duration-150 text-base flex items-center justify-center rounded-full text-white font-medium",
                   exerciseChoice == null
                     ? className.options[i]
                     : i == correct

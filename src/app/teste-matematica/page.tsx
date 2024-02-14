@@ -1,13 +1,26 @@
 import { twMerge } from "tailwind-merge";
-import { TbDiscountCheckFilled, TbVideoOff } from "react-icons/tb";
+import { TbVideoOff } from "react-icons/tb";
 import { SubLogo } from "../../components/SubLogo";
-import { getKey, tests, testsByYear } from "@/tests/tests";
+import { getKey, testsByYear } from "@/tests/tests";
 import { Fragment } from "react";
 import { NavBar } from "../../components/NavBar";
 import { fullDate } from "@/tests/fullDate";
 import { Button } from "@/components/Button";
 import Link from "next/link";
 import { ExamProgressIndicatorMinimal } from "@/components/ExamProgressIndicator";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Teste Evaluarea Națională Matematică cu rezolvări video",
+  description:
+    "Teste oficiale Evaluarea Națională Matematică de la examenele și simulările din anii trecuți în format interactiv cu rezolvări video",
+  icons: [
+    {
+      url: "/favicon.ico",
+      type: "image/x-icon",
+    },
+  ],
+};
 
 export default function Home() {
   return (

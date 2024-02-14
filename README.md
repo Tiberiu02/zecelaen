@@ -24,7 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Before launch:
 
-- verificari automate teste (puncte, imagini)
+- [x] verificari automate teste (puncte, imagini)
 - [x] Gamification features
 - [?] youtube upload script
 - deploy on bunny

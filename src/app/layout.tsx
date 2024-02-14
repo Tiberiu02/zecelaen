@@ -9,7 +9,7 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Zece la EN",
-  description: "Teste Evaluarea Națională Matematică",
+  description: "Platformă digitală pentru Evaluarea Națională Matematică",
   icons: [
     {
       url: "/favicon.ico",
