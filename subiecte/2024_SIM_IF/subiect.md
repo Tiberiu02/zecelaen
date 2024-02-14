@@ -151,7 +151,7 @@ d. $72$ cm
 
 ## 1. 5p
 
-Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unui zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu (2509m), parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu (2544m), iar în a treia etapă a mers cu 50% mai mult decât în a doua etapă, mergând până pe vârful Dara (2500m).
+Un turist a parcurs un traseu în care a atins 3 vârfuri muntoase, în trei etape ale unei zile. În prima etapă a plecat de la Lacul Bâlea și a ajuns pe vârful Vânătoarea lui Buteanu (2509m), parcurgând o cincime din etapa a doua, în care a mers până pe vârful Moldoveanu (2544m), iar în a treia etapă a mers cu 50% mai mult decât în a doua etapă, mergând până pe vârful Dara (2500m).
 
 ### a. 2p
 
