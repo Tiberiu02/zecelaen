@@ -64,6 +64,8 @@ d. Vlad
 
 Afirmația: „Conform informațiilor din diagramă, jumătate din numărul elevilor acestei clase a obținut la testul de matematică cel puțin nota 8.” este:
 
+![Imagine](img/1-6.png)
+
 a. adevărată
 b. falsă
 
