@@ -11,6 +11,7 @@ import { ShareButtons } from "@/components/ShareButtons";
 import { Card } from "../../../components/Card";
 import { ExamProgressIndicator } from "@/components/ExamProgressIndicator";
 import { Metadata } from "next";
+import { Footer } from "@/components/Footer";
 
 export function generateStaticParams() {
   return Object.keys(testsByKey).map((test) => ({
@@ -85,11 +86,7 @@ export default async function Page({ params }: { params: { test: string } }) {
           <Test testId={test.id} />
         </div>
 
-        <div className="flex flex-col gap-4 items-center">
-          <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
-            <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
-          </div>
-        </div>
+        <Footer className="bg-anti-math" />
       </div>
     </main>
   );

@@ -9,6 +9,7 @@ import { Button } from "@/components/Button";
 import Link from "next/link";
 import { ExamProgressIndicatorMinimal } from "@/components/ExamProgressIndicator";
 import { Metadata } from "next";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Teste Evaluarea Națională Matematică cu rezolvări video",
@@ -67,9 +68,8 @@ export default function Home() {
               </div>
             </Fragment>
           ))}
-        <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
-          <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
-        </div>
+
+        <Footer className="bg-anti-math" />
       </div>
     </main>
   );

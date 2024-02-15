@@ -43,5 +43,5 @@ Tech debt:
 - video links in separate files
 - footer component
 - layout of single pages
-- button hover translate glitch
+- [x] button hover translate glitch
 - static, more uniform exam logos
