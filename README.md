@@ -40,8 +40,8 @@ After launch:
 
 Tech debt:
 
-- video links in separate files
-- footer component
-- layout of single pages
+- [x] footer component
+- [x] layout of single pages
 - [x] button hover translate glitch
+- video links in separate files (maybe postpone for now)
 - static, more uniform exam logos
