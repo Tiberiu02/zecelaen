@@ -7,6 +7,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import Link from "next/link";
 import { IconRoFlag, IconCheckMarkStack } from "@/components/Icons";
 import { RuntimeLoader } from "@rive-app/react-canvas";
+import { Footer } from "@/components/Footer";
 
 const riveWASMResource = "https://unpkg.com/@rive-app/canvas@2.7.6/rive.wasm";
 RuntimeLoader.setWasmUrl(riveWASMResource);
@@ -132,11 +133,7 @@ export default async function Page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 items-center">
-        <div className="mb-4 mt-28 font-medium text-black/40 bg-anti-math flex items-center gap-1">
-          <span className="text-2xl">©</span> 2024 ZeceLaEN.ro
-        </div>
-      </div>
+      <Footer />
     </main>
   );
 }
