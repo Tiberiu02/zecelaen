@@ -21,9 +21,13 @@ export function Button({
   return (
     <div
       className={twMerge(
-        "rounded-full border-[2px] duration-150 shadow bg-white border-gray-200",
+        "relative rounded-full border-2 duration-150 shadow bg-white border-gray-200 select-none",
         active && "cursor-pointer",
         pressed && active && "bg-gray-100 shadow-none translate-y-[2px]",
+        // Fake element to increase the hitbox when hovering so that translations don't glitch
+        active &&
+          "after:content-[''] after:absolute after:inset-0 after:rounded-full after:m-[-2px]",
+        active && pressed && "after:scale-y-110",
         className
       )}
       onClick={onClick}
