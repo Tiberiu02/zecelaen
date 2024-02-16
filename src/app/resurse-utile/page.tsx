@@ -283,6 +283,30 @@ export default async function Page() {
         la examen.
       </Resource>
 
+      <Resource
+        imgSrc="/img/resurse/lectii-virtuale.jpg"
+        imgAlt="Lectii-Virtuale.ro"
+        links={[
+          {
+            href: "https://www.youtube.com/channel/UC4Bcf1KZ0FB2FXOO16Vb90w",
+            Icon: FaYoutube,
+            text: "Lecții Virtuale",
+            color: "#F00",
+          },
+          {
+            href: "https://lectii-virtuale.ro/",
+            Icon: FaEarthAfrica,
+            text: "lectii-virtuale.ro",
+            color: "#54A0FF",
+          },
+        ]}
+      >
+        <span className="font-bold">Lectii-Virtuale.ro</span> este o platformă
+        educațională cu peste 700 de lecții video de matematică, fizică și
+        chimie. Aici găsiți și multe lecții de teorie, formule și teste cu
+        rezolvări complete.
+      </Resource>
+
       <div className="text-3xl self-center font-semibold [text-wrap:balance] text-center mt-16">
         Limba Română
       </div>
