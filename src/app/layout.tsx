@@ -10,13 +10,22 @@ const rubik = Rubik({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Zece la EN",
   description:
-    "Hai să de pregătim împreună la matematică pentru Evaluarea Națională. Avem subiecte oficiale cu grile interactive și rezolvări video.",
+    "Subiecte oficiale de la Evaluarea Națională matematică cu grile interactive și rezolvări video.",
   icons: [
     {
       url: "/favicon.ico",
       type: "image/x-icon",
     },
   ],
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://zecelaen.ro",
+    siteName: "Zece la EN",
+    title: "Zece la EN",
+    description:
+      "Subiecte oficiale de la Evaluarea Națională matematică cu grile interactive și rezolvări video.",
+  },
 };
 
 const NEXT_PUBLIC_GA_MEASUREMENT_ID = "G-JKH4HGB1JT";
