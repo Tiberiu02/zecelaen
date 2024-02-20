@@ -37,6 +37,8 @@ After launch:
 - deploy on bunny
 - yt upload script
 - pagina despre evaluare
+- info streak
+- cookie banner / policy (?)
 
 Tech debt:
 

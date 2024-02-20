@@ -125,10 +125,18 @@ export default async function Page() {
             matematică.
             <br />
             <br />
-            Sunt convins că tehnologia poate avea un rol major în procesul
-            educațional. Visul meu este să creez cea mai bună platformă
-            educațională din lume, în România, modelată special pentru sistemul
-            românesc.
+            În 2021 an lansat platforma{" "}
+            <Link
+              href="https://bacplus.ro"
+              target="_blank"
+              className="text-blue-600 font-medium"
+            >
+              BacPlus.ro
+            </Link>{" "}
+            ca un mic pas în direcția mult mai largă a digitalizării educației
+            în România. Tehnologia aduce poate un mare plus în procesul
+            educațional. Depinde doar de noi ca următoarea generație să
+            beneficieze de o educație mai bună.
           </div>
         </div>
       </div>
