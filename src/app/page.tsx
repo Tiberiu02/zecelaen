@@ -134,7 +134,7 @@ export default async function Page() {
               BacPlus.ro
             </Link>{" "}
             ca un mic pas în direcția mult mai largă a digitalizării educației
-            în România. Tehnologia aduce poate un mare plus în procesul
+            în România. Tehnologia poate aduce un mare plus în procesul
             educațional. Depinde doar de noi ca următoarea generație să
             beneficieze de o educație mai bună.
           </div>
