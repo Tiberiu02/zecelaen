@@ -7,8 +7,10 @@ import Script from "next/script";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
+const year = new Date().getFullYear();
+
 export const metadata: Metadata = {
-  title: "Zece la EN",
+  title: `Teste Evaluarea Națională ${year} | Zece la EN`,
   description:
     "Subiecte oficiale de la Evaluarea Națională matematică cu grile interactive și rezolvări video.",
   icons: [
@@ -21,8 +23,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     url: "https://zecelaen.ro",
-    siteName: "Zece la EN",
-    title: "Zece la EN",
+    siteName: `Teste Evaluarea Națională ${year} | Zece la EN`,
+    title: `Teste Evaluarea Națională ${year} | Zece la EN`,
     description:
       "Subiecte oficiale de la Evaluarea Națională matematică cu grile interactive și rezolvări video.",
   },
