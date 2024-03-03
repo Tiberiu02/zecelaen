@@ -1,16 +1,12 @@
 import React from "react";
 import { NAVBAR_HEIGHT, NavBar } from "@/components/NavBar";
-import { Animation } from "@/components/Animation";
+import { RiveAnimation } from "@/components/Animation";
 import { Button } from "@/components/Button";
 import { FaCirclePlay, FaDiscord } from "react-icons/fa6";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Link from "next/link";
 import { IconRoFlag, IconCheckMarkStack } from "@/components/Icons";
-import { RuntimeLoader } from "@rive-app/react-canvas";
 import { Footer } from "@/components/Footer";
-
-const riveWASMResource = "https://unpkg.com/@rive-app/canvas@2.7.6/rive.wasm";
-RuntimeLoader.setWasmUrl(riveWASMResource);
 
 export default async function Page() {
   const ageTM =
@@ -19,19 +15,6 @@ export default async function Page() {
   return (
     <main className="flex flex-col">
       <NavBar showStats={false} />
-
-      <link
-        rel="preload"
-        href="/animations/fig1.riv"
-        as="fetch"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="preload"
-        href={riveWASMResource}
-        as="fetch"
-        crossOrigin="anonymous"
-      />
 
       <div className="w-full bg-math flex flex-col overflow-hidden">
         <div
@@ -42,7 +25,11 @@ export default async function Page() {
           }}
         >
           <div className="w-64 sm:w-96 aspect-square">
-            <Animation src="/animations/fig1.riv" stateMachines="main" />
+            <RiveAnimation
+              rivSrc="/animations/fig1.riv"
+              stateMachine="main"
+              fallbackImgSrc="/animations/fig1-fallback.png"
+            />
           </div>
           <div className="flex flex-col max-w-xl items-center sm:items-start">
             <h1 className="text-3xl lg:text-5xl font-bold text-black bg-anti-math text-center sm:text-left balance-lines">
