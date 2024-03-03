@@ -35,7 +35,7 @@ export function RiveAnimation({
         console.log("Playing animation", rive);
         setState("animation");
         rive?.play();
-      }, 500);
+      }, 800);
     }
   }, [loaded, state, rive]);
 
@@ -54,7 +54,7 @@ export function RiveAnimation({
           src={fallbackImgSrc}
           alt="Animation fallback"
           className={twMerge(
-            "w-full inset-0 absolute duration-300 opacity-100 object-contain",
+            "w-full inset-0 absolute duration-500 opacity-100 object-contain",
             state != "image" && "opacity-0"
           )}
         />
