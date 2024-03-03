@@ -112,7 +112,7 @@ export default async function Page() {
             matematică.
             <br />
             <br />
-            În 2021 an lansat platforma{" "}
+            În 2021 am lansat platforma{" "}
             <Link
               href="https://bacplus.ro"
               target="_blank"
