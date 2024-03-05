@@ -54,7 +54,7 @@ $\begin{array}{|c|c|c|c|}
 \hline
 \text{Andrei} & \text{Bogdan} & \text{Ciprian} & \text{Dan} \\
 \hline
- \large \frac{16}{6} = \frac{9}{24} & \large \frac{9}{6} = \frac{24}{16} & \large \frac{6}{24} 
+ \large \frac{16}{6} = \frac{24}{9} & \large \frac{9}{6} = \frac{24}{16} & \large \frac{6}{24} 
  = \frac{9}{16} & \large \frac{9}{24} = \frac{6}{16} \\
 \hline
 \end{array}$
